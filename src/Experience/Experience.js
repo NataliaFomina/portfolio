@@ -53,7 +53,7 @@ function Experience() {
                 <i className="fal fa-map-pin"></i>AvtoHarakter - Saint Petersburg, Russia
               </p>
               <p>
-                <i className="fal fa-link">http://begethost7.beget.tech/auto</i><a href="http://begethost7.beget.tech/auto"></a>
+                <i className="fal fa-link"></i><a href="http://begethost7.beget.tech/auto">http://begethost7.beget.tech/auto</a>
               </p>
               <ul>
                 <li>Development of a responsive web frontend for desktop, mobile and tablet</li>
