@@ -33,12 +33,16 @@ function Experience() {
               <p>
                 <i className="fal fa-link"></i><a href="https://www.mygento.ru">https://www.mygento.ru</a>
               </p>
-              <ul>Development of UI:
-                <li>work with client manager and backend team</li>
-                <li>develop frontend components</li>
-                <li>creating animation, banners, sliders, blogs</li>
-                <li>refactor code</li>
-                <li>Support for an existing websites L'Oréal, MyGlo</li>
+              <ul>
+                <li>Development of React based component, featuring responsive design that supports mobile and tablet</li>
+                <li>Development of frontend elements: sliders, menus, blog, subscription, product card, cart animation, and more</li>
+                <li>Code refactoring</li>
+                <li>Integration testing</li>
+                <li>Collaborating with backend developers</li>
+                <li>Working directly with clients; taking part in discussions, setting up tasks and goals</li>
+                <li>Content management & administration</li>
+                <li>Taking part in the migration of Magento 1 online shop to Magento 2</li>
+                <li>Support and maintenance of existing products: L'Oréal, MyGlo</li>
               </ul>
             </div>
 
@@ -51,12 +55,15 @@ function Experience() {
               <p>
                 <i className="fal fa-link"></i><a href=""></a>
               </p>
-              <ul>Development of UI:
-                <li>work with client manager and backend team</li>
-                <li>develop frontend components</li>
-                <li>creating animation, banners, sliders, blogs</li>
-                <li>refactor code</li>
-                <li>Support for an existing websites L'Oréal, MyGlo</li>
+              <ul>
+                <li>Development of a responsive web frontend for desktop, mobile and tablet</li>
+                <li>Design of UI & UX</li>
+                <li>Deployment and hosting setup</li>
+                <li>Defining a sitemap</li>
+                <li>Working directly with clients; discussing and setting goals</li>
+                <li>Working with article writers</li>
+                <li>Optimizing SEO for Google and Yandex searching engines</li>
+                <li>Maintenance of existing products</li>
               </ul>
             </div>
 
@@ -69,12 +76,14 @@ function Experience() {
               <p>
                 <i className="fal fa-link"></i><a href="http://процентденьги.рф">http://процентденьги.рф</a>
               </p>
-              <ul>Development of UI:
-                <li>Creating elements (sliders, calculators)</li>
-                <li>Design layouts for landing pages</li>
-                <li>Responsive layout / for mobile devices</li>
-                <li>SEO optimization</li>
-                <li>Support for an existing site</li>
+              <ul>
+                <li>Client management, discussion and tasking</li>
+                <li>Sitemap and design</li>
+                <li>Frontend and backend creation</li>
+                <li>Mobile responsive tablet</li>
+                <li>Working with article writers</li>
+                <li>SEO optimisation</li>
+                <li>Maintenance of current site</li>
               </ul>
             </div>
 
@@ -87,12 +96,14 @@ function Experience() {
               <p>
                 <i className="fal fa-link"></i><a href="http://granitbrz.ru">http://granitbrz.ru</a>
               </p>
-              <ul>Development of UI:
-                <li>Creating elements (sliders, calculators)</li>
-                <li>Design layouts for landing pages</li>
-                <li>Responsive layout / for mobile devices</li>
-                <li>SEO optimization</li>
-                <li>Support for an existing site</li>
+              <ul>
+                <li>Client liaison, discussion and tasking</li>
+                <li>Sitemap and design</li>
+                <li>Frontend and backend creation</li>
+                <li>Mobile responsive tablet</li>
+                <li>Working with article writers</li>
+                <li>SEO optimisation</li>
+                <li>Ongoing website maintenance</li>
               </ul>
             </div>
 
