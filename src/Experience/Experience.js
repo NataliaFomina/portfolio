@@ -14,12 +14,13 @@ function Experience() {
               <p>
                 <i className="fal fa-map-pin"></i>Snippet Stock - Frankfurt, Germany
               </p>
-              <ul>Development of UI:
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
-                <li>5</li>
+              <ul>
+                <li>Development of a responsive web frontend for desktop, mobile and tablet</li>
+                <li>Design of UI & UX</li>
+                <li>Defining features and workflow</li>
+                <li>Defining a marketing strategy</li>
+                <li>Defining a monetisation strategy</li>
+                <li>Optimizing SEO for Google and Yandex searching engines</li>
               </ul>
             </div>
 
