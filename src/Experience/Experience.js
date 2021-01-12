@@ -77,13 +77,14 @@ function Experience() {
                 <i className="fal fa-link"></i><a href="http://процентденьги.рф">http://процентденьги.рф</a>
               </p>
               <ul>
-                <li>Client management, discussion and tasking</li>
-                <li>Sitemap and design</li>
-                <li>Frontend and backend creation</li>
-                <li>Mobile responsive tablet</li>
+                <li>Development of a responsive web frontend for desktop, mobile and tablet</li>
+                <li>Design of UI & UX</li>
+                <li>Deployment and hosting setup</li>
+                <li>Defining a sitemap</li>
+                <li>Working directly with clients; discussing and setting goals</li>
                 <li>Working with article writers</li>
-                <li>SEO optimisation</li>
-                <li>Maintenance of current site</li>
+                <li>Optimizing SEO for Google and Yandex searching engines</li>
+                <li>Maintenance of existing products</li>
               </ul>
             </div>
 
@@ -97,13 +98,14 @@ function Experience() {
                 <i className="fal fa-link"></i><a href="http://granitbrz.ru">http://granitbrz.ru</a>
               </p>
               <ul>
-                <li>Client liaison, discussion and tasking</li>
-                <li>Sitemap and design</li>
-                <li>Frontend and backend creation</li>
-                <li>Mobile responsive tablet</li>
+                <li>Development of a responsive web frontend for desktop, mobile and tablet</li>
+                <li>Design of UI & UX</li>
+                <li>Deployment and hosting setup</li>
+                <li>Defining a sitemap</li>
+                <li>Working directly with clients; discussing and setting goals</li>
                 <li>Working with article writers</li>
-                <li>SEO optimisation</li>
-                <li>Ongoing website maintenance</li>
+                <li>Optimizing SEO for Google and Yandex searching engines</li>
+                <li>Maintenance of existing products</li>
               </ul>
             </div>
 
