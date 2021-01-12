@@ -9,7 +9,7 @@ function Experience() {
 
           <div className="items">
             <div className="item">
-              <p className="year">2020-2021</p>
+              <p className="year">2020-Present</p>
               <p className="job">Web Developer & Web Designer, Founder</p>
               <p>
                 <i className="fal fa-map-pin"></i>Snippet Stock - Frankfurt, Germany
