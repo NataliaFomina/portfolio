@@ -6,13 +6,19 @@ $fontQuicksand: 'Quicksand', sans-serif;
 $fontMontserrat: 'Montserrat', sans-serif;
 
 .experience-section {
+  background-image: url("img/expirience_back.svg");
+  background-repeat: no-repeat;
   font-family: $fontQuicksand;
   font-weight: 500;
+
+  @media (max-width: 992px) {
+    background-image: url("img/expirience_back_mob.svg");
+  }
 
   .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 3%;
+    padding: 70px 3% 0;
   }
 
   .title {
