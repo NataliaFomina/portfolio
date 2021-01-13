@@ -33,7 +33,7 @@ function Experience() {
 
             <div className="item">
               <p className="year">2019</p>
-              <p className="job">Web Developer (freelancer)</p>
+              <p className="job">Web Developer (Freelancer)</p>
               <p>
                 <i className="fal fa-map-pin"></i>AvtoHarakter - Saint Petersburg, Russia
               </p>
@@ -54,7 +54,7 @@ function Experience() {
 
             <div className="item">
               <p className="year">2019</p>
-              <p className="job">Web Developer (freelancer)</p>
+              <p className="job">Web Developer (Freelancer)</p>
               <p>
                 <i className="fal fa-map-pin"></i>Procent - Saint Petersburg, Russia
               </p>
@@ -75,7 +75,7 @@ function Experience() {
 
             <div className="item">
               <p className="year">2018</p>
-              <p className="job">Web Developer (freelancer)</p>
+              <p className="job">Web Developer (Freelancer)</p>
               <p>
                 <i className="fal fa-map-pin"></i>Granit - Saint Petersburg, Russia
               </p>
@@ -96,7 +96,7 @@ function Experience() {
 
             <div className="item">
               <p className="year">2018</p>
-              <p className="job">Web Developer (freelancer)</p>
+              <p className="job">Web Developer (Freelancer)</p>
               <p>
                 <i className="fal fa-map-pin"></i>Enduro - Saint Petersburg, Russia
               </p>
@@ -117,7 +117,7 @@ function Experience() {
 
             <div className="item">
               <p className="year">2017</p>
-              <p className="job">Web Master (freelancer)</p>
+              <p className="job">Web Master (Freelancer)</p>
               <p>
                 <i className="fal fa-map-pin"></i>Maskom - Moscow, Russia
               </p>

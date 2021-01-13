@@ -1,0 +1,148 @@
+.portfolio-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 70px 3% 70px;
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    .card {
+      width: 40%;
+      height: 50px;
+    }
+
+    .one {
+      background-color: #44B853;
+    }
+    .two {
+      background-color: #C21DF0;
+    }
+    .three {
+      background-color: #EC008D;
+    }
+    .four {
+      background-color: #F26521;
+    }
+  }
+
+
+
+
+
+
+
+
+
+}
+/*slider*/
+.slider {
+  position: relative;
+}
+
+.slider-cont {
+  position: relative;
+  overflow: hidden;
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.slider-wrapper {
+  display: flex;
+  transition: transform 0.6s ease;
+  //transition: none;
+}
+
+.slider-item {
+  position: relative;
+  flex: 0 0 100%; /* определяет количество активных слайдов (в данном случае 3 */
+  max-width: 100%; /* определяет количество активных слайдов (в данном случае 3 */
+}
+
+@media screen and (max-width: 1050px) {
+  .slider-item {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .gallery {
+    padding: 30px 3% 40px;
+  }
+  .description {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .slider-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .description {
+    text-align: justify;
+  }
+}
+
+.slider-control {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  width: 40px;
+  height: 50px;
+  transform: translateY(-50%);
+  text-align: center;
+  opacity: 1;
+  background: none;
+  z-index: 10;
+}
+
+@media screen and (max-width: 768px) {
+  .control-cars {
+    opacity: .7;
+    background: white;
+  }
+}
+
+.slider-control:hover,
+.slider-control:focus {
+  color: #fff;
+  outline: 0;
+  opacity: 0.9;
+}
+
+.slider-control-left {
+  left: 0;
+}
+
+.slider-control-right {
+  right: 0;
+}
+
+.slider-control:before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  background: transparent no-repeat center center;
+  background-size: 100% 100%;
+  cursor: pointer;
+}
+
+.control-cars:before {
+  width: 40px;
+  height: 40px;
+}
+
+.slider-control-left:before {
+  background-image: url("img/arrow_prev.svg");
+}
+
+.slider-control-right:before {
+  background-image: url("img/arrow_next.svg");
+}
+
+.slider-item {
+  position: relative;
+  height: auto;
+}
