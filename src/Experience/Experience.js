@@ -8,24 +8,9 @@ function Experience() {
           <h2 className="title">My Experience</h2>
 
           <div className="items">
-            <div className="item">
-              <p className="year">2020-Present</p>
-              <p className="job">Web Developer & Web Designer, Founder</p>
-              <p>
-                <i className="fal fa-map-pin"></i>Snippet Stock - Frankfurt, Germany
-              </p>
-              <ul>
-                <li>Development of a responsive web frontend for desktop, mobile and tablet</li>
-                <li>Design of UI & UX</li>
-                <li>Defining features and workflow</li>
-                <li>Defining a marketing strategy</li>
-                <li>Defining a monetisation strategy</li>
-                <li>Optimizing SEO for Google and Yandex searching engines</li>
-              </ul>
-            </div>
 
             <div className="item">
-              <p className="year">2019-2020</p>
+              <p className="year">Nov 2020 - Feb 2020</p>
               <p className="job">Frontend Developer</p>
               <p>
                 <i className="fal fa-map-pin"></i>Mygento - Saint Petersburg, Russia
@@ -47,8 +32,8 @@ function Experience() {
             </div>
 
             <div className="item">
-              <p className="year">2019-2020</p>
-              <p className="job">Web Developer</p>
+              <p className="year">2019</p>
+              <p className="job">Web Developer (freelancer)</p>
               <p>
                 <i className="fal fa-map-pin"></i>AvtoHarakter - Saint Petersburg, Russia
               </p>
@@ -68,8 +53,8 @@ function Experience() {
             </div>
 
             <div className="item">
-              <p className="year">2018-2019</p>
-              <p className="job">Web Developer</p>
+              <p className="year">2019</p>
+              <p className="job">Web Developer (freelancer)</p>
               <p>
                 <i className="fal fa-map-pin"></i>Procent - Saint Petersburg, Russia
               </p>
@@ -89,8 +74,8 @@ function Experience() {
             </div>
 
             <div className="item">
-              <p className="year">2018-2019</p>
-              <p className="job">Web Developer</p>
+              <p className="year">2018</p>
+              <p className="job">Web Developer (freelancer)</p>
               <p>
                 <i className="fal fa-map-pin"></i>Granit - Saint Petersburg, Russia
               </p>
@@ -110,8 +95,29 @@ function Experience() {
             </div>
 
             <div className="item">
-              <p className="year">2017-2018</p>
-              <p className="job">Web Master</p>
+              <p className="year">2018</p>
+              <p className="job">Web Developer (freelancer)</p>
+              <p>
+                <i className="fal fa-map-pin"></i>Enduro - Saint Petersburg, Russia
+              </p>
+              <p>
+                <i className="fal fa-link"></i><a href="http://crimeatrophy.ru">http://crimeatrophy.ru</a>
+              </p>
+              <ul>
+                <li>Development of a responsive web frontend for desktop, mobile and tablet</li>
+                <li>Design of UI & UX</li>
+                <li>Deployment and hosting setup</li>
+                <li>Defining a sitemap</li>
+                <li>Working directly with clients; discussing and setting goals</li>
+                <li>Working with article writers</li>
+                <li>Optimizing SEO for Google and Yandex searching engines</li>
+                <li>Maintenance of existing products</li>
+              </ul>
+            </div>
+
+            <div className="item">
+              <p className="year">2017</p>
+              <p className="job">Web Master (freelancer)</p>
               <p>
                 <i className="fal fa-map-pin"></i>Maskom - Moscow, Russia
               </p>
