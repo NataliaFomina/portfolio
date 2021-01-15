@@ -1,50 +1,180 @@
+$transition: 100ms ease-in;
+
 .portfolio-section {
   max-width: 1200px;
   margin: 0 auto;
   padding: 70px 3% 70px;
+
   .cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
 
     .card {
-      width: 40%;
-      height: 50px;
+      width: 100%;
+      border-radius: 7px;
+      margin-bottom: 70px;
+      box-shadow: 10px 25px 40px -10px rgba(0, 0, 0, 0.2);
+
+      @media (min-width: 700px) {
+        width: 45%;
+      }
+
+      @media (min-width: 992px) {
+        width: 30%;
+      }
+
     }
 
-    .one {
-      background-color: #44B853;
+
+    .card-img {
+      height: 290px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: top center;
+      border-top-left-radius: 7px;
+      border-top-right-radius: 7px;
+      @media (min-width: 992px) {
+        height: 260px;
+      }
     }
-    .two {
-      background-color: #C21DF0;
+
+
+    .granit {
+      background-image: url("img/granit.jpg");
     }
-    .three {
-      background-color: #EC008D;
+    .collaboration {
+      background-image: url("img/collaboration.jpg");
     }
-    .four {
-      background-color: #F26521;
+    .avtoharakter {
+      background-image: url("img/avtoharakter.jpg");
+    }
+    .ga {
+      background-image: url("img/qa.jpg");
+    }
+    .procent {
+      background-image: url("img/procent.jpg");
+    }
+    .enduro {
+      background-image: url("img/enduro.jpg");
+    }
+
+    .card-container {
+      padding: 20px 20px;
+    }
+
+    .card-title {
+      font-family: "Montserrat", sans-serif;
+      font-size: 18px;
+      margin: 20px 0;
+      line-height: 30px;
+      color: #404040;
+      height: auto;
+
+      @media (min-width: 700px) {
+        height: 90px;
+      }
+    }
+
+    .card-desc {
+      margin: 25px 0;
+      color: #7A7A7A;
+      font-family: "Quicksand", sans-serif;
+      line-height: 20px;
+      letter-spacing: 0.2px;
+      text-align: justify;
+    }
+
+    .card-btns {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .card-btn {
+      width: 47%;
+      height: 40px;
+      border-radius: 7px;
+      border: none;
+      outline: none;
+      text-transform: capitalize;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .card-long {
+      width: 100%;
+    }
+
+    .card-btn-open {
+      background: #4ABFEF;
+      color: white;
+
+      @media (min-width: 992px) {
+        background: #EEEEEE;
+        color: #0D0C08;
+      }
+    }
+
+    .card-btn-git {
+      background: #0D0C08;
+
+      a {
+        text-decoration: none;
+        color: white;
+        height: 100%;
+        width: 100%;
+        padding: 9px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .fa-github {
+        color: white;
+        font-size: 20px;
+        margin-right: 10px;
+      }
+    }
+
+    @media (min-width: 992px) {
+      .card-btn-git:hover {
+        background: #404040;
+        transition: $transition;
+      }
+
+      .card:hover {
+        cursor: pointer;
+
+        .card-title {
+          color: #4ABFEF;
+          transition: $transition;
+        }
+
+        .card-btn-open {
+          background: #4ABFEF;
+          color: white;
+          transition: $transition;
+        }
+      }
     }
   }
-
-
-
-
-
-
-
-
-
 }
+
 /*slider*/
 .slider {
   position: relative;
 }
 
 .slider-cont {
+  display: none;
   position: relative;
   overflow: hidden;
   max-width: 950px;
   margin: 0 auto;
+}
+.slider-active {
+  display: block;
 }
 
 .slider-wrapper {
@@ -59,29 +189,29 @@
   max-width: 100%; /* определяет количество активных слайдов (в данном случае 3 */
 }
 
-@media screen and (max-width: 1050px) {
-  .slider-item {
-    flex: 0 0 50%;
-    max-width: 50%;
-  }
-  .gallery {
-    padding: 30px 3% 40px;
-  }
-  .description {
-    font-size: 14px;
-    margin-bottom: 20px;
-  }
-}
+//@media screen and (max-width: 1050px) {
+//  .slider-item {
+//    flex: 0 0 50%;
+//    max-width: 50%;
+//  }
+//  .gallery {
+//    padding: 30px 3% 40px;
+//  }
+//  .description {
+//    font-size: 14px;
+//    margin-bottom: 20px;
+//  }
+//}
 
-@media screen and (max-width: 700px) {
-  .slider-item {
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-  .description {
-    text-align: justify;
-  }
-}
+//@media screen and (max-width: 700px) {
+//  .slider-item {
+//    flex: 0 0 100%;
+//    max-width: 100%;
+//  }
+//  .description {
+//    text-align: justify;
+//  }
+//}
 
 .slider-control {
   position: absolute;
@@ -98,12 +228,7 @@
   z-index: 10;
 }
 
-@media screen and (max-width: 768px) {
-  .control-cars {
-    opacity: .7;
-    background: white;
-  }
-}
+//s
 
 .slider-control:hover,
 .slider-control:focus {

@@ -6,13 +6,13 @@ $fontQuicksand: 'Quicksand', sans-serif;
 $fontMontserrat: 'Montserrat', sans-serif;
 
 .experience-section {
-  background-image: url("img/expirience_back.svg");
+  background-image: url("img/expirience_back_mob.svg");
   background-repeat: no-repeat;
   font-family: $fontQuicksand;
   font-weight: 500;
 
-  @media (max-width: 992px) {
-    background-image: url("img/expirience_back_mob.svg");
+  @media (min-width: 992px) {
+    background-image: url("img/expirience_back.svg");
   }
 
   .container {
@@ -39,15 +39,18 @@ $fontMontserrat: 'Montserrat', sans-serif;
     content: '';
     top: 2px;
     bottom: 0;
-    left: calc(50% - 0.5px);
+    left: $halfCircle;
     width: 1px;
     height: 100%;
     background-color: lightgrey;
+
+    @media (min-width: 992px) {
+      left: calc(50% - 0.5px);
+    }
   }
 
   .item {
     position: relative;
-    width: 40%;
     padding: 20px 40px;
     color: $lightGrey;
     border-radius: 7px;
@@ -66,13 +69,29 @@ $fontMontserrat: 'Montserrat', sans-serif;
      }
   }
 
-  .item:nth-child(odd) {
-    margin-left: calc(50% + #{$offset-center} - 1px);
+  .item:nth-child(odd),
+  .item:nth-child(even) {
+    align-self: flex-start;
+    width: calc(100% - #{$offset-center} - #{$halfCircle});
+    margin-left: calc(#{$offset-center} + #{$halfCircle});
+    margin-right: 0;
+    margin-bottom: 20px;
   }
 
-  .item:nth-child(even) {
-    align-self: flex-end;
-    margin-right: calc(50% + #{$offset-center} - 1px);
+  @media (min-width: 992px) {
+    .item:nth-child(odd),
+    .item:nth-child(even) {
+      width: 40%;
+    }
+
+    .item:nth-child(odd) {
+      margin-left: calc(50% + #{$offset-center} - 1px);
+    }
+
+    .item:nth-child(even) {
+      align-self: flex-end;
+      margin-right: calc(50% + #{$offset-center} - 1px);
+    }
   }
 
   .item:nth-child(1),
@@ -118,12 +137,20 @@ $fontMontserrat: 'Montserrat', sans-serif;
     border-radius: 50%;
   }
 
-  .item:nth-child(odd):before {
+  .item:nth-child(odd):before,
+  .item:nth-child(even):before {
     left: calc(-#{$offset-center} - #{$halfCircle});
   }
 
-  .item:nth-child(even):before {
-    right: calc(-#{$offset-center} - #{$halfCircle});
+  @media (min-width: 992px) {
+    .item:nth-child(odd):before {
+      left: calc(-#{$offset-center} - #{$halfCircle});
+    }
+
+    .item:nth-child(even):before {
+      left: auto;
+      right: calc(-#{$offset-center} - #{$halfCircle});
+    }
   }
 
   .item:nth-child(1):before,
@@ -144,26 +171,6 @@ $fontMontserrat: 'Montserrat', sans-serif;
     background-color: #EC008D;
   }
 
-  @media (max-width: 992px) {
-    .items:before {
-      left: $halfCircle;
-    }
-
-    .item:nth-child(odd),
-    .item:nth-child(even) {
-      align-self: flex-start;
-      width: calc(100% - #{$offset-center} - #{$halfCircle});
-      margin-left: calc(#{$offset-center} + #{$halfCircle});
-      margin-right: 0;
-      margin-bottom: 20px;
-    }
-
-    .item:nth-child(odd):before,
-    .item:nth-child(even):before {
-      left: calc(-#{$offset-center} - #{$halfCircle});
-    }
-  }
-
   .year {
     color: black;
     letter-spacing: 0.5px;
@@ -177,5 +184,7 @@ $fontMontserrat: 'Montserrat', sans-serif;
 
   ul li {
     margin-left: 20px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
   }
 }

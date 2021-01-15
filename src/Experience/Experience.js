@@ -35,7 +35,7 @@ function Experience() {
               <p className="year">2019</p>
               <p className="job">Web Developer (Freelancer)</p>
               <p>
-                <i className="fal fa-map-pin"></i>AvtoHarakter - Saint Petersburg, Russia
+                <i className="fal fa-map-pin"></i>Avtoharakter - Saint Petersburg, Russia
               </p>
               <p>
                 <i className="fal fa-link"></i><a href="http://begethost7.beget.tech/auto">http://begethost7.beget.tech/auto</a>
