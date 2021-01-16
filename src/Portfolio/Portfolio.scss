@@ -163,18 +163,21 @@ $transition: 100ms ease-in;
 
 /*slider*/
 .slider {
+  display: block;
   position: relative;
 }
 
 .slider-cont {
-  display: none;
+  visibility: hidden;
   position: relative;
   overflow: hidden;
   max-width: 950px;
   margin: 0 auto;
+  height: 0;
 }
 .slider-active {
-  display: block;
+  visibility: visible;
+  height: 600px;
 }
 
 .slider-wrapper {
