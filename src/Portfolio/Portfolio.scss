@@ -1,4 +1,7 @@
 $transition: 100ms ease-in;
+$darkBlack: #0D0C08;
+$softBlue: #4ABFEF;
+
 
 .portfolio-section {
   max-width: 1200px;
@@ -143,19 +146,16 @@ $transition: 100ms ease-in;
         transition: $transition;
       }
 
-      .card:hover {
+      .card-btn-open:hover {
         cursor: pointer;
+        background: #4ABFEF;
+        color: white;
+        transition: $transition;
 
-        .card-title {
-          color: #4ABFEF;
-          transition: $transition;
-        }
-
-        .card-btn-open {
-          background: #4ABFEF;
-          color: white;
-          transition: $transition;
-        }
+        //.card-title {
+        //  color: #4ABFEF;
+        //  transition: $transition;
+        //}
       }
     }
   }
@@ -164,57 +164,48 @@ $transition: 100ms ease-in;
 /*slider*/
 .slider {
   display: block;
-  position: relative;
+}
+
+.slider-modal {
+  visibility: hidden;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  border: 1px solid red;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 0;
 }
 
 .slider-cont {
-  visibility: hidden;
-  position: relative;
+position: relative;
   overflow: hidden;
-  max-width: 950px;
+  max-width: 1050px;
   margin: 0 auto;
-  height: 0;
+  border: 1px solid green;
+
 }
-.slider-active {
+
+.slider-modal-active {
   visibility: visible;
-  height: 600px;
+  height: auto;
 }
 
 .slider-wrapper {
   display: flex;
   transition: transform 0.6s ease;
-  //transition: none;
+
 }
 
 .slider-item {
   position: relative;
   flex: 0 0 100%; /* определяет количество активных слайдов (в данном случае 3 */
   max-width: 100%; /* определяет количество активных слайдов (в данном случае 3 */
+  height: auto;
+  //padding: 0 60px;
 }
-
-//@media screen and (max-width: 1050px) {
-//  .slider-item {
-//    flex: 0 0 50%;
-//    max-width: 50%;
-//  }
-//  .gallery {
-//    padding: 30px 3% 40px;
-//  }
-//  .description {
-//    font-size: 14px;
-//    margin-bottom: 20px;
-//  }
-//}
-
-//@media screen and (max-width: 700px) {
-//  .slider-item {
-//    flex: 0 0 100%;
-//    max-width: 100%;
-//  }
-//  .description {
-//    text-align: justify;
-//  }
-//}
 
 .slider-control {
   position: absolute;
@@ -230,8 +221,6 @@ $transition: 100ms ease-in;
   background: none;
   z-index: 10;
 }
-
-//s
 
 .slider-control:hover,
 .slider-control:focus {
@@ -270,7 +259,65 @@ $transition: 100ms ease-in;
   background-image: url("img/arrow_next.svg");
 }
 
+.slider-control-close {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+
+  .close-right,
+  .close-left {
+    position: absolute;
+    height: 4px;
+    width: 50px;
+    margin-top: 24px;
+    background-color: $darkBlack;
+    border-radius: 2px;
+    transition: all .3s ease-in;
+  }
+
+  .close-right {
+    transform: rotate(45deg);
+  }
+
+  .close-left {
+    transform: rotate(-45deg);
+  }
+}
+
+.slider-control-close:hover .close-right,
+.slider-control-close:hover .close-left {
+  background-color: $softBlue;
+}
+
+.slider-control-close:hover .close-right {
+  transform: rotate(-45deg);
+}
+
+.slider-control-close:hover .close-left{
+  transform: rotate(45deg);
+}
+
+.slider-img {
+  height: 500px;
+  width: 60%;
+  background-repeat: no-repeat;
+  border-radius: 7px;
+  height: 439px;
+
+}
+.slider-desc {
+  width: 35%;
+}
+
 .slider-item {
-  position: relative;
-  height: auto;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.collaboration {
+  background-image: url("img/collaboration.jpg");
 }
