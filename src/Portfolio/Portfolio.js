@@ -7,7 +7,7 @@ function Portfolio() {
 
   useEffect(() => {
     document.querySelectorAll('.slider').forEach(item => slider(item));
-  }, [sliderActive]);
+  }, []);
 
   function onClickCard(event) {
     setSliderActive(true);
@@ -19,11 +19,13 @@ function Portfolio() {
     }
   }
 
-
   const escFunction = useCallback((event) => {
-    if (event.keyCode === 27) {
-      setSliderActive(false);
-    }
+    setSliderActive(value => {
+      if (value && event.keyCode === 27) {
+        return false;
+      }
+      return value;
+    });
   }, []);
 
   useEffect(() => {
