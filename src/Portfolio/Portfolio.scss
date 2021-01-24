@@ -4,7 +4,6 @@ $softBlue: #4ABFEF;
 $fontQuicksand: 'Quicksand', sans-serif;
 $fontMontserrat: 'Montserrat', sans-serif;
 
-
 .portfolio-section {
   max-width: 1300px;
   margin: 0 auto;
@@ -17,10 +16,10 @@ $fontMontserrat: 'Montserrat', sans-serif;
 
     .card {
       position: relative;
-      padding-bottom: 60px;
       width: 100%;
-      border-radius: 7px;
       margin-bottom: 70px;
+      padding-bottom: 60px;
+      border-radius: 7px;
       box-shadow: 10px 25px 40px -10px rgba(0, 0, 0, 0.2);
 
       @media (min-width: 700px) {
@@ -31,143 +30,106 @@ $fontMontserrat: 'Montserrat', sans-serif;
         width: 30%;
       }
 
-    }
-
-
-    .card-img {
-      height: 290px;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: top center;
-      border-top-left-radius: 7px;
-      border-top-right-radius: 7px;
-      @media (min-width: 992px) {
-        height: 260px;
+      .card-img {
+        img {
+          height: auto;
+          width: 100%;
+          border-top-left-radius: 7px;
+          border-top-right-radius: 7px;
+        }
       }
-    }
 
+      .card-container {
+        padding: 20px 20px;
 
-    .granit {
-      background-image: url("img/granit.jpg");
-    }
-    .collaboration {
-      background-image: url("img/collaboration.jpg");
-    }
-    .avtoharakter {
-      background-image: url("img/avtoharakter.jpg");
-    }
-    .ga {
-      background-image: url("img/qa.jpg");
-    }
-    .procent {
-      background-image: url("img/procent.jpg");
-    }
-    .enduro {
-      background-image: url("img/enduro.jpg");
-    }
+        .card-title {
+          font-family: $fontMontserrat;
+          font-size: 18px;
+          line-height: 30px;
+          color: #404040;
+        }
 
-    .card-container {
-      padding: 20px 20px;
-    }
-
-    .card-title {
-      font-family: "Montserrat", sans-serif;
-      font-size: 18px;
-      margin: 20px 0;
-      line-height: 30px;
-      color: #404040;
-      height: auto;
-
-      @media (min-width: 700px) {
-        //height: 90px;
+        .card-desc {
+          margin: 20px 0 10px;
+          font-family: $fontQuicksand;
+          text-align: justify;
+          color: #7A7A7A;
+          line-height: 20px;
+          letter-spacing: 0.2px;
+        }
       }
-    }
 
-    .card-desc {
-      margin: 20px 0 10px;
-      color: #7A7A7A;
-      font-family: "Quicksand", sans-serif;
-      line-height: 20px;
-      letter-spacing: 0.2px;
-      text-align: justify;
-    }
-
-    .card-btns {
-      position: absolute;
-      bottom: 20px;
-      left: 20px;
-      right: 20px;
-      display: flex;
-      justify-content: space-between;
-      //margin: 0 20px;
-      width: calc(100% - 40px);
-    }
-
-    .card-btn {
-      width: 47%;
-      height: 40px;
-      border-radius: 7px;
-      border: none;
-      outline: none;
-      text-transform: capitalize;
-      font-family: 'Montserrat', sans-serif;
-      font-size: 12px;
-      font-weight: 600;
-      cursor: pointer;
-    }
-    .card-long {
-      //margin: 0 20px;
-      //width: calc(100% - 40px);
-      width: 100%;
-    }
-
-    .card-btn-open {
-      background: #4ABFEF;
-      color: white;
-
-      @media (min-width: 992px) {
-        background: #EEEEEE;
-        color: #0D0C08;
-      }
-    }
-
-    .card-btn-git {
-      background: #0D0C08;
-
-      a {
-        text-decoration: none;
-        color: white;
-        height: 100%;
-        width: 100%;
-        padding: 9px 0;
+      .card-btns {
+        position: absolute;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: space-between;
+        width: calc(100% - 40px);
+        bottom: 20px;
+        left: 20px;
+        right: 20px;
       }
 
-      .fa-github {
-        color: white;
-        font-size: 20px;
-        margin-right: 10px;
-      }
-    }
-
-    @media (min-width: 992px) {
-      .card-btn-git:hover {
-        background: #404040;
-        transition: $transition;
-      }
-
-      .card-btn-open:hover {
+      .card-btn {
+        width: 47%;
+        height: 40px;
+        border-radius: 7px;
+        border: none;
+        outline: none;
+        text-transform: capitalize;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 12px;
+        font-weight: 600;
         cursor: pointer;
+      }
+
+      .card-btn-long {
+        width: 100%;
+      }
+
+      .card-btn-open {
         background: #4ABFEF;
         color: white;
-        transition: $transition;
 
-        //.card-title {
-        //  color: #4ABFEF;
-        //  transition: $transition;
-        //}
+        @media (min-width: 992px) {
+          background: #EEEEEE;
+          color: #0D0C08;
+        }
+      }
+
+      .card-btn-git {
+        background: #0D0C08;
+
+        a {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100%;
+          width: 100%;
+          padding: 9px 0;
+          text-decoration: none;
+          color: white;
+        }
+
+        .fa-github {
+          margin-right: 10px;
+          color: white;
+          font-size: 20px;
+        }
+      }
+
+      @media (min-width: 992px) {
+
+        .card-btn-git:hover {
+          background: #404040;
+          transition: $transition;
+        }
+
+        .card-btn-open:hover {
+          background: #4ABFEF;
+          transition: $transition;
+          color: white;
+          cursor: pointer;
+        }
       }
     }
   }
@@ -192,57 +154,153 @@ $fontMontserrat: 'Montserrat', sans-serif;
   z-index: 100;
 }
 
-
 .slider-cont {
   background-color: white;
   position: relative;
   overflow: hidden;
   width: 100%;
-  //max-width: 1200px;
   border: 1px solid green;
-  filter: blur(0) !important;
-  //top: 50%;
-  //left: 50%;
-  //transform: translate(-50%, -50%);
-
 
   @media (min-width: 850px) {
-    width: 90%;
     position: absolute;
     top: 50%;
     left: 50%;
+    width: 90%;
     transform: translate(-50%, -50%);
   }
 
   @media (min-width: 1300px) {
     width: 1200px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
   }
-
 }
 
 .slider-modal-active {
   visibility: visible;
   height: auto;
-  //height: 500px;
   overflow-y: auto;
 }
 
 .slider-wrapper {
   display: flex;
   transition: transform 0.6s ease;
-
 }
 
 .slider-item {
   position: relative;
-  flex: 0 0 100%; /* определяет количество активных слайдов (в данном случае 3 */
-  max-width: 100%; /* определяет количество активных слайдов (в данном случае 3 */
+  flex: 0 0 100%;
+  max-width: 100%;
   height: auto;
-  //padding: 0 60px;
+}
+
+.slider-content {
+  padding: 70px 20px 20px;
+
+  @media (min-width: 850px) {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 40px;
+  }
+}
+
+.slider-img {
+  width: 100%;
+  max-height: 520px;
+  margin-bottom: 20px;
+
+  @media (min-width: 850px) {
+    width: 48%;
+    margin-bottom: 0;
+  }
+
+  .slider-img-active {
+    max-height: 410px;
+    max-width: 535px;
+    margin-bottom: 10px;
+
+    img {
+      height: auto;
+      width: 100%;
+    }
+  }
+
+  .slider-images {
+    display: flex;
+    justify-content: space-between;
+
+    div {
+      max-height: 100px;
+      max-width: 130px;
+
+      img {
+        height: auto;
+        width: 100%;
+      }
+    }
+
+    .slider-images-active {
+      position: relative;
+    }
+
+    .slider-images-active:before {
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #4ABFEF;
+      opacity: 0.3;
+    }
+  }
+}
+
+.slider-desc {
+  width: 100%;
+
+  @media (min-width: 850px) {
+    width: 48%;
+  }
+
+  .slider-desc-title {
+    margin-bottom: 15px;
+    font-family: $fontMontserrat;
+    font-size: 18px;
+
+    @media (min-width: 850px) {
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
+  }
+
+  .slider-desc-list {
+    margin-bottom: 15px;
+    line-height: 24px;
+    font-family: $fontQuicksand;
+    font-weight: 600;
+
+    @media (min-width: 850px) {
+      margin-bottom: 30px;
+      line-height: 28px;
+    }
+
+    li {
+      margin-left: 30px;
+      font-weight: 300;
+    }
+  }
+
+  .slider-desc-text {
+    margin-bottom: 15px;
+    line-height: 22px;
+    font-family: $fontQuicksand;
+    font-weight: 300;
+    text-align: justify;
+
+    @media (min-width: 850px) {
+      margin-bottom: 30px;
+      line-height: 24px;
+    }
+  }
 }
 
 .slider-control {
@@ -288,7 +346,7 @@ $fontMontserrat: 'Montserrat', sans-serif;
   cursor: pointer;
 }
 
-.control-cars:before {
+.slider-control-icon:before {
   width: 20px;
   height: 20px;
 }
@@ -345,89 +403,4 @@ $fontMontserrat: 'Montserrat', sans-serif;
 
 .slider-control-close:hover .close-left{
   transform: rotate(45deg);
-}
-
-.slider-img {
-  width: 100%;
-  //border-radius: 7px;
-  //min-height: 250px;
-  //max-height: 439px;
-  //background-position: top center;
-  //background-repeat: no-repeat;
-  //background-size: contain;
-  margin-bottom: 20px;
-  border: 1px solid grey;
-
-
-  @media (min-width: 850px) {
-    width: 48%;
-    margin-bottom: 0;
-
-  }
-
-}
-.slider-desc {
-  width: 100%;
-  @media (min-width: 850px) {
-    width: 48%;
-  }
-}
-
-
-
-.collaboration {
-  background-image: url("img/collaboration.jpg");
-}
-.granit {
-  background-image: url("img/granit.jpg");
-}
-
-.slider-content {
-  //display: flex;
-  //justify-content: space-between;
-  padding: 70px 20px 20px;
-
-  @media (min-width: 850px) {
-    display: flex;
-    justify-content: space-between;
-    padding: 40px 40px;
-  }
-}
-
-.slider-desc-title {
- font-family: $fontMontserrat;
- font-size: 18px;
-  margin-bottom: 15px;
-  //color: #404040;
-  @media (min-width: 850px) {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-}
-.slider-desc-list {
-  font-family: $fontQuicksand;
-  //color: #404040;
-  line-height: 24px;
-  margin-bottom: 15px;
-  font-weight: 600;
-  @media (min-width: 850px) {
-    line-height: 28px;
-    margin-bottom: 30px;
-  }
-}
-.slider-desc-list > li {
-  margin-left: 30px;
-  font-weight: 300;
-}
-.slider-desc-text {
-  font-family: $fontQuicksand;
-  //color: #404040;
-  line-height: 22px;
-  margin-bottom: 15px;
-  text-align: justify;
-  font-weight: 300;
-  @media (min-width: 850px) {
-    line-height: 24px;
-    margin-bottom: 30px;
-  }
 }
