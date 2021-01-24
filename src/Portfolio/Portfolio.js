@@ -1,24 +1,25 @@
 import React, {useState, useEffect, useCallback} from 'react';
 import './Portfolio.scss';
 import slider from '../slider';
-import granitPreview from './img/granit_preview.jpg';
 import collabPreview from './img/collab_preview.jpg';
-import avtoHarPreview from './img/avtohar_preview.jpg';
 import qaPreview from './img/qa_preview.jpg';
 import procentPreview from './img/procent_preview.jpg';
 import enduroPreview from './img/enduro_preview.jpg';
 import granitSlider1 from './img/granit_slider_1.jpg';
+import granitSlider2 from './img/granit_slider_2.jpg';
+import granitSlider3 from './img/granit_slider_3.jpg';
+import granitSlider4 from './img/granit_slider_4.jpg';
+import avtoharSlider1 from './img/avtohar_slider_1.jpg';
+import avtoharSlider2 from './img/avtohar_slider_2.jpg';
+import avtoharSlider3 from './img/avtohar_slider_3.jpg';
+import avtoharSlider4 from './img/avtohar_slider_4.jpg';
 
-import col from './img/collab_preview.jpg';
-
-
-const granitImages = [granitSlider1, col, col, col];
+const granitImages = [granitSlider1, granitSlider2, granitSlider3, granitSlider4];
 const collaborationImages = [granitSlider1, granitSlider1, granitSlider1, granitSlider1];
-const avtoharakterImages = [granitSlider1, granitSlider1, granitSlider1, granitSlider1];
+const avtoharakterImages = [avtoharSlider1, avtoharSlider2, avtoharSlider3, avtoharSlider4];
 const gaImages = [granitSlider1, granitSlider1, granitSlider1, granitSlider1];
 const procentImages = [granitSlider1, granitSlider1, granitSlider1, granitSlider1];
 const enduroImages = [granitSlider1, granitSlider1, granitSlider1, granitSlider1];
-
 
 function SliderImage({images}) {
   const [imageActive, setImageActive] = useState(images[0]);
@@ -84,7 +85,7 @@ function Portfolio() {
         <div className="cards">
           <div className="card">
             <div className="card-img">
-              <img src={granitPreview}
+              <img src={granitSlider2}
                    alt="Natalia Fomina portfolio"/>
             </div>
             <section className="card-container">
@@ -134,7 +135,7 @@ function Portfolio() {
 
           <div className="card">
             <div className="card-img">
-              <img src={avtoHarPreview}
+              <img src={avtoharSlider1}
                    alt="Natalia Fomina portfolio"/>
             </div>
             <section className="card-container">
@@ -280,23 +281,32 @@ function Portfolio() {
                       <li>All users who view the image in paint mode can see what other users are drawing.</li>
                     </ul>
                   </div>
+
                 </div>
               </div>
 
               <div className="slider-item">
-                <SliderImage images={avtoharakterImages}/>
+                <div className="slider-content">
+                  <SliderImage images={avtoharakterImages}/>
+                </div>
               </div>
 
               <div className="slider-item">
-                <SliderImage images={gaImages}/>
+                <div className="slider-content">
+                  <SliderImage images={gaImages}/>
+                </div>
               </div>
 
               <div className="slider-item">
-                <SliderImage images={procentImages}/>
+                <div className="slider-content">
+                  <SliderImage images={procentImages}/>
+                </div>
               </div>
 
               <div className="slider-item">
-                <SliderImage images={enduroImages}/>
+                <div className="slider-content">
+                  <SliderImage images={enduroImages}/>
+                </div>
               </div>
             </div>
             <span className="slider-control slider-control-left slider-control-icon"></span>
