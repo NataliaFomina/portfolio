@@ -79,7 +79,7 @@ function Portfolio() {
 
   return (
     <div className="portfolio-section">
-      <h2></h2>
+      <h2 className="portfolio-title">Portfolio</h2>
       <div className="slider">
 
         <div className="cards">
