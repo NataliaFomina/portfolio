@@ -4,7 +4,7 @@ import './Skills.scss';
 function Skills() {
   return (
     <section className="skills-section">
-      <h1 className="skills-title">Professional Skills Work</h1>
+      <h1 className="skills-title">Professional Skills</h1>
       <div className="skills-container">
         <div className="skills-icons">
           <div className="skills-icon">
