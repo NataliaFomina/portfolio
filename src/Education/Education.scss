@@ -2,26 +2,26 @@ $fontQuicksand: 'Quicksand', sans-serif;
 $fontMontserrat: 'Montserrat', sans-serif;
 $mobWidth: 576px;
 $tabletWidth: 992px;
+$textColor: rgb(70,70,70);
 
 .education-section {
-  height: 1200px;
+  height: 800px;
   background-repeat: no-repeat;
-  background-position: 51% 0%;
-  background-image: url("img/23_back.svg");
+  background-position: 50% 0%;
+  background-image: url("img/23_back_2.svg");
   background-size: cover;
-  padding-top: 135px;
+  color: $textColor;
 
+  @media (min-width: $tabletWidth) {
+    padding: 0 30px 20px;
+  }
 
   .education-container {
     max-width: 1300px;
     margin: 0 auto;
-    padding: 50px 20px 20px;
-
-
-
 
     @media (min-width: $tabletWidth) {
-      padding: 70px 20px 70px;
+      padding: 10px 0 0;
     }
     .education-items {
       display: flex;
@@ -35,8 +35,9 @@ $tabletWidth: 992px;
       font-size: 26px;
       text-align: center;
 
+
       @media (min-width: $tabletWidth) {
-        margin-bottom: 50px;
+        margin-bottom: 40px;
         font-size: 34px;
       }
     }
@@ -58,13 +59,12 @@ $tabletWidth: 992px;
       width: 47%;
       transition: 150ms ease-in;
       p {
-        color: #27014e;
         font-size: 15px;
       }
       .education-item-program {
       }
       a {
-        color: #c348a4;
+        color: $textColor;
         font-size: 15px;
         text-decoration: none;
       }
@@ -73,7 +73,6 @@ $tabletWidth: 992px;
         font-size: 16px;
         font-weight: 600;
         margin-bottom: 6px;
-        color: #c348a4;
       }
     }
     .education-item:last-child {
