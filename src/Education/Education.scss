@@ -1,0 +1,108 @@
+$fontQuicksand: 'Quicksand', sans-serif;
+$fontMontserrat: 'Montserrat', sans-serif;
+$mobWidth: 576px;
+$tabletWidth: 992px;
+
+.education-section {
+  height: 1200px;
+  //background-image: url("img/back.jpg");
+  background-repeat: no-repeat;
+  background-position: 51% 0%;
+  background-image: url("img/23_back.svg");
+  background-size: cover;
+  padding-top: 135px;
+
+
+  .education-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 50px 20px 20px;
+
+
+
+
+    @media (min-width: $tabletWidth) {
+      padding: 70px 20px 70px;
+    }
+    .education-items {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .education-title {
+      margin-bottom: 20px;
+      font-family: $fontMontserrat;
+      font-size: 26px;
+      text-align: center;
+
+      @media (min-width: $tabletWidth) {
+        margin-bottom: 50px;
+        font-size: 34px;
+      }
+    }
+
+    .education-item {
+      display: flex;
+      margin-bottom: 30px;
+      font-size: 15px;
+      font-family: "Quicksand", sans-serif;
+      //border: 1px solid lightgray;
+      //width: 800px;
+      padding: 20px;
+      //padding: 15px;
+      //line-height: 25px;
+      line-height: 20px;
+      border-radius: 30px;
+      background-color: rgba(255, 255, 255, 1);
+      width: 47%;
+      //background-image: url("img/23_back.svg");
+      //opacity: 0.5;
+      //color: white;
+      transition: 150ms ease-in;
+
+      p {
+        color: #27014e;
+        //font-size: 18px;
+        font-size: 15px;
+      }
+      .education-item-program {
+        // width: 500px;
+      }
+      a {
+        color: #c348a4;
+        //font-size: 18px;
+        font-size: 15px;
+        text-decoration: none;
+      }
+
+      .education-item-univ {
+        font-family: $fontMontserrat;
+        //font-size: 20px;
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 6px;
+        color: #c348a4;
+      }
+
+    }
+    .education-item:last-child {
+      margin-left: 53%;
+    }
+    .education-item:nth-child(5) {
+      background-repeat: no-repeat;
+      //background-position: center center;
+      background-image: url("img/23.svg");
+      //background-size: cover;
+      background-size: 110%;
+    }
+    .education-item:hover {
+      //transform: scale(1.02);
+      box-shadow: 10px 25px 40px -10px rgba(0, 0, 0, 0.2);
+      transition: 170ms ease-out;
+    }
+
+  }
+
+
+}
