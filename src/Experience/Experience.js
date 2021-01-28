@@ -5,7 +5,7 @@ function Experience() {
   return (
       <div className="experience-section">
         <section className="container">
-          <h2 className="title">My Experience</h2>
+          <h2 className="title">Work Experience</h2>
 
           <div className="items">
 
