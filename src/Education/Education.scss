@@ -1,83 +1,96 @@
-$fontQuicksand: 'Quicksand', sans-serif;
-$fontMontserrat: 'Montserrat', sans-serif;
-$mobWidth: 576px;
-$tabletWidth: 992px;
-$textColor: rgb(70,70,70);
+@import "variables";
 
 .education-section {
-  height: 805px;
+  height: auto;
+  background-position: 40% 0%;
+  background-image: url("img/back_desk.svg");
   background-repeat: no-repeat;
-  background-position: 50% 0%;
-  background-image: url("img/23_back_2.svg");
   background-size: cover;
   color: $textColor;
 
-  @media (min-width: $tabletWidth) {
+  @media (min-width: $mdWidth) {
+    height: 805px;
+    background-position: 50% 0%;
+  }
+
+  @media (min-width: $lgWidth) {
     padding: 0 30px 20px;
   }
 
   .education-container {
     max-width: 1300px;
     margin: 0 auto;
+    padding: 0 20px;
 
-    @media (min-width: $tabletWidth) {
-      padding: 10px 0 0;
+    @media (min-width: $lgWidth) {
+      padding: 10px 20px 0;
     }
+
     .education-items {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
+      @media (min-width: $mdWidth) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
     }
 
     .education-title {
       margin-bottom: 20px;
-      font-family: $fontMontserrat;
+      font-family: $titleFontFamily;
       font-size: 26px;
       text-align: center;
 
-
-      @media (min-width: $tabletWidth) {
+      @media (min-width: $lgWidth) {
         margin-bottom: 40px;
         font-size: 34px;
       }
     }
 
     .education-item {
-      box-shadow: 10px 25px 40px -10px rgba(0, 0, 0, 0.1);
+      display: flex;
+      margin-bottom: 30px;
+      padding: 20px;
+      width: 100%;
+      font-family: $textFontFamily;
+      font-size: 15px;
+      line-height: 20px;
       background: linear-gradient(135deg,
               rgba(255,255,255,1) 0%,
               rgba(255,255,255,1) 50%,
               rgba(255,255,255,1) 70%,
               rgba(255,255,255,0) 100%);
-      display: flex;
-      margin-bottom: 30px;
-      font-size: 15px;
-      font-family: "Quicksand", sans-serif;
-      padding: 20px;
-      line-height: 20px;
       border-radius: 30px;
-      width: 47%;
+      box-shadow: 10px 25px 40px -10px rgba(0, 0, 0, 0.1);
       transition: 150ms ease-in;
+
+      @media (min-width: $mdWidth) {
+        width: 47%;
+      }
+
       p {
         font-size: 15px;
       }
-      .education-item-program {
-      }
+
       a {
         color: $textColor;
         font-size: 15px;
         text-decoration: none;
       }
+
       .education-item-univ {
-        font-family: $fontMontserrat;
+        margin-bottom: 6px;
+        font-family: $titleFontFamily;
         font-size: 16px;
         font-weight: 600;
-        margin-bottom: 6px;
       }
     }
+
     .education-item:last-child {
-      margin-left: 53%;
+      @media (min-width: $mdWidth) {
+        margin-left: 53%;
+      }
     }
+    
     .education-item:nth-child(4),
     .education-item:nth-child(6),
     .education-item:nth-child(7) {

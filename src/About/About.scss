@@ -1,3 +1,4 @@
+@import "variables";
 $bg-color: orange;
 
 .wrapper {
@@ -8,10 +9,10 @@ $bg-color: orange;
     font-size: 30px;
     margin: 10px 0 10px;
     font-weight: 300;
-    font-family: 'Quicksand', sans-serif;
+    font-family: $textFontFamily;
   }
   .name {
-    font-family: 'Hind';
+    font-family: $nameFontFamily;
     font-size: 60px;
     text-transform: uppercase;
     font-weight: 600;
@@ -23,10 +24,10 @@ $bg-color: orange;
     font-size: 26px;
     margin: 15px 0 15px;
     font-weight: 300;
-    font-family: 'Quicksand', sans-serif;
+    font-family: $textFontFamily;
   }
   .btn {
-    font-family: 'Montserrat', sans-serif;
+    font-family: $titleFontFamily;
     text-transform: uppercase;
     font-size: 18px;
     font-weight: 500;
@@ -37,19 +38,13 @@ $bg-color: orange;
     border: none;
     border-radius: 7px;
     margin: 30px 30px 0 0;
-
-
   }
   .text {
-    //font-family: 'Quicksand', sans-serif;
-    //letter-spacing: 0.2px;
-    font-family: 'Montserrat', sans-serif;
-    //font-family: 'Source Sans Pro', sans-serif;
+    font-family: $titleFontFamily;
     font-size: 16px;
     max-width: 600px;
     margin: 20px 0;
     text-align: justify;
     color: #7A7A7A;
-
   }
 }

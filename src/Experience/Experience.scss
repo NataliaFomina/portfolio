@@ -1,12 +1,12 @@
+@import "variables";
+
 $offset-center: 40px;
 $circle: 14px;
 $halfCircle: 7px;
 $lightGrey: #7A7A7A;
-$fontQuicksand: 'Quicksand', sans-serif;
-$fontMontserrat: 'Montserrat', sans-serif;
 
 .experience-section {
-  font-family: $fontQuicksand;
+  font-family: $textFontFamily;
   font-weight: 500;
 
   .container {
@@ -17,7 +17,7 @@ $fontMontserrat: 'Montserrat', sans-serif;
 
   .title {
     margin-bottom: 60px;
-    font-family: $fontMontserrat;
+    font-family: $titleFontFamily;
     font-size: 32px;
     text-align: center;
   }
@@ -38,7 +38,7 @@ $fontMontserrat: 'Montserrat', sans-serif;
     height: 100%;
     background-color: lightgrey;
 
-    @media (min-width: 992px) {
+    @media (min-width: $lgWidth) {
       left: calc(50% - 0.5px);
     }
   }
@@ -72,7 +72,7 @@ $fontMontserrat: 'Montserrat', sans-serif;
     margin-bottom: 20px;
   }
 
-  @media (min-width: 992px) {
+  @media (min-width: $lgWidth) {
     .item:nth-child(odd),
     .item:nth-child(even) {
       width: 40%;
@@ -136,7 +136,7 @@ $fontMontserrat: 'Montserrat', sans-serif;
     left: calc(-#{$offset-center} - #{$halfCircle});
   }
 
-  @media (min-width: 992px) {
+  @media (min-width: $lgWidth) {
     .item:nth-child(odd):before {
       left: calc(-#{$offset-center} - #{$halfCircle});
     }
@@ -171,7 +171,7 @@ $fontMontserrat: 'Montserrat', sans-serif;
   }
 
   .job {
-    font-family: $fontMontserrat;
+    font-family: $titleFontFamily;
     font-size: 18px;
     font-weight: 600;
   }

@@ -1,8 +1,8 @@
+@import "variables";
+
 $transition: 100ms ease-in;
 $darkBlack: #0D0C08;
 $softBlue: #4ABFEF;
-$fontQuicksand: 'Quicksand', sans-serif;
-$fontMontserrat: 'Montserrat', sans-serif;
 
 .portfolio-section {
   max-width: 1300px;
@@ -10,7 +10,7 @@ $fontMontserrat: 'Montserrat', sans-serif;
   padding: 70px 20px 70px;
 
   .portfolio-title {
-    font-family: $fontMontserrat;
+    font-family: $titleFontFamily;
     font-size: 34px;
     text-align: center;
     margin-bottom: 100px;
@@ -29,11 +29,11 @@ $fontMontserrat: 'Montserrat', sans-serif;
       border-radius: 7px;
       transition: 150ms ease-in;
 
-      @media (min-width: 700px) {
+      @media (min-width: $mdWidth) {
         width: 45%;
       }
 
-      @media (min-width: 992px) {
+      @media (min-width: $lgWidth) {
         width: 30%;
 
         &:hover {
@@ -56,7 +56,7 @@ $fontMontserrat: 'Montserrat', sans-serif;
         padding: 20px 20px;
 
         .card-title {
-          font-family: $fontMontserrat;
+          font-family: $titleFontFamily;
           font-size: 18px;
           line-height: 30px;
           color: #404040;
@@ -64,7 +64,7 @@ $fontMontserrat: 'Montserrat', sans-serif;
 
         .card-desc {
           margin: 20px 0 10px;
-          font-family: $fontQuicksand;
+          font-family: $textFontFamily;
           text-align: justify;
           color: #7A7A7A;
           line-height: 20px;
@@ -89,7 +89,7 @@ $fontMontserrat: 'Montserrat', sans-serif;
         border: none;
         outline: none;
         text-transform: capitalize;
-        font-family: 'Montserrat', sans-serif;
+        font-family: $titleFontFamily;
         font-size: 12px;
         font-weight: 600;
         cursor: pointer;
@@ -103,7 +103,7 @@ $fontMontserrat: 'Montserrat', sans-serif;
         background: #4ABFEF;
         color: white;
 
-        @media (min-width: 992px) {
+        @media (min-width: $lgWidth) {
           background: #EEEEEE;
           color: #0D0C08;
         }
@@ -130,7 +130,7 @@ $fontMontserrat: 'Montserrat', sans-serif;
         }
       }
 
-      @media (min-width: 992px) {
+      @media (min-width: $lgWidth) {
 
         .card-btn-git:hover {
           background: #404040;
@@ -277,7 +277,7 @@ $fontMontserrat: 'Montserrat', sans-serif;
 
   .slider-desc-title {
     margin-bottom: 15px;
-    font-family: $fontMontserrat;
+    font-family: $titleFontFamily;
     font-size: 18px;
 
     @media (min-width: 850px) {
@@ -289,7 +289,7 @@ $fontMontserrat: 'Montserrat', sans-serif;
   .slider-desc-list {
     margin-bottom: 15px;
     line-height: 24px;
-    font-family: $fontQuicksand;
+    font-family: $textFontFamily;
     font-weight: 600;
 
     @media (min-width: 850px) {
@@ -306,7 +306,7 @@ $fontMontserrat: 'Montserrat', sans-serif;
   .slider-desc-text {
     margin-bottom: 15px;
     line-height: 22px;
-    font-family: $fontQuicksand;
+    font-family: $textFontFamily;
     font-weight: 300;
     text-align: justify;
 
