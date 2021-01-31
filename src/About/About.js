@@ -1,25 +1,22 @@
 import React from 'react';
 import './About.scss';
-import {PhoneVisible} from "../useDeviceParams";
 
 function About() {
   return (
-      <div className="wrapper">
-        {/*<h1>About</h1>*/}
-
-        <p className="name">NATALIA FOMINA</p>
-        <p className="designer">Web Developer & Web Designer</p>
-        <PhoneVisible>
-          only mobile
-        </PhoneVisible>
-        <p className="text">This means that when you set width and height, you have to adjust the value you give to allow for any border
-          or padding that may be added. For example, if you have four boxes with width: 25%; they will not by default fit on one line within the constraints of the
-          parent container.</p>
-        <button className="btn">my works</button>
-        <button className="btn">Contact me</button>
-
-      </div>
+    <div className="about-section">
+      <section className="about-container container">
+        <h1 className="about-name">NATALIA FOMINA</h1>
+        <p className="about-profession">Web Developer & Web Designer</p>
+        <p className="about-text"><i className="fal fa-heart"></i>I love design, web development and art.</p>
+        <p className="about-text"><i className="fal fa-map-pin"></i>I'm from Saint Petersburg, and I live in Frankfurt.</p>
+        <p className="about-text"><i className="fal fa-globe-americas"></i>I speak fluent English, Italian, Russian. I'm actively learning German.</p>
+        <div className="about-btn-wrap">
+          <button className="about-btn">My works</button>
+          <button className="about-btn">Contact me</button>
+        </div>
+      </section>
+    </div>
   )
-}
+};
 
 export default About;

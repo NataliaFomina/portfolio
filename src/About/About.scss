@@ -1,50 +1,123 @@
 @import "variables";
-$bg-color: orange;
 
-.wrapper {
-  max-width: 1300px;
-  margin: 0 auto;
+.about-section {
+  height: 830px;
+  padding-top: 300px;
+  background-image: url("img/about_mob.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 0%;
 
-  .wellcome  {
-    font-size: 30px;
-    margin: 10px 0 10px;
-    font-weight: 300;
-    font-family: $textFontFamily;
+  @media (min-width: $lgWidth) {
+    height: 650px;
+    padding-top: 0;
+    background-image: url("img/about.svg");
   }
-  .name {
-    font-family: $nameFontFamily;
-    font-size: 60px;
-    text-transform: uppercase;
-    font-weight: 600;
-    margin: 15px 0 15px;
-    line-height: 52px;
 
-  }
-  .designer {
-    font-size: 26px;
-    margin: 15px 0 15px;
-    font-weight: 300;
-    font-family: $textFontFamily;
-  }
-  .btn {
-    font-family: $titleFontFamily;
-    text-transform: uppercase;
-    font-size: 18px;
-    font-weight: 500;
-    color: white;
-    padding: 15px 40px;
-    background-color: #C21DF0;
-    letter-spacing: 0.5px;
-    border: none;
-    border-radius: 7px;
-    margin: 30px 30px 0 0;
-  }
-  .text {
-    font-family: $titleFontFamily;
-    font-size: 16px;
-    max-width: 600px;
-    margin: 20px 0;
-    text-align: justify;
-    color: #7A7A7A;
+  .about-container {
+    padding: 50px 20px 0;
+
+    .about-name {
+      margin: 0 0 10px;
+      font-family: $nameFontFamily;
+      font-size: 34px;
+      font-weight: 600;
+      text-transform: uppercase;
+      line-height: 40px;
+
+      @media (min-width: $mdWidth) {
+        margin: 25px 0 15px;
+        font-size: 60px;
+        line-height: 52px;
+      }
+
+      @media (min-width: $lgWidth) {
+        margin: 75px 0 15px;
+      }
+    }
+
+    .about-profession {
+      margin: 10px 0 20px;
+      font-family: $titleFontFamily;
+      font-size: 20px;
+
+      @media (min-width: $mdWidth) {
+        margin: 20px 0 40px;
+        font-size: 26px;
+      }
+    }
+
+    .about-text {
+      margin-bottom: 10px;
+      font-family: $textFontFamily;
+      font-size: 16px;
+      line-height: 24px;
+
+      @media (min-width: $mdWidth) {
+        margin-bottom: 20px;
+        font-size: 18px;
+      }
+
+      .fal {
+        width: 20px;
+        margin-right: 10px;
+        text-align: center;
+      }
+    }
+
+    .about-btn-wrap {
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+
+      @media (min-width: $mdWidth) {
+        flex-direction: row;
+        justify-content: center;
+      }
+
+      @media (min-width: $lgWidth) {
+        justify-content: start;
+      }
+    }
+
+    .about-btn {
+      width: 100%;
+      margin: 20px 30px 0 0;
+      padding: 15px 40px;
+      font-family: $textFontFamily;
+      font-size: 18px;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+      color: $textColor;
+      background-color: white;
+      border: none;
+      border-radius: 20px;
+      box-shadow: 13px 10px 20px -10px rgba(0, 0, 0, 0.2);
+      transition: 150ms ease-out;
+      cursor: pointer;
+
+      @media (min-width: $mdWidth) {
+        width: 230px;
+      }
+
+      @media (min-width: $lgWidth) {
+        margin: 60px 30px 0 0;
+      }
+    }
+
+    .about-btn:hover {
+      color: lighten($textColor, 10%);
+      box-shadow: 13px 10px 30px -10px rgba(0, 0, 0, 0.3);
+      transition: 150ms ease-in;
+      transform: scale(1.03);
+    }
+
+    @media (min-width: $mdWidth) and (max-width: $lgWidth) {
+      .about-name,
+      .about-profession,
+      .about-text {
+        text-align: center;
+      }
+    }
   }
 }

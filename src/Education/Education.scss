@@ -13,13 +13,7 @@
     background-position: 50% 0%;
   }
 
-  @media (min-width: $lgWidth) {
-    padding: 0 30px 20px;
-  }
-
   .education-container {
-    max-width: 1300px;
-    margin: 0 auto;
     padding: 0 20px;
 
     @media (min-width: $lgWidth) {
@@ -90,7 +84,7 @@
         margin-left: 53%;
       }
     }
-    
+
     .education-item:nth-child(4),
     .education-item:nth-child(6),
     .education-item:nth-child(7) {

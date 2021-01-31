@@ -4,7 +4,7 @@ import './Education.scss';
 function Education() {
   return (
     <div className="education-section">
-      <section className="education-container">
+      <section className="education-container container">
         <h2 className="education-title">Education</h2>
         <div className="education-items">
 

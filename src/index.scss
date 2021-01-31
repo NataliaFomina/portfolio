@@ -11,6 +11,7 @@ $fa-font-path: '~@fortawesome/fontawesome-pro/webfonts';
 @import '~@fortawesome/fontawesome-pro/scss/regular';
 @import '~@fortawesome/fontawesome-pro/scss/light';
 @import '~@fortawesome/fontawesome-pro/scss/duotone';
+@import "variables";
 
 body {
   margin: 0;
@@ -32,3 +33,7 @@ code {
   box-sizing: border-box;
 }
 
+.container {
+  max-width: $maxWidthContainer;
+  margin: 0 auto;
+}

@@ -78,7 +78,7 @@ function Portfolio() {
   }, []);
 
   return (
-    <div className="portfolio-section">
+    <div className="portfolio-section container">
       <h2 className="portfolio-title">Portfolio</h2>
       <div className="slider">
 

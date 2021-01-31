@@ -3,7 +3,7 @@ import './Skills.scss';
 
 function Skills() {
   return (
-    <section className="skills-section">
+    <section className="skills-section container">
       <h1 className="skills-title">Professional Skills</h1>
       <div className="skills-container">
         <div className="skills-icons">
