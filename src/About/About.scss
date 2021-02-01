@@ -112,7 +112,7 @@
       transform: scale(1.03);
     }
 
-    @media (min-width: $mdWidth) and (max-width: $lgWidth) {
+    @media (min-width: $mdWidth) and (max-width: 991px) {
       .about-name,
       .about-profession,
       .about-text {

@@ -5,7 +5,11 @@ $darkBlack: #0D0C08;
 $softBlue: #4ABFEF;
 
 .portfolio-section {
-  padding: 70px 20px 70px;
+  padding: 40px 20px 70px;
+
+  @media (min-width: $lgWidth) {
+    padding: 0px 20px 70px;
+  }
 
   .portfolio-title {
     font-family: $titleFontFamily;
