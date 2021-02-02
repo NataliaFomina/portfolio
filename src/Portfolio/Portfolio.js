@@ -2,8 +2,6 @@ import React, {useState, useEffect, useCallback} from 'react';
 import './Portfolio.scss';
 import slider from '../slider';
 import collabPreview from './img/collab_preview.jpg';
-import qaPreview from './img/qa_preview.jpg';
-import procentPreview from './img/procent_preview.jpg';
 
 import granitSlider1 from './img/granit_slider_1.jpg';
 import granitSlider2 from './img/granit_slider_2.jpg';
@@ -15,6 +13,17 @@ import avtoharSlider2 from './img/avtohar_slider_2.jpg';
 import avtoharSlider3 from './img/avtohar_slider_3.jpg';
 import avtoharSlider4 from './img/avtohar_slider_4.jpg';
 
+import qaSlider1 from './img/qa_slider_1.svg';
+import qaSlider2 from './img/qa_slider_2.svg';
+import qaSlider3 from './img/qa_slider_3.svg';
+import qaSlider4 from './img/qa_slider_4.svg';
+
+import procentPreview from './img/procent_preview.svg';
+import procentSlider1 from './img/procent_slider_1.svg';
+import procentSlider2 from './img/procent_slider_2.svg';
+import procentSlider3 from './img/procent_slider_3.svg';
+import procentSlider4 from './img/procent_slider_4.svg';
+
 import enduroPreview from './img/enduro_preview.svg';
 import enduroSlider1 from './img/enduro_slider_1.svg';
 import enduroSlider2 from './img/enduro_slider_2.svg';
@@ -24,8 +33,8 @@ import enduroSlider4 from './img/enduro_slider_4.svg';
 const granitImages = [granitSlider1, granitSlider2, granitSlider3, granitSlider4];
 const collaborationImages = [granitSlider1, granitSlider1, granitSlider1, granitSlider1];
 const avtoharakterImages = [avtoharSlider1, avtoharSlider2, avtoharSlider3, avtoharSlider4];
-const gaImages = [granitSlider1, granitSlider1, granitSlider1, granitSlider1];
-const procentImages = [granitSlider1, granitSlider1, granitSlider1, granitSlider1];
+const gaImages = [qaSlider1, qaSlider2, qaSlider3, qaSlider4];
+const procentImages = [procentSlider1, procentSlider2, procentSlider3, procentSlider4];
 const enduroImages = [enduroSlider1, enduroSlider2, enduroSlider3, enduroSlider4];
 
 function SliderImage({images}) {
@@ -165,7 +174,7 @@ function Portfolio() {
 
           <div className="card">
             <div className="card-img">
-              <img src={qaPreview}
+              <img src={qaSlider1}
                    alt="Natalia Fomina portfolio"/>
             </div>
             <section className="card-container">
