@@ -4,22 +4,29 @@ import slider from '../slider';
 import collabPreview from './img/collab_preview.jpg';
 import qaPreview from './img/qa_preview.jpg';
 import procentPreview from './img/procent_preview.jpg';
-import enduroPreview from './img/enduro_preview.jpg';
+
 import granitSlider1 from './img/granit_slider_1.jpg';
 import granitSlider2 from './img/granit_slider_2.jpg';
 import granitSlider3 from './img/granit_slider_3.jpg';
 import granitSlider4 from './img/granit_slider_4.jpg';
+
 import avtoharSlider1 from './img/avtohar_slider_1.jpg';
 import avtoharSlider2 from './img/avtohar_slider_2.jpg';
 import avtoharSlider3 from './img/avtohar_slider_3.jpg';
 import avtoharSlider4 from './img/avtohar_slider_4.jpg';
+
+import enduroPreview from './img/enduro_preview.svg';
+import enduroSlider1 from './img/enduro_slider_1.svg';
+import enduroSlider2 from './img/enduro_slider_2.svg';
+import enduroSlider3 from './img/enduro_slider_3.svg';
+import enduroSlider4 from './img/enduro_slider_4.svg';
 
 const granitImages = [granitSlider1, granitSlider2, granitSlider3, granitSlider4];
 const collaborationImages = [granitSlider1, granitSlider1, granitSlider1, granitSlider1];
 const avtoharakterImages = [avtoharSlider1, avtoharSlider2, avtoharSlider3, avtoharSlider4];
 const gaImages = [granitSlider1, granitSlider1, granitSlider1, granitSlider1];
 const procentImages = [granitSlider1, granitSlider1, granitSlider1, granitSlider1];
-const enduroImages = [granitSlider1, granitSlider1, granitSlider1, granitSlider1];
+const enduroImages = [enduroSlider1, enduroSlider2, enduroSlider3, enduroSlider4];
 
 function SliderImage({images}) {
   const [imageActive, setImageActive] = useState(images[0]);
