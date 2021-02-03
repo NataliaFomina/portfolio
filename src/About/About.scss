@@ -111,6 +111,10 @@
       transition: 150ms ease-in;
       transform: scale(1.03);
     }
+    .about-btn:focus {
+      border: none;
+      outline: none;
+    }
 
     @media (min-width: $mdWidth) and (max-width: 991px) {
       .about-name,
