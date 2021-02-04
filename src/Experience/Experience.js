@@ -10,7 +10,7 @@ function Experience() {
           <div className="items">
 
             <div className="item">
-              <p className="year">Nov 2020 - Feb 2020</p>
+              <p className="year">Feb 2020 - Nov 2020</p>
               <p className="job">Frontend Developer</p>
               <p>
                 <i className="fal fa-map-pin"></i>Mygento - Saint Petersburg, Russia
@@ -130,6 +130,25 @@ function Experience() {
                 <li>Responsive layout / for mobile devices</li>
                 <li>SEO optimization</li>
                 <li>Support for an existing site</li>
+              </ul>
+            </div>
+
+            <div className="item">
+              <p className="year">Sep 2015 - Nov 2016</p>
+              <p className="job">Art Director & Stylist</p>
+              <p>
+                <i className="fal fa-map-pin"></i>LYYK & Lomonosova 22 - Saint Petersburg, Russia
+              </p>
+              <p>
+                <i className="fal fa-link"></i><a href="https://www.instagram.com/lomonosova22">https://www.instagram.com/lomonosova22</a>
+              </p>
+              <ul>
+                <li>Creating brand image & style for two shops</li>
+                <li>Ideas for photo shotings and participation in it: choosing location, model, photographer, make up, style and coordinate all process</li>
+                <li>Ideas for graphic design: banners, newsletters, sales, new collections, presentation</li>
+                <li>Managing team: photographer, graphic designer, models, smm department, brand manager</li>
+                <li>SWorking with fashion bloggers, opinion makers, magazines and online channels</li>
+                <li>Making research and hire team, testing, making test task</li>
               </ul>
             </div>
           </div>
