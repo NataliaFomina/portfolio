@@ -104,7 +104,8 @@ $lightGrey: #7A7A7A;
     }
   }
 
-  .item:nth-child(3) {
+  .item:nth-child(3),
+  .item:nth-child(7) {
     border: 1px solid #C21DF0;
 
     .job {
@@ -155,7 +156,8 @@ $lightGrey: #7A7A7A;
     background-color: #F26521;
   }
 
-  .item:nth-child(3):before {
+  .item:nth-child(3):before,
+  .item:nth-child(7):before {
     background-color: #C21DF0;
   }
 
