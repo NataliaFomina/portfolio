@@ -29,7 +29,8 @@ $softBlue: #4ABFEF;
       margin-bottom: 70px;
       padding-bottom: 60px;
       border-radius: 7px;
-      transition: 150ms ease-in;
+      //transition: 150ms ease-in;
+      box-shadow: 0px 20px 25px -5px rgba(0, 0, 0, 0.1);
 
       @media (min-width: $mdWidth) {
         width: 45%;
@@ -38,11 +39,11 @@ $softBlue: #4ABFEF;
       @media (min-width: $lgWidth) {
         width: 30%;
 
-        &:hover {
-          transform: scale(1.02);
-          box-shadow: 10px 25px 40px -10px rgba(0, 0, 0, 0.2);
-          transition: 170ms ease-out;
-        }
+        //&:hover {
+        //  transform: scale(1.02);
+        //  box-shadow: 10px 25px 40px -10px rgba(0, 0, 0, 0.2);
+        //  transition: 170ms ease-out;
+        //}
       }
 
       .card-img {

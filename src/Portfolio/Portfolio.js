@@ -1,34 +1,39 @@
 import React, {useState, useEffect, useCallback} from 'react';
 import './Portfolio.scss';
 import slider from '../slider';
-import granitPreview from './img/granit_preview.svg';
-import granitSlider1 from './img/granit_slider_1.svg';
-import granitSlider2 from './img/granit_slider_2.svg';
-import granitSlider3 from './img/granit_slider_3.jpg';
-import granitSlider4 from './img/granit_slider_4.jpg';
-import collabSlider1 from './img/collab_slider_1.svg';
-import collabSlider2 from './img/collab_slider_2.svg';
-import collabSlider3 from './img/collab_slider_3.svg';
-import collabSlider4 from './img/collab_slider_4.svg';
-import avtoharPreview from './img/avtohar_preview.svg';
-import avtoharSlider1 from './img/avtohar_slider_1.jpg';
-import avtoharSlider2 from './img/avtohar_slider_2.jpg';
-import avtoharSlider3 from './img/avtohar_slider_3.jpg';
-import avtoharSlider4 from './img/avtohar_slider_4.jpg';
-import qaSlider1 from './img/qa_slider_1.svg';
-import qaSlider2 from './img/qa_slider_2.svg';
-import qaSlider3 from './img/qa_slider_3.svg';
-import qaSlider4 from './img/qa_slider_4.svg';
-import procentPreview from './img/procent_preview.svg';
-import procentSlider1 from './img/procent_slider_1.svg';
-import procentSlider2 from './img/procent_slider_2.svg';
-import procentSlider3 from './img/procent_slider_3.svg';
-import procentSlider4 from './img/procent_slider_4.svg';
-import enduroPreview from './img/enduro_preview.svg';
-import enduroSlider1 from './img/enduro_slider_1.svg';
-import enduroSlider2 from './img/enduro_slider_2.svg';
-import enduroSlider3 from './img/enduro_slider_3.svg';
-import enduroSlider4 from './img/enduro_slider_4.svg';
+import granitPreview from './img/granit_preview.png';
+import granitSlider1 from './img/granit_slider_1.png';
+import granitSlider2 from './img/granit_slider_2.png';
+import granitSlider3 from './img/granit_slider_3.png';
+import granitSlider4 from './img/granit_slider_4.png';
+
+import collabSlider1 from './img/collab_slider_1.png';
+import collabSlider2 from './img/collab_slider_2.png';
+import collabSlider3 from './img/collab_slider_3.png';
+import collabSlider4 from './img/collab_slider_4.png';
+
+import avtoharPreview from './img/avtohar_preview.png';
+import avtoharSlider1 from './img/avtohar_slider_1.png';
+import avtoharSlider2 from './img/avtohar_slider_2.png';
+import avtoharSlider3 from './img/avtohar_slider_3.png';
+import avtoharSlider4 from './img/avtohar_slider_4.png';
+
+import qaSlider1 from './img/qa_slider_1.png';
+import qaSlider2 from './img/qa_slider_2.png';
+import qaSlider3 from './img/qa_slider_3.png';
+import qaSlider4 from './img/qa_slider_4.png';
+
+import procentPreview from './img/procent_preview.png';
+import procentSlider1 from './img/procent_slider_1.png';
+import procentSlider2 from './img/procent_slider_2.png';
+import procentSlider3 from './img/procent_slider_3.png';
+import procentSlider4 from './img/procent_slider_4.png';
+
+import enduroPreview from './img/enduro_preview.png';
+import enduroSlider1 from './img/enduro_slider_1.png';
+import enduroSlider2 from './img/enduro_slider_2.png';
+import enduroSlider3 from './img/enduro_slider_3.png';
+import enduroSlider4 from './img/enduro_slider_4.png';
 
 const granitImages = [granitSlider1, granitSlider2, granitSlider3, granitSlider4];
 const collaborationImages = [collabSlider1, collabSlider2, collabSlider3, collabSlider4];
