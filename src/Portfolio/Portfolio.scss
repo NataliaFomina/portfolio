@@ -160,7 +160,7 @@ $softBlue: #4ABFEF;
   visibility: hidden;
   position: fixed;
   width: 100%;
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(0, 0, 0, 0.3);
   top: 0;
   left: 0;
   right: 0;
@@ -185,6 +185,7 @@ $softBlue: #4ABFEF;
 
   @media (min-width: 1300px) {
     width: 1200px;
+    border-radius: 30px;
   }
 }
 
@@ -347,11 +348,11 @@ $softBlue: #4ABFEF;
 }
 
 .slider-control-left {
-  left: 0;
+  left: 20px;
 }
 
 .slider-control-right {
-  right: 0;
+  right: 20px;
 }
 
 .slider-control:before {
