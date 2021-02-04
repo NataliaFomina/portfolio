@@ -1,49 +1,18 @@
-import React, { useState } from 'react';
+import React from 'react';
+import './Contacts.scss'
 
 function Contacts() {
-  const  [status, setStatus ] = useState();
-  function submitForm(ev) {
-    console.log(ev);
-
-    ev.preventDefault();
-    const form = ev.target;
-    const data = new FormData(form);
-    const xhr = new XMLHttpRequest();
-    xhr.open(form.method, form.action);
-    xhr.setRequestHeader("Accept", "application/json");
-    xhr.onreadystatechange = () => {
-      if (xhr.readyState !== XMLHttpRequest.DONE) return;
-      if (xhr.status === 200) {
-        form.reset();
-        setStatus("SUCCESS");
-      } else {
-        setStatus("ERROR");
-      }
-    };
-    xhr.send(data);
-  }
-
   return (
-    <div className="contact-section container">
-
-
-      <form
-        onSubmit={submitForm}
-        action="https://formspree.io/f/xpzonjaz"
-        method="POST"
-        className="contact-form"
-      >
-
-        <label>Email:</label>
-        <input type="email" name="email" placeholder="Email"/>
-        <label>Message:</label>
-        <textarea name="message" id="">
-
-        </textarea>
-        {status === "SUCCESS" ? <p>Thanks!</p> : <button>Submit</button>}
-        {status === "ERROR" && <p>Ooops! There was an error.</p>}
-      </form>
-    </div>
+      <div className="contact-section">
+        <section className="contact-container container">
+          <h2 className="contact-title">Write me a note</h2>
+          <form action="https://formspree.io/f/xpzonjaz" method="POST" className="contact-form">
+            <input id="email" name="email" type="email" placeholder="Email" required/>
+            <textarea id="message" name="message" placeholder="Message" required/>
+            <button className="btn">Submit</button>
+          </form>
+        </section>
+      </div>
   )
 }
 

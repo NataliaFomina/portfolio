@@ -1,7 +1,63 @@
 @import "variables";
 
 .contact-section {
-.contact-form {
+  padding: 70px 20px 70px;
 
-}
+  .contact-container {
+  }
+
+  .contact-title {
+    font-family: $titleFontFamily;
+    font-size: 34px;
+    text-align: center;
+    margin-bottom: 100px;
+  }
+
+  .contact-error {
+    font-size: 18px;
+    color: orangered;
+    padding: 20px;
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    @media (min-width: $mdWidth) {
+      width: 500px;
+    }
+    @media (min-width: $lgWidth) {
+      width: 1000px;
+    }
+    margin: 0 auto;
+
+    input, button, textarea {
+      &:not(:first-child) {
+        margin-top: 15px;
+      }
+    }
+
+    input, textarea {
+      font-family: $textFontFamily;
+      font-size: 18px;
+      padding: 20px;
+      outline: none;
+      appearance: none;
+      border: 1px solid transparent;
+      border-radius: 20px;
+      box-shadow: 13px 10px 20px -10px rgba(0, 0, 0, 0.2);
+
+      &::placeholder {
+        color: lightgrey;
+      }
+
+      &:focus {
+        border: 1px solid lightgrey;
+      }
+    }
+
+    textarea {
+      max-width: 100%;
+    }
+  }
 }
