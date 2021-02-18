@@ -16,7 +16,7 @@ function Experience() {
                 <i className="fal fa-map-pin"></i>Mygento - Saint Petersburg, Russia
               </p>
               <p>
-                <i className="fal fa-link"></i><a href="https://www.mygento.ru">https://www.mygento.ru</a>
+                <i className="fal fa-link"></i><a href="https://www.mygento.ru" target="_blank" rel="noreferrer">https://www.mygento.ru</a>
               </p>
               <ul>
                 <li>Development of React based component, featuring responsive design that supports mobile and tablet</li>
@@ -35,10 +35,10 @@ function Experience() {
               <p className="year">2019</p>
               <p className="job">Web Developer (Freelancer)</p>
               <p>
-                <i className="fal fa-map-pin"></i>Avtoharakter - Saint Petersburg, Russia
+                <i className="fal fa-map-pin"></i>Autoharakter - Saint Petersburg, Russia
               </p>
               <p>
-                <i className="fal fa-link"></i><a href="http://begethost7.beget.tech/auto">http://begethost7.beget.tech/auto</a>
+                <i className="fal fa-link"></i><a href="https://autoharakter.ru" target="_blank" rel="noreferrer">https://autoharakter.ru</a>
               </p>
               <ul>
                 <li>Development of a responsive web frontend for desktop, mobile and tablet</li>
@@ -59,7 +59,7 @@ function Experience() {
                 <i className="fal fa-map-pin"></i>Procent - Saint Petersburg, Russia
               </p>
               <p>
-                <i className="fal fa-link"></i><a href="http://процентденьги.рф">http://процентденьги.рф</a>
+                <i className="fal fa-link"></i><a href="http://процентденьги.рф" target="_blank" rel="noreferrer">http://процентденьги.рф</a>
               </p>
               <ul>
                 <li>Development of a responsive web frontend for desktop, mobile and tablet</li>
@@ -80,7 +80,7 @@ function Experience() {
                 <i className="fal fa-map-pin"></i>Granit - Saint Petersburg, Russia
               </p>
               <p>
-                <i className="fal fa-link"></i><a href="http://granitbrz.ru">http://granitbrz.ru</a>
+                <i className="fal fa-link"></i><a href="http://granitbrz.ru" target="_blank" rel="noreferrer">http://granitbrz.ru</a>
               </p>
               <ul>
                 <li>Development of a responsive web frontend for desktop, mobile and tablet</li>
@@ -101,7 +101,7 @@ function Experience() {
                 <i className="fal fa-map-pin"></i>Enduro - Saint Petersburg, Russia
               </p>
               <p>
-                <i className="fal fa-link"></i><a href="http://crimeatrophy.ru">http://crimeatrophy.ru</a>
+                <i className="fal fa-link"></i><a href="http://crimeatrophy.ru" target="_blank" rel="noreferrer">http://crimeatrophy.ru</a>
               </p>
               <ul>
                 <li>Development of a responsive web frontend for desktop, mobile and tablet</li>
@@ -122,7 +122,7 @@ function Experience() {
                 <i className="fal fa-map-pin"></i>Maskom - Moscow, Russia
               </p>
               <p>
-                <i className="fal fa-link"></i><a href="https://maskomzoloto.ru">https://maskomzoloto.ru</a>
+                <i className="fal fa-link"></i><a href="https://maskomzoloto.ru" target="_blank" rel="noreferrer">https://maskomzoloto.ru</a>
               </p>
               <ul>Development of UI:
                 <li>Creating elements (sliders, calculators)</li>
@@ -140,7 +140,7 @@ function Experience() {
                 <i className="fal fa-map-pin"></i>LYYK & Lomonosova 22 - Saint Petersburg, Russia
               </p>
               <p>
-                <i className="fal fa-link"></i><a href="https://www.instagram.com/lomonosova22">https://www.instagram.com/lomonosova22</a>
+                <i className="fal fa-link"></i><a href="https://www.instagram.com/lomonosova22" target="_blank" rel="noreferrer">https://www.instagram.com/lomonosova22</a>
               </p>
               <ul>
                 <li>Creating brand image & style for two shops</li>
