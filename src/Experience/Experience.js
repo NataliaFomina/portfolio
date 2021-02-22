@@ -13,14 +13,18 @@ function Experience() {
               <p className="year">Feb 2020 - Nov 2020</p>
               <p className="job">Frontend Developer</p>
               <p>
-                <i className="fal fa-map-pin"></i>Mygento - Saint Petersburg, Russia
+                <i className="fal fa-map-pin"/>Mygento - Saint Petersburg, Russia
               </p>
               <p>
-                <i className="fal fa-link"></i><a href="https://www.mygento.ru" target="_blank" rel="noreferrer">https://www.mygento.ru</a>
+                <i className="fal fa-link"/><a href="https://www.mygento.ru" target="_blank"
+                                               rel="noreferrer">https://www.mygento.ru</a>
               </p>
               <ul>
-                <li>Development of React based component, featuring responsive design that supports mobile and tablet</li>
-                <li>Development of frontend elements: sliders, menus, blog, subscription, product card, cart animation, and more</li>
+                <li>Development of React based component, featuring responsive design that supports mobile and tablet
+                </li>
+                <li>Development of frontend elements: sliders, menus, blog, subscription, product card, cart animation,
+                  and more
+                </li>
                 <li>Code refactoring</li>
                 <li>Integration testing</li>
                 <li>Collaborating with backend developers</li>
@@ -35,10 +39,11 @@ function Experience() {
               <p className="year">2019</p>
               <p className="job">Web Developer (Freelancer)</p>
               <p>
-                <i className="fal fa-map-pin"></i>Autoharakter - Saint Petersburg, Russia
+                <i className="fal fa-map-pin"/>Autoharakter - Saint Petersburg, Russia
               </p>
               <p>
-                <i className="fal fa-link"></i><a href="https://autoharakter.ru" target="_blank" rel="noreferrer">https://autoharakter.ru</a>
+                <i className="fal fa-link"/><a href="https://autoharakter.ru" target="_blank"
+                                               rel="noreferrer">https://autoharakter.ru</a>
               </p>
               <ul>
                 <li>Development of a responsive web frontend for desktop, mobile and tablet</li>
@@ -56,31 +61,11 @@ function Experience() {
               <p className="year">2019</p>
               <p className="job">Web Developer (Freelancer)</p>
               <p>
-                <i className="fal fa-map-pin"></i>Procent - Saint Petersburg, Russia
+                <i className="fal fa-map-pin"/>Procent - Saint Petersburg, Russia
               </p>
               <p>
-                <i className="fal fa-link"></i><a href="http://процентденьги.рф" target="_blank" rel="noreferrer">http://процентденьги.рф</a>
-              </p>
-              <ul>
-                <li>Development of a responsive web frontend for desktop, mobile and tablet</li>
-                <li>Design of UI & UX</li>
-                <li>Deployment and hosting setup</li>
-                <li>Defining a sitemap</li>
-                <li>Working directly with clients; discussing and setting goals</li>
-                <li>Working with article writers</li>
-                <li>Optimizing SEO for Google and Yandex searching engines</li>
-                <li>Maintenance of existing products</li>
-              </ul>
-            </div>
-
-            <div className="item">
-              <p className="year">2018</p>
-              <p className="job">Web Developer (Freelancer)</p>
-              <p>
-                <i className="fal fa-map-pin"></i>Granit - Saint Petersburg, Russia
-              </p>
-              <p>
-                <i className="fal fa-link"></i><a href="http://granitbrz.ru" target="_blank" rel="noreferrer">http://granitbrz.ru</a>
+                <i className="fal fa-link"/><a href="http://процентденьги.рф" target="_blank"
+                                               rel="noreferrer">http://процентденьги.рф</a>
               </p>
               <ul>
                 <li>Development of a responsive web frontend for desktop, mobile and tablet</li>
@@ -98,10 +83,33 @@ function Experience() {
               <p className="year">2018</p>
               <p className="job">Web Developer (Freelancer)</p>
               <p>
-                <i className="fal fa-map-pin"></i>Enduro - Saint Petersburg, Russia
+                <i className="fal fa-map-pin"/>Granit - Saint Petersburg, Russia
               </p>
               <p>
-                <i className="fal fa-link"></i><a href="http://crimeatrophy.ru" target="_blank" rel="noreferrer">http://crimeatrophy.ru</a>
+                <i className="fal fa-link"/><a href="http://granitbrz.ru" target="_blank"
+                                               rel="noreferrer">http://granitbrz.ru</a>
+              </p>
+              <ul>
+                <li>Development of a responsive web frontend for desktop, mobile and tablet</li>
+                <li>Design of UI & UX</li>
+                <li>Deployment and hosting setup</li>
+                <li>Defining a sitemap</li>
+                <li>Working directly with clients; discussing and setting goals</li>
+                <li>Working with article writers</li>
+                <li>Optimizing SEO for Google and Yandex searching engines</li>
+                <li>Maintenance of existing products</li>
+              </ul>
+            </div>
+
+            <div className="item">
+              <p className="year">2018</p>
+              <p className="job">Web Developer (Freelancer)</p>
+              <p>
+                <i className="fal fa-map-pin"/>Enduro - Saint Petersburg, Russia
+              </p>
+              <p>
+                <i className="fal fa-link"/><a href="http://crimeatrophy.ru" target="_blank"
+                                               rel="noreferrer">http://crimeatrophy.ru</a>
               </p>
               <ul>
                 <li>Development of a responsive web frontend for desktop, mobile and tablet</li>
@@ -119,10 +127,11 @@ function Experience() {
               <p className="year">2017</p>
               <p className="job">Web Master (Freelancer)</p>
               <p>
-                <i className="fal fa-map-pin"></i>Maskom - Moscow, Russia
+                <i className="fal fa-map-pin"/>Maskom - Moscow, Russia
               </p>
               <p>
-                <i className="fal fa-link"></i><a href="https://maskomzoloto.ru" target="_blank" rel="noreferrer">https://maskomzoloto.ru</a>
+                <i className="fal fa-link"/><a href="https://maskomzoloto.ru" target="_blank"
+                                               rel="noreferrer">https://maskomzoloto.ru</a>
               </p>
               <ul>Development of UI:
                 <li>Creating elements (sliders, calculators)</li>
@@ -137,14 +146,17 @@ function Experience() {
               <p className="year">Sep 2015 - Nov 2016</p>
               <p className="job">Art Director & Stylist</p>
               <p>
-                <i className="fal fa-map-pin"></i>LYYK & Lomonosova 22 - Saint Petersburg, Russia
+                <i className="fal fa-map-pin"/>LYYK & Lomonosova 22 - Saint Petersburg, Russia
               </p>
               <p>
-                <i className="fal fa-link"></i><a href="https://www.instagram.com/lomonosova22" target="_blank" rel="noreferrer">https://www.instagram.com/lomonosova22</a>
+                <i className="fal fa-link"/><a href="https://www.instagram.com/lomonosova22" target="_blank"
+                                               rel="noreferrer">https://www.instagram.com/lomonosova22</a>
               </p>
               <ul>
                 <li>Creating brand image & style for two shops</li>
-                <li>Ideas for photo shotings and participation in it: choosing location, model, photographer, make up, style and coordinate all process</li>
+                <li>Ideas for photo shotings and participation in it: choosing location, model, photographer, make up,
+                  style and coordinate all process
+                </li>
                 <li>Ideas for graphic design: banners, newsletters, sales, new collections, presentation</li>
                 <li>Managing team: photographer, graphic designer, models, smm department, brand manager</li>
                 <li>SWorking with fashion bloggers, opinion makers, magazines and online channels</li>
