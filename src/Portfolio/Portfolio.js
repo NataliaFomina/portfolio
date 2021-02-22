@@ -53,14 +53,14 @@ function SliderImage({images}) {
   });
 
   return (
-    <div className="slider-img">
-      <div className="slider-img-active">
-        <img src={imageActive} alt="Natalia Fomina portfolio"/>
+      <div className="slider-img">
+        <div className="slider-img-active">
+          <img src={imageActive} alt="Natalia Fomina portfolio"/>
+        </div>
+        <div className="slider-images">
+          {imagesArray}
+        </div>
       </div>
-      <div className="slider-images">
-        {imagesArray}
-      </div>
-    </div>
   )
 }
 
@@ -99,324 +99,330 @@ function Portfolio() {
   }, []);
 
   return (
-    <div className="portfolio-section container">
-      <h2 className="portfolio-title">Portfolio</h2>
-      <div className="slider">
+      <div className="portfolio-section container">
+        <h2 className="portfolio-title">Portfolio</h2>
+        <div className="slider">
 
-        <div className="cards">
-          <div className="card">
-            <div className="card-img">
-              <img src={granitPreview}
-                   alt="Natalia Fomina portfolio"/>
+          <div className="cards">
+            <div className="card">
+              <div className="card-img">
+                <img src={granitPreview}
+                     alt="Natalia Fomina portfolio"/>
+              </div>
+              <section className="card-container">
+                <h3 className="card-title">
+                  Website for company Granit:<br/>
+                  Design of UI/UX, Web Development and SEO
+                </h3>
+                <p className="card-desc">Created a complete website for Granit Extreme Center using HTML5, CSS Flexbox
+                  to
+                  insure responsiveness, SVG vector graphics, and high resolution images.
+                </p>
+              </section>
+              <div className="card-btns">
+                <button className="card-btn card-btn-open card-btn-long" onClick={onClickCard}>
+                  Open project
+                </button>
+              </div>
             </div>
-            <section className="card-container">
-              <h3 className="card-title">
-                Website for company Granit:<br/>
-                Design of UI & UX, Web Developing, SEO
-              </h3>
-              <p className="card-desc">Creating full website for Granit extreme center. Using technologies as Flex
-                Box, fully responsive, HTML5, images based on high quality resolution & SVG.
-              </p>
-            </section>
-            <div className="card-btns">
-              <button className="card-btn card-btn-open card-btn-long"
-                      onClick={onClickCard}>
-                Open project
-              </button>
+
+            <div className="card">
+              <div className="card-img">
+                <img src={collabSlider1}
+                     alt="Natalia Fomina portfolio"/>
+              </div>
+              <section className="card-container">
+                <h3 className="card-title">
+                  Real-time Image Collaboration:<br/>
+                  WebSocket, JavaScript, HTML5 Canvas and Node.js
+                </h3>
+                <p className="card-desc">The client side is implemented in JavaScript and WebSockets;
+                  featuring Drag & Drop, Canvas drawing, collaborative drawing and commenting on images.
+                </p>
+              </section>
+              <div className="card-btns">
+                <button className="card-btn card-btn-open" onClick={onClickCard}>
+                  Open project
+                </button>
+                <button className="card-btn card-btn-git">
+                  <a href="https://github.com/NataliaFomina/realtime-image-collab" target="_blank" rel="noreferrer">
+                    <i className="fab fa-github"/>GitHub
+                  </a>
+                </button>
+              </div>
+            </div>
+
+            <div className="card">
+              <div className="card-img">
+                <img src={avtoharPreview} alt="Natalia Fomina portfolio"/>
+              </div>
+              <section className="card-container">
+                <h3 className="card-title">
+                  Website for company Autoharakter:<br/>
+                  Design of UI/UX, Web Development and SEO
+                </h3>
+                <p className="card-desc">Created a complete website for Avtoharakter using HTML5, CSS Flexbox to
+                  insure responsiveness, SVG vector graphics, and high resolution images.
+                </p>
+              </section>
+              <div className="card-btns">
+                <button className="card-btn card-btn-open card-btn-long"
+                        onClick={onClickCard}>
+                  Open project
+                </button>
+              </div>
+            </div>
+
+            <div className="card">
+              <div className="card-img">
+                <img src={qaSlider1}
+                     alt="Natalia Fomina portfolio"/>
+              </div>
+              <section className="card-container">
+                <h3 className="card-title">
+                  Question and answer WebApp:<br/>
+                  Featuring PHP, SQL, MVC and HTML5</h3>
+                <p className="card-desc">Question and answer web application with guest and administrator portals.
+                  The web application is implemented in PHP, using MVC architecture, components are
+                  implemented using OOP, data is stored in a relational database.
+                </p>
+              </section>
+              <div className="card-btns">
+                <button className="card-btn card-btn-open" onClick={onClickCard}>
+                  Open project
+                </button>
+                <button className="card-btn card-btn-git">
+                  <a href="https://github.com/NataliaFomina/qa-webapp" target="_blank" rel="noreferrer">
+                    <i className="fab fa-github"/>GitHub
+                  </a>
+                </button>
+              </div>
+            </div>
+
+            <div className="card">
+              <div className="card-img">
+                <img src={procentPreview}
+                     alt="Natalia Fomina portfolio"/>
+              </div>
+              <section className="card-container">
+                <h3 className="card-title">
+                  Website for company Procent:<br/>
+                  Design of UI/UX, Web Development and SEO
+                </h3>
+                <p className="card-desc">Created a complete website for Procent Finance using HTML5, CSS Flexbox to
+                  insure responsiveness, SVG vector graphics, and high resolution images.
+                </p>
+              </section>
+              <div className="card-btns">
+                <button className="card-btn card-btn-open card-btn-long"
+                        onClick={onClickCard}>
+                  Open project
+                </button>
+              </div>
+            </div>
+
+            <div className="card">
+              <div className="card-img">
+                <img src={enduroPreview}
+                     alt="Natalia Fomina portfolio"/>
+              </div>
+              <section className="card-container">
+                <h3 className="card-title">
+                  Website for company Enduro:<br/>
+                  Design of UI/UX, Web Development and SEO
+                </h3>
+                <p className="card-desc">Created a complete website for Enduro travel in Crimea using HTML5, CSS Flexbox
+                  to
+                  insure responsiveness, SVG vector graphics, and high resolution images.
+                </p>
+              </section>
+              <div className="card-btns">
+                <button className="card-btn card-btn-open card-btn-long"
+                        onClick={onClickCard}>
+                  Open project
+                </button>
+              </div>
             </div>
           </div>
 
-          <div className="card">
-            <div className="card-img">
-              <img src={collabSlider1}
-                   alt="Natalia Fomina portfolio"/>
-            </div>
-            <section className="card-container">
-              <h3 className="card-title">
-                Real-time Image Collaboration:<br/>
-                WebSocket, JavaScript Canvas, Node.js
-              </h3>
-              <p className="card-desc">Client part is implemented on JavaScript, Drag & Drop images, Canvas drawing,
-                DOM, collective drawing and commenting interaction with the server via websocket.
-              </p>
-            </section>
-            <div className="card-btns">
-              <button className="card-btn card-btn-open"
-                      onClick={onClickCard}>
-                Open project
-              </button>
-              <button className="card-btn card-btn-git">
-                <a href="https://github.com/NataliaFomina/realtime-image-collab" target="_blank" rel="noreferrer">
-                  <i className="fab fa-github"></i>GitHub
-                </a>
-              </button>
-            </div>
-          </div>
+          <div className={`slider-modal ${sliderActive ? "slider-modal-active" : ""}`} onClick={onClickCloseModal}>
+            <div className="slider-cont">
+              <div className="slider-wrapper">
 
-          <div className="card">
-            <div className="card-img">
-              <img src={avtoharPreview}
-                   alt="Natalia Fomina portfolio"/>
-            </div>
-            <section className="card-container">
-              <h3 className="card-title">
-                Website for company Autoharakter:<br/>
-                Design of UI & UX, Web Developing, SEO
-              </h3>
-              <p className="card-desc">Creating full website for Avtoharakter. Using technologies as Flex Box, fully
-                responsive, HTML5, images based on high quality resolution & SVG.
-              </p>
-            </section>
-            <div className="card-btns">
-              <button className="card-btn card-btn-open card-btn-long"
-                      onClick={onClickCard}>
-                Open project
-              </button>
-            </div>
-          </div>
+                <div className="slider-item">
+                  <div className="slider-content">
+                    <SliderImage images={granitImages}/>
 
-          <div className="card">
-            <div className="card-img">
-              <img src={qaSlider1}
-                   alt="Natalia Fomina portfolio"/>
-            </div>
-            <section className="card-container">
-              <h3 className="card-title">
-                Question and answer WebApp:<br/>
-                Featuring PHP, SQL, MVC and HTML5</h3>
-              <p className="card-desc">Question and answer web application with guest and administrator portals.
-                The system is implemented in PHP,
-                using MVC architecture, components are
-                implemented using OOP, data is stored in a relational database.
-              </p>
-            </section>
-            <div className="card-btns">
-              <button className="card-btn card-btn-open"
-                      onClick={onClickCard}>
-                Open project
-              </button>
-              <button className="card-btn card-btn-git">
-                <a href="https://github.com/NataliaFomina/qa-webapp" target="_blank" rel="noreferrer">
-                  <i className="fab fa-github"></i>GitHub
-                </a>
-              </button>
-            </div>
-          </div>
+                    <div className="slider-desc">
+                      <h3 className="slider-desc-title">Website for company Granit:<br/> Design of UI/UX, Web
+                        Development and SEO</h3>
+                      <p className="slider-desc-text">
+                        Created a complete website for Granit Extreme Center using HTML5, CSS Flexbox to
+                        insure responsiveness, SVG vector graphics, and high resolution images.
+                      </p>
+                      <p className="slider-desc-link">
+                        Link: <a href="https://granitbrz.ru" target="_blank" rel="noreferrer">https://granitbrz.ru</a>
+                      </p>
+                      <ul className="slider-desc-list">Includes:
+                        <li>5 Pages</li>
+                        <li>Form</li>
+                        <li>Slider</li>
+                        <li>CSS3 animations</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
 
-          <div className="card">
-            <div className="card-img">
-              <img src={procentPreview}
-                   alt="Natalia Fomina portfolio"/>
-            </div>
-            <section className="card-container">
-              <h3 className="card-title">
-                Website for company Procent:<br/>
-                Design of UI & UX, Web Developing, SEO
-              </h3>
-              <p className="card-desc">Creating full website for Procent finance. Using technologies as Flex Box,
-                fully responsive, HTML5, images based on high quality resolution & SVG.
-              </p>
-            </section>
-            <div className="card-btns">
-              <button className="card-btn card-btn-open card-btn-long"
-                      onClick={onClickCard}>
-                Open project
-              </button>
-            </div>
-          </div>
+                <div className="slider-item">
+                  <div className="slider-content">
+                    <SliderImage images={collaborationImages}/>
 
-          <div className="card">
-            <div className="card-img">
-              <img src={enduroPreview}
-                   alt="Natalia Fomina portfolio"/>
-            </div>
-            <section className="card-container">
-              <h3 className="card-title">
-                Website for company Enduro:<br/>
-                Design of UI & UX, Web Developing, SEO
-              </h3>
-              <p className="card-desc">Creating full website for Enduro travel in Crimea. Using technologies as Flex
-                Box, fully responsive, HTML5, images based on high quality resolution & SVG.
-              </p>
-            </section>
-            <div className="card-btns">
-              <button className="card-btn card-btn-open card-btn-long"
-                      onClick={onClickCard}>
-                Open project
-              </button>
-            </div>
-          </div>
-        </div>
+                    <div className="slider-desc">
+                      <h3 className="slider-desc-title">Real-time Image Collaboration:<br/> WebSocket, JavaScript, HTML5
+                        Canvas and Node.js</h3>
+                      <p className="slider-desc-text">The client side is implemented in JavaScript and WebSockets;
+                        featuring Drag & Drop, Canvas drawing, collaborative drawing and commenting on images.</p>
+                      <p className="slider-desc-link">
+                        Link: <a href="https://natalia-realtime-image-collab.herokuapp.com" target="_blank"
+                                 rel="noreferrer">https://natalia-realtime-image-collab.herokuapp.com</a>
+                      </p>
+                      <ul className="slider-desc-list">The service provides users with the following options:
+                        <li>Upload images.</li>
+                        <li>Add comments to a specific part of the image.</li>
+                        <li>Draw on top of the image.</li>
+                      </ul>
+                      <ul className="slider-desc-list">The service is also equipped with collaborative elements:
+                        <li>The uploaded image has a unique link that can be shared.</li>
+                        <li>All users viewing the image will be notified of new comments on the image.</li>
+                        <li>All users who view the image in paint mode can see what other users are drawing.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
 
-        <div className={`slider-modal ${sliderActive ? "slider-modal-active" : ""}`} onClick={onClickCloseModal}>
-          <div className="slider-cont">
-            <div className="slider-wrapper">
+                <div className="slider-item">
+                  <div className="slider-content">
+                    <SliderImage images={avtoharakterImages}/>
 
-              <div className="slider-item">
-                <div className="slider-content">
-                  <SliderImage images={granitImages}/>
+                    <div className="slider-desc">
+                      <h3 className="slider-desc-title">Website for company Autoharakter:<br/> Design of UI/UX, Web
+                        Development and SEO</h3>
+                      <p className="slider-desc-text">
+                        Created a complete website for Avtoharakter using HTML5, CSS Flexbox to insure responsiveness,
+                        SVG vector graphics, and high resolution images.
+                      </p>
+                      <p className="slider-desc-link">
+                        Link: <a href="https://autoharakter.ru" target="_blank"
+                                 rel="noreferrer">https://autoharakter.ru</a>
+                      </p>
+                      <ul className="slider-desc-list">Includes:
+                        <li>20 Pages</li>
+                        <li>Forms</li>
+                        <li>Sliders</li>
+                        <li>CSS3 animations</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
 
-                  <div className="slider-desc">
-                    <h3 className="slider-desc-title">Website for company Granit:<br/> Design of UI & UX, Web
-                      Developing, SEO</h3>
-                    <p className="slider-desc-text">
-                      Creating full website for Granit extreme center. Using technologies as Flex
-                      Box, fully responsive, HTML5, images based on high quality resolution & SVG.
-                    </p>
-                    <p className="slider-desc-link">
-                      Link: <a href="https://granitbrz.ru" target="_blank" rel="noreferrer">https://granitbrz.ru</a>
-                    </p>
-                    <ul className="slider-desc-list">Includes:
-                      <li>5 Pages</li>
-                      <li>Form</li>
-                      <li>Slider</li>
-                      <li>Animation</li>
-                    </ul>
+                <div className="slider-item">
+                  <div className="slider-content">
+                    <SliderImage images={gaImages}/>
+
+                    <div className="slider-desc">
+                      <h3 className="slider-desc-title">QA-WebApp:<br/>Featuring PHP, SQL, MVC and HTML5 </h3>
+                      <p className="slider-desc-text">
+                        Question and answer web application with guest and administrator portals. The web application is
+                        implemented in PHP, using MVC architecture, components are implemented using OOP,
+                        data is stored in a relational database.
+                      </p>
+                      <p className="slider-desc-link">
+                        Link: <a
+                          href="https://natalia-qa-webapp.herokuapp.com/index.php?c=front&a=categories&categoryId=all"
+                          target="_blank"
+                          rel="noreferrer">Guest portal</a>
+                      </p>
+                      <ul className="slider-desc-list">Guest portal:
+                        <li>Users can browse categories, questions and answers.</li>
+                        <li>Any user can ask a question by entering their name, email address, selecting a category and
+                          writing the text of the
+                          question.
+                        </li>
+                      </ul>
+                      <p className="slider-desc-link">
+                        Link: <a href="https://natalia-qa-webapp.herokuapp.com/" target="_blank"
+                                 rel="noreferrer">Admin portal</a> <span>(username: admin, password: admin)</span>
+                      </p>
+                      <ul className="slider-desc-list">Admin portal:
+                        <li>General section: the number of questions in each category, the number of unanswered
+                          questions and the number of administrators.</li>
+                        <li>Administrator section: a list of administrators with the ability to remove or change the
+                          password, and add a new administrator.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="slider-item">
+                  <div className="slider-content">
+                    <SliderImage images={procentImages}/>
+
+                    <div className="slider-desc">
+                      <h3 className="slider-desc-title">Website for company Procent:<br/> Design of UI/UX, Web
+                        Development and SEO</h3>
+                      <p className="slider-desc-text">
+                        Created a complete website for Procent Finance using HTML5, CSS Flexbox to insure
+                        responsiveness, SVG vector graphics, and high resolution images.
+                      </p>
+                      <p className="slider-desc-link">
+                        Link: <a href="http://xn--c1abcbq0acdikz9b6e.xn--p1ai/" target="_blank"
+                                 rel="noreferrer">http://процентденьги.рф</a>
+                      </p>
+                      <ul className="slider-desc-list">Includes:
+                        <li>4 Pages</li>
+                        <li>Forms</li>
+                        <li>Sliders</li>
+                        <li>CSS3 animations</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="slider-item">
+                  <div className="slider-content">
+                    <SliderImage images={enduroImages}/>
+
+                    <div className="slider-desc">
+                      <h3 className="slider-desc-title">WWebsite for company Enduro:<br/> Design of UI/UX, Web
+                        Development and SEO</h3>
+                      <p className="slider-desc-text">
+                        Created a complete website for Enduro travel in Crimea using HTML5, CSS Flexbox to insure
+                        responsiveness, SVG vector graphics, and high resolution images.
+                      </p>
+                      <p className="slider-desc-link">
+                        Link: <a href="http://xn--c1abcbq0acdikz9b6e.xn--p1ai/" target="_blank"
+                                 rel="noreferrer">http://процентденьги.рф</a>
+                      </p>
+                      <ul className="slider-desc-list">Includes:
+                        <li>4 Pages</li>
+                        <li>Forms</li>
+                        <li>Sliders</li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
-
-              <div className="slider-item">
-                <div className="slider-content">
-                  <SliderImage images={collaborationImages}/>
-
-                  <div className="slider-desc">
-                    <h3 className="slider-desc-title">Real-time Image Collaboration:<br/> WebSocket, JavaScript
-                      Canvas,
-                      Node.js</h3>
-                    <p className="slider-desc-text">Client part is implemented on JavaScript, Drag & drop images,
-                      Canvas drawing, DOM, collective
-                      drawing and commenting interaction with the server via websocket.</p>
-                    <p className="slider-desc-link">
-                      Link: <a href="https://natalia-realtime-image-collab.herokuapp.com" target="_blank"
-                               rel="noreferrer">https://natalia-realtime-image-collab.herokuapp.com</a>
-                    </p>
-                    <ul className="slider-desc-list">The service provides users with the following options:
-                      <li>Upload images.</li>
-                      <li>Add comments to a specific part of the image.</li>
-                      <li>Draw on top of the image.</li>
-                    </ul>
-                    <ul className="slider-desc-list">The service is also equipped with collaborative elements:
-                      <li>The uploaded image has a unique link that can be shared.</li>
-                      <li>All users viewing the image will be notified of new comments on the image.</li>
-                      <li>All users who view the image in paint mode can see what other users are drawing.</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              <div className="slider-item">
-                <div className="slider-content">
-                  <SliderImage images={avtoharakterImages}/>
-
-                  <div className="slider-desc">
-                    <h3 className="slider-desc-title">Website for company Autoharakter:<br/> Design of UI & UX, Web
-                      Developing, SEO</h3>
-                    <p className="slider-desc-text">
-                      Creating full website for Autoharakter.
-                      Using technologies as Flex Box, fully responsive, HTML5, images based on high quality resolution & SVG.
-                    </p>
-                    <p className="slider-desc-link">
-                      Link: <a href="https://autoharakter.ru" target="_blank" rel="noreferrer">https://autoharakter.ru</a>
-                    </p>
-                    <ul className="slider-desc-list">Includes:
-                      <li>20 Pages</li>
-                      <li>Forms</li>
-                      <li>Sliders</li>
-                      <li>CSS3 animation</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              <div className="slider-item">
-                <div className="slider-content">
-                  <SliderImage images={gaImages}/>
-
-                  <div className="slider-desc">
-                    <h3 className="slider-desc-title">QA-WebApp:<br/>Featuring PHP, SQL, MVC and HTML5 </h3>
-                    <p className="slider-desc-text">
-                      Question and answer web application with guest and administrator portals.
-                    </p>
-                    <p className="slider-desc-link">
-                      Link: <a href="https://natalia-qa-webapp.herokuapp.com/index.php?c=front&a=categories&categoryId=all" target="_blank"
-                                     rel="noreferrer">Guest portal</a>
-                    </p>
-                    <ul className="slider-desc-list">Guest portal:
-                      <li>Users can browse categories, questions and answers.</li>
-                      <li>Any user can ask a question by entering their name, email address, selecting a category and writing the text of the
-                        question.
-                      </li>
-                    </ul>
-                    <p className="slider-desc-link">
-                      Link: <a href="https://natalia-qa-webapp.herokuapp.com/" target="_blank"
-                                     rel="noreferrer">Admin portal</a> <span>(username: admin, password: admin)</span>
-                    </p>
-                    <ul className="slider-desc-list">Admin portal:
-                      <li>General section: the number of questions in each category, the number of unanswered questions and the number of administrators.</li>
-                      <li>Administrator section: a list of administrators with the ability to remove or change the password, and add a new administrator.</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              <div className="slider-item">
-                <div className="slider-content">
-                  <SliderImage images={procentImages}/>
-
-                  <div className="slider-desc">
-                    <h3 className="slider-desc-title">WWebsite for company Procent:<br/> Design of UI & UX, Web
-                      Developing, SEO</h3>
-                    <p className="slider-desc-text">
-                      Creating full website for Procent finance.
-                      Using technologies as Flex Box, fully responsive, HTML5, images based on high quality resolution & SVG.
-                    </p>
-                    <p className="slider-desc-link">
-                      Link: <a href="http://xn--c1abcbq0acdikz9b6e.xn--p1ai/" target="_blank" rel="noreferrer">http://процентденьги.рф</a>
-                    </p>
-                    <ul className="slider-desc-list">Includes:
-                      <li>4 Pages</li>
-                      <li>Forms</li>
-                      <li>Sliders</li>
-                      <li>CSS3 animation</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              <div className="slider-item">
-                <div className="slider-content">
-                  <SliderImage images={enduroImages}/>
-
-                  <div className="slider-desc">
-                    <h3 className="slider-desc-title">WWebsite for company Enduro:<br/> Design of UI & UX, Web
-                      Developing, SEO</h3>
-                    <p className="slider-desc-text">
-                      Creating full website Enduro travel in Crimea.
-                      Using technologies as Flex Box, fully responsive, HTML5, images based on high quality resolution & SVG.
-                    </p>
-                    <p className="slider-desc-link">
-                      Link: <a href="http://xn--c1abcbq0acdikz9b6e.xn--p1ai/" target="_blank" rel="noreferrer">http://процентденьги.рф</a>
-                    </p>
-                    <ul className="slider-desc-list">Includes:
-                      <li>4 Pages</li>
-                      <li>Forms</li>
-                      <li>Sliders</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
+              <span className="slider-control slider-control-left slider-control-icon"/>
+              <span className="slider-control slider-control-right slider-control-icon"/>
             </div>
-            <span className="slider-control slider-control-left slider-control-icon"></span>
-            <span className="slider-control slider-control-right slider-control-icon"></span>
-          </div>
-          <div className="slider-control-close" onClick={onClickCloseModal}>
-            <div className="close-right"></div>
-            <div className="close-left"></div>
+            <div className="slider-control-close" onClick={onClickCloseModal}>
+              <div className="close-right"/>
+              <div className="close-left"/>
+            </div>
           </div>
         </div>
       </div>
-    </div>
   )
 }
 
