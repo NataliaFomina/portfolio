@@ -394,15 +394,15 @@ function Portfolio() {
                     <SliderImage images={enduroImages}/>
 
                     <div className="slider-desc">
-                      <h3 className="slider-desc-title">WWebsite for company Enduro:<br/> Design of UI/UX, Web
+                      <h3 className="slider-desc-title">Website for company Enduro:<br/> Design of UI/UX, Web
                         Development and SEO</h3>
                       <p className="slider-desc-text">
                         Created a complete website for Enduro travel in Crimea using HTML5, CSS Flexbox to insure
                         responsiveness, SVG vector graphics, and high resolution images.
                       </p>
                       <p className="slider-desc-link">
-                        Link: <a href="http://xn--c1abcbq0acdikz9b6e.xn--p1ai/" target="_blank"
-                                 rel="noreferrer">http://процентденьги.рф</a>
+                        Link: <a href="http://crimeatrophy.ru" target="_blank"
+                                 rel="noreferrer">http://crimeatrophy.ru</a>
                       </p>
                       <ul className="slider-desc-list">Includes:
                         <li>4 Pages</li>
