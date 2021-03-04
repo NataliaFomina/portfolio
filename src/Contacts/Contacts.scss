@@ -3,7 +3,8 @@
 .contact-section {
   padding: 70px 20px 70px;
 
-  .contact-container {
+  @media (min-width: $lgWidth) {
+    padding: 70px 20px 150px;
   }
 
   .contact-title {
@@ -20,15 +21,31 @@
   }
 
   .contact-form {
+    position: relative;
     display: flex;
     flex-direction: column;
     width: 100%;
+
+    &:before {
+      position: absolute;
+      content: '';
+      bottom: -100px;
+      left: -50px;
+      height: 250px;
+      width: 250px;
+      background-image: url("img/contact_back.svg");
+      background-repeat: no-repeat;
+      z-index: -10;
+    }
+
     @media (min-width: $mdWidth) {
       width: 500px;
     }
+
     @media (min-width: $lgWidth) {
       width: 1000px;
     }
+
     margin: 0 auto;
 
     input, button, textarea {

@@ -150,16 +150,16 @@ function Experience() {
               </p>
               <p>
                 <i className="fal fa-link"/><a href="https://www.instagram.com/lomonosova22" target="_blank"
-                                               rel="noreferrer">https://www.instagram.com/lomonosova22</a>
+                                               rel="noreferrer">https://lomonosova22</a>
               </p>
               <ul>
                 <li>Creating brand image & style for two shops</li>
-                <li>Ideas for photo shotings and participation in it: choosing location, model, photographer, make up,
+                <li>Ideas for photo shootings and participation in it: choosing location, model, photographer, make up,
                   style and coordinate all process
                 </li>
                 <li>Ideas for graphic design: banners, newsletters, sales, new collections, presentation</li>
                 <li>Managing team: photographer, graphic designer, models, smm department, brand manager</li>
-                <li>SWorking with fashion bloggers, opinion makers, magazines and online channels</li>
+                <li>Working with fashion bloggers, opinion makers, magazines and online channels</li>
                 <li>Making research and hire team, testing, making test task</li>
               </ul>
             </div>

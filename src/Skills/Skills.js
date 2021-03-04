@@ -68,7 +68,7 @@ function Skills() {
               <section className="skills-text-section">
                 <h3 className="skills-text-title">React, JavaScript and Single Page Applications (SPA)</h3>
                 <p className="skills-text-desc">Experience in creating applications using Vanilla JS, ES6, React
-                  (Functional Components, Hooks),
+                  (Functional and Class Components, Hooks),
                   JSX, React Router, Virtual DOM, AJAX, Fetch, NPM manager and WebSockets.</p>
               </section>
               <section className="skills-text-section">

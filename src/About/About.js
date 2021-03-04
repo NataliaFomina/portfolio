@@ -11,11 +11,10 @@ function About() {
           <p className="about-text"><i className="fal fa-map-pin"/>I'm from Saint Petersburg, and I live in Frankfurt.
           </p>
           <p className="about-text"><i className="fal fa-globe-americas"/>I speak fluent English, Italian, Russian. I'm
-            actively learning German.</p>
+            beginner in German.</p>
           <div className="about-btn-wrap">
             <a href="/cv.pdf" target="_blank" className="about-btn">Download my CV <i
                 className="fal fa-arrow-to-bottom"/></a>
-            {/*<button className="about-btn">Contact me</button>*/}
           </div>
         </section>
       </div>
