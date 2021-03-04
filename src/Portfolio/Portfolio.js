@@ -96,7 +96,7 @@ function Portfolio() {
     return () => {
       document.removeEventListener("keydown", escFunction, false);
     };
-  }, []);
+  });
 
   return (
       <div className="portfolio-section container">
