@@ -51,15 +51,15 @@ $lightGrey: #7A7A7A;
       margin-right: 10px;
     }
 
-     p {
-       margin-bottom: 10px;
-       font-weight: 500;
+    p {
+      margin-bottom: 10px;
+      font-weight: 500;
 
-       a {
-         color: $lightGrey;
-         cursor: pointer;
-       }
-     }
+      a {
+        color: $lightGrey;
+        cursor: pointer;
+      }
+    }
   }
 
   .item:nth-child(odd),

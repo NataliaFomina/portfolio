@@ -3,7 +3,7 @@
 .about-section {
   height: 830px;
   padding-top: 300px;
-  background-image: url("img/about_mob.svg");
+  background-image: url("../images/about/about_mob.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 0%;
@@ -11,7 +11,7 @@
   @media (min-width: $lgWidth) {
     height: 650px;
     padding-top: 0;
-    background-image: url("img/about.svg");
+    background-image: url("../images/about/about.svg");
   }
 
   .about-container {

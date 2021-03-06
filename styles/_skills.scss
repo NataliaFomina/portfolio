@@ -2,21 +2,21 @@
 
 .skills-section {
   height: auto;
-  background-image: url("img/back_mob.svg");
+  background-image: url("../images/skills/back_mob.svg");
   background-position: 50% 70%;
   background-size: 200%;
   background-repeat: no-repeat;
   color: $textColor;
 
   @media (min-width: $smWidth) {
-    background-image: url("img/back_tablet.svg");
+    background-image: url("../images/skills/back_tablet.svg");
     background-position: 400px 500px;
     background-size: 70%;
   }
 
   @media (min-width: $lgWidth) {
     height: 830px;
-    background-image: url("img/back.svg");
+    background-image: url("../images/skills/back.svg");
     background-position: 50% 0;
     background-size: cover;
   }
@@ -111,7 +111,7 @@
           .icon-js {
             height: 50px;
             width: 37.5px;
-            background-image: url("img/icon_js.svg");
+            background-image: url("../images/skills/icon_js.svg");
             background-repeat: no-repeat;
             background-position: 0 3px;
 
@@ -135,15 +135,15 @@
           }
 
           .icon-ai {
-            background-image: url("img/icon_ai.svg");
+            background-image: url("../images/skills/icon_ai.svg");
           }
 
           .icon-id {
-            background-image: url("img/icon_id.svg");
+            background-image: url("../images/skills/icon_id.svg");
           }
 
           .icon-ps {
-            background-image: url("img/icon_ps.svg");
+            background-image: url("../images/skills/icon_ps.svg");
           }
         }
       }
