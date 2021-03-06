@@ -13,7 +13,7 @@ function About() {
           <p className="about-text"><i className="fal fa-globe-americas"/>I speak fluent English, Italian, Russian. I'm
             beginner in German.</p>
           <div className="about-btn-wrap">
-            <a href="/Natalia_Fomina_CV.pdf" target="_blank" className="about-btn">Download my CV <i
+            <a href="https://natalia-portfolio-api.herokuapp.com/" target="_blank" className="about-btn">Download my CV <i
                 className="fal fa-arrow-to-bottom"/></a>
           </div>
         </section>
