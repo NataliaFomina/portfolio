@@ -1,4 +1,4 @@
-import React, { useState, useCallback, useEffect } from 'react';
+import React, {useState, useCallback, useEffect} from 'react';
 
 
 import granitPreview from '../images/portfolio/granit_preview.png';
@@ -189,7 +189,7 @@ const data = [
   }
 ];
 
-function SliderImage({ images }) {
+function SliderImage({images}) {
   const [imageActive, setImageActive] = useState(images[0]);
   const imagesArray = images.map((image, index) => {
     return <div className={`${image === imageActive ? "slider-images-active" : ""} `} key={index}>
@@ -211,10 +211,10 @@ function SliderImage({ images }) {
   )
 }
 
-function Cards({ openSlider, cards }) {
-  return(
+function Cards({onClickOpenSlider, cards}) {
+  return (
     <div className="cards">
-      {cards.map( card => <div
+      {cards.map(card => <div
         className="card"
         id={card.id}
         key={card.id}
@@ -228,7 +228,7 @@ function Cards({ openSlider, cards }) {
           <p className="card-text">{card.text}</p>
         </section>
         <div className="card-btns">
-          <button className="card-btn card-btn-open" onClick={() => openSlider(card)}>
+          <button className="card-btn card-btn-open" onClick={() => onClickOpenSlider(card)}>
             Open project
           </button>
           {
@@ -245,19 +245,74 @@ function Cards({ openSlider, cards }) {
   )
 }
 
+function Slider(props) {
+  const {data, isOpen, currentSlide, onClickCloseSlider, onClickPrevSlide, onClickNextSlide} = props;
+  return (
+    <div className={`slider ${isOpen ? 'slider-active' : ''}`}
+         onClick={onClickCloseSlider}
+    >
+      <div className="slider-container">
+        <div className="slider-slides">
+          {data.map(e => <div
+            className={`slider-slide ${e.id === currentSlide.id ? 'slider-slide-active' : ''}`}
+            id={e.id}
+            key={e.id}
+          >
+
+            <SliderImage images={e.images}/>
+
+            <div className="slider-desc">
+              <h3 className="slider-desc-title">{e.title}</h3>
+              <p className="slider-desc-subtitle">{e.subtitle}</p>
+              <p className="slider-desc-text">{e.desc.p1}</p>
+              <p className="slider-desc-link">Link:
+                <a href={e.desc.link1.href} target="_blank" rel="noreferrer">{e.desc.link1.text}</a>
+              </p>
+              <ul className="slider-desc-list">{e.desc.ul1.title}
+                {e.desc.ul1.li.map((li, i) => <li key={i}>{li}</li>)}
+              </ul>
+              {
+                e.desc.link2 &&
+                <p className="slider-desc-link">Link:
+                  <a href={e.desc.link2.href} target="_blank" rel="noreferrer">{e.desc.link2.text}</a>
+                </p>
+              }
+              {
+                e.desc.ul2 &&
+                <ul className="slider-desc-list">{e.desc.ul2.title}
+                  {e.desc.ul2.li.map((li, i) => <li key={i}>{li}</li>)}
+                </ul>
+              }
+            </div>
+          </div>)
+          }
+        </div>
+        <div className="slider-arrows">
+          <div className="slider-arrow-left" onClick={onClickPrevSlide}></div>
+          <div className="slider-arrow-right" onClick={onClickNextSlide}></div>
+        </div>
+        <div className="slider-close" onClick={onClickCloseSlider}>
+          <div className="slider-close-right"/>
+          <div className="slider-close-left"/>
+        </div>
+      </div>
+    </div>
+  )
+}
+
 export default function Portfolio() {
   const [currentSlide, setCurrentSlide] = useState(data[0]);
-  const [isOpened, setIsOpened] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
-  const openSlider = (slide) => {
+  const onClickOpenSlider = (slide) => {
     setCurrentSlide(slide);
-    setIsOpened(true);
+    setIsOpen(true);
     document.body.classList.add('slider-open');
   }
 
   function closeSlider() {
-    setIsOpened(value => {
-      if (value ) {
+    setIsOpen(value => {
+      if (value) {
         document.body.classList.remove('slider-open');
         return false;
       }
@@ -283,7 +338,7 @@ export default function Portfolio() {
     };
   });
 
-  function prevSlide() {
+  function onClickPrevSlide() {
     const i = data.indexOf(currentSlide);
     if (i === 0) {
       setCurrentSlide(data[data.length - 1]);
@@ -292,7 +347,7 @@ export default function Portfolio() {
     }
   }
 
-  function nextSlide() {
+  function onClickNextSlide() {
     const i = data.indexOf(currentSlide);
     if (i === data.length - 1) {
       setCurrentSlide(data[0]);
@@ -305,58 +360,14 @@ export default function Portfolio() {
     <div className="portfolio-section container">
       <h2 className="portfolio-title">Portfolio</h2>
       <div className="wrapper">
-
-        <Cards openSlider={openSlider} cards={data}/>
-
-        <div className={`slider ${isOpened ? 'slider-active' : ''}`}
-             onClick={onClickCloseSlider}
-        >
-          <div className="slider-container">
-            <div className="slider-slides">
-              {data.map(e => <div
-                className={`slider-slide ${e.id === currentSlide.id ? 'slider-slide-active' : ''}`}
-                id={e.id}
-                key={e.id}
-              >
-
-                <SliderImage images={e.images}/>
-
-                <div className="slider-desc">
-                  <h3 className="slider-desc-title">{e.title}</h3>
-                  <p className="slider-desc-subtitle">{e.subtitle}</p>
-                  <p className="slider-desc-text">{e.desc.p1}</p>
-                  <p className="slider-desc-link">Link:
-                    <a href={e.desc.link1.href} target="_blank" rel="noreferrer">{e.desc.link1.text}</a>
-                  </p>
-                  <ul className="slider-desc-list">{e.desc.ul1.title}
-                    {e.desc.ul1.li.map((li, i) => <li key={i}>{li}</li>)}
-                  </ul>
-                  {
-                    e.desc.link2 &&
-                    <p className="slider-desc-link">Link:
-                      <a href={e.desc.link2.href} target="_blank" rel="noreferrer">{e.desc.link2.text}</a>
-                    </p>
-                  }
-                  {
-                    e.desc.ul2 &&
-                    <ul className="slider-desc-list">{e.desc.ul2.title}
-                      {e.desc.ul2.li.map((li, i) => <li key={i}>{li}</li>)}
-                    </ul>
-                  }
-                </div>
-              </div>)
-              }
-            </div>
-            <div className="slider-arrows">
-              <div className="slider-arrow-left" onClick={prevSlide}></div>
-              <div className="slider-arrow-right" onClick={nextSlide}></div>
-            </div>
-            <div className="slider-close" onClick={onClickCloseSlider}>
-              <div className="slider-close-right"/>
-              <div className="slider-close-left"/>
-            </div>
-          </div>
-        </div>
+        <Cards cards={data}
+               onClickOpenSlider={onClickOpenSlider}/>
+        <Slider data={data}
+               isOpen={isOpen}
+               currentSlide={currentSlide}
+               onClickPrevSlide={onClickPrevSlide}
+               onClickNextSlide={onClickNextSlide}
+               onClickCloseSlider={onClickCloseSlider}/>
       </div>
     </div>
   )
