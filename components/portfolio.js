@@ -90,7 +90,7 @@ const data = [
   {
     id: '3',
     title: 'Website for company Autoharakter:',
-    subtitle: 'WebSocket, JavaScript, HTML5 Canvas and Node.js',
+    subtitle: 'Design of UI/UX, Web Development and SEO',
     text: 'Created a complete website for Avtoharakter using HTML5, CSS Flexbox to insure responsiveness, SVG vector graphics, and high resolution images.',
     imgPreview: avtoharPreview,
     images: [avtoharSlider1, avtoharSlider2, avtoharSlider3, avtoharSlider4],
