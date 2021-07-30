@@ -1,10 +1,12 @@
 import React from 'react';
+import {useTranslation} from "react-i18next";
 
 function Skills() {
+  const {t} = useTranslation();
   return (
     <div className="skills-section">
       <section className="skills-container container">
-        <h1 className="skills-title">Professional Skills</h1>
+        <h1 className="skills-title">{t('Professional Skills')}</h1>
         <div className="skills-content">
           <div className="skills-icons">
             <div className="skills-icon">
@@ -59,27 +61,20 @@ function Skills() {
 
           <div className="skills-text">
             <section className="skills-text-section">
-              <h3 className="skills-text-title">HTML5, CSS3 and Responsive/Mobile Web</h3>
-              <p className="skills-text-desc">Design and build user interfaces for touch and mobile devices using:
-                HTML5, CCS3 animations, CSS media queries, Flexbox, Figma, Adobe Photoshop, Adobe Illustrator, Adobe
-                InDesign.</p>
+              <h3 className="skills-text-title">{t('HTML5, CSS3 and Responsive/Mobile Web')}</h3>
+              <p className="skills-text-desc">{t('Design and build user interfaces for touch and mobile devices using: HTML5, CCS3 animations, CSS media queries, Flexbox, Figma, Adobe Photoshop, Adobe Illustrator, Adobe InDesign.')}</p>
             </section>
             <section className="skills-text-section">
-              <h3 className="skills-text-title">React, JavaScript and Single Page Applications (SPA)</h3>
-              <p className="skills-text-desc">Experience in creating applications using Vanilla JS, ES6, React
-                (Functional and Class Components, Hooks),
-                JSX, React Router, Virtual DOM, AJAX, Fetch, NPM manager and WebSockets.</p>
+              <h3 className="skills-text-title">{t('React, JavaScript and Single Page Applications (SPA)')}</h3>
+              <p className="skills-text-desc">{t('Experience in creating applications using Vanilla JS, ES6, React (Functional and Class Components, Hooks), JSX, React Router, Virtual DOM, AJAX, Fetch, NPM manager and WebSockets.')}</p>
             </section>
             <section className="skills-text-section">
-              <h3 className="skills-text-title">Magento & PHP</h3>
-              <p className="skills-text-desc">Experience in creating Magento based online stores with React based
-                Frontends.
-                Knowledge of Object Oriented Programming (OOP), SQL and MVC.</p>
+              <h3 className="skills-text-title">{t('Magento & PHP')}</h3>
+              <p className="skills-text-desc">{t('Experience in creating Magento based online stores with React based Frontends. Knowledge of Object Oriented Programming (OOP), SQL and MVC.')}</p>
             </section>
             <section className="skills-text-section">
-              <h3 className="skills-text-title">SEO optimization</h3>
-              <p className="skills-text-desc">Semantics of HTML structure, image and page optimization, Google Page
-                Speed. Optimizing SEO for Google and Yandex searching engines.</p>
+              <h3 className="skills-text-title">{t('SEO optimization')}</h3>
+              <p className="skills-text-desc">{t('Semantics of HTML structure, image and page optimization, Google Page Speed. Optimizing SEO for Google and Yandex searching engines.')}</p>
             </section>
           </div>
         </div>
