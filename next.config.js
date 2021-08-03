@@ -6,11 +6,11 @@ module.exports = withImages({
     defaultLocale: 'en',
     domains: [
       {
-        domain: 'nataliafomina.com',
+        domain: 'https://nataliafomina.com',
         defaultLocale: 'en',
       },
       {
-        domain: 'nataliafomina.ru',
+        domain: 'https://nataliafomina.ru',
         defaultLocale: 'ru',
       },
     ]
