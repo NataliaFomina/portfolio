@@ -65,7 +65,8 @@ $softBlue: #4ABFEF;
 
         .card-text {
           margin: 20px 0 10px;
-          font-family: $textFontFamily;
+          font-family: $descFontFamily;
+          font-weight: 300;
           text-align: justify;
           color: #7A7A7A;
           line-height: 20px;
@@ -328,7 +329,7 @@ $softBlue: #4ABFEF;
             margin-top: 15px;
             margin-bottom: 15px;
             line-height: 22px;
-            font-family: $textFontFamily;
+            font-family: $descFontFamily;
             font-weight: 300;
             text-align: justify;
 

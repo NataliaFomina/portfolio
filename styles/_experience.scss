@@ -43,9 +43,13 @@ $lightGrey: #7A7A7A;
 
   .item {
     position: relative;
-    padding: 20px 40px;
+    padding: 20px 15px;
     color: $lightGrey;
     border-radius: 7px;
+
+    @media (min-width: $lgWidth) {
+      padding: 20px 40px;
+    }
 
     .fal {
       margin-right: 10px;
@@ -179,6 +183,8 @@ $lightGrey: #7A7A7A;
 
   ul li {
     margin-left: 20px;
+    font-family: $descFontFamily;
+    font-weight: 300;
     line-height: 20px;
     letter-spacing: 0.2px;
   }

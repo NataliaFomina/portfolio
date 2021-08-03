@@ -14,7 +14,7 @@ function Education() {
               <p className="education-item-univ">{t('University of Internet Professions "Netology"')}</p>
               <p className="education-item-course">{t('Programming, PHP / SQL back-end development and databases')}</p>
               <p className="education-item-year">{t('Moscow, Russia')} 2019</p>
-              <a className="education-item-link" href="https://netology.ru" target="_blank" rel="noreferrer">https://netology.ru</a>
+              <a className="education-item-link" href="https://netology.ru" target="_blank" rel="noreferrer">netology.ru</a>
             </div>
           </div>
 
@@ -23,7 +23,7 @@ function Education() {
               <p className="education-item-univ">{t('University of Internet Professions "Netology"')}</p>
               <p className="education-item-course">{t('Programming, Frontend developer (HTML, JavaScript, React JS)')}</p>
               <p className="education-item-year">{t('Moscow, Russia')} 2018-2019</p>
-              <a className="education-item-link" href="https://netology.ru" target="_blank" rel="noreferrer">https://netology.ru</a>
+              <a className="education-item-link" href="https://netology.ru" target="_blank" rel="noreferrer">netology.ru</a>
             </div>
           </div>
 
@@ -32,7 +32,7 @@ function Education() {
               <p className="education-item-univ">{t('University of Internet Professions "Netology"')}</p>
               <p className="education-item-course">{t('Programming, Responsive and mobile layout')}</p>
               <p className="education-item-year">{t('Moscow, Russia')} 2018</p>
-              <a className="education-item-link" href="https://netology.ru" target="_blank" rel="noreferrer">https://netology.ru</a>
+              <a className="education-item-link" href="https://netology.ru" target="_blank" rel="noreferrer">netology.ru</a>
             </div>
           </div>
 
@@ -41,7 +41,7 @@ function Education() {
               <p className="education-item-univ">{t('"Specialist" at Bauman Moscow State Technical University')}</p>
               <p className="education-item-course">{t('Web technologies, HTML5 and CSS3')}</p>
               <p className="education-item-year">{t('Moscow, Russia')} 2017</p>
-              <a className="education-item-link" href="https://www.specialist.ru" target="_blank" rel="noreferrer">https://www.specialist.ru</a>
+              <a className="education-item-link" href="https://www.specialist.ru" target="_blank" rel="noreferrer">specialist.ru</a>
             </div>
           </div>
 
@@ -50,7 +50,7 @@ function Education() {
               <p className="education-item-univ">{t('"Specialist" at Bauman Moscow State Technical University')}</p>
               <p className="education-item-course">{t('Web technologies, Website promotion and SEO')}</p>
               <p className="education-item-year">{t('Moscow, Russia')} 2017</p>
-              <a className="education-item-link" href="https://www.specialist.ru" target="_blank" rel="noreferrer">https://www.specialist.ru</a>
+              <a className="education-item-link" href="https://www.specialist.ru" target="_blank" rel="noreferrer">specialist.ru</a>
             </div>
           </div>
 
@@ -59,7 +59,7 @@ function Education() {
               <p className="education-item-univ">{t('Istituto Marangoni')}</p>
               <p className="education-item-course">{t('Design')}</p>
               <p className="education-item-year">{t('Milan, Italy')} 2008-2011</p>
-              <a className="education-item-link" href="https://www.istitutomarangoni.com" target="_blank" rel="noreferrer">https://www.istitutomarangoni.com</a>
+              <a className="education-item-link" href="https://www.istitutomarangoni.com" target="_blank" rel="noreferrer">istitutomarangoni.com</a>
             </div>
           </div>
 
@@ -68,7 +68,7 @@ function Education() {
               <p className="education-item-univ">{t('University Higher School of Economics')}</p>
               <p className="education-item-course">{t('Management')}</p>
               <p className="education-item-year">{t('Moscow, Russia')} 2006-2008</p>
-              <a className="education-item-link" href="https://www.hse.ru" target="_blank" rel="noreferrer">https://www.hse.ru</a>
+              <a className="education-item-link" href="https://www.hse.ru" target="_blank" rel="noreferrer">hse.ru</a>
             </div>
           </div>
         </div>
