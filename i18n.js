@@ -10,7 +10,7 @@ i18n
       en: en,
       ru: ru
     },
-    lng: 'en',
+    lng: process.env.NEXT_PUBLIC_LANG,
     fallbackLng: 'en',
     interpolation: {escapeValue: false},
     nsSeparator: false,
