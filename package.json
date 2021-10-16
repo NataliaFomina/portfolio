@@ -8,7 +8,6 @@
     "start": "next start"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-pro": "5.15.1",
     "i18next": "20.3.3",
     "next": "10.0.0",
     "next-images": "1.7.0",
