@@ -120,11 +120,11 @@ $softBlue: #4ABFEF;
           padding: 9px 0;
           text-decoration: none;
           color: white;
+          cursor: pointer;
         }
 
-        .fa-github {
-          margin-right: 10px;
-          color: white;
+        .card-btn-git-icon {
+          margin-right: 6px;
           font-size: 20px;
         }
       }
