@@ -1,10 +1,10 @@
 {
   "translation": {
-    "NATALIA FOMINA": "NATALIA FOMINA",
-    "Front-end Developer & Designer": "Front-end Developer & Designer",
-    "I love web development, design and art.": "I love web development, design and art.",
-    "I live in Munich, Germany.": "I live in Munich, Germany.",
-    "I speak fluent English, Italian, Russian. I'm beginner in German.": "I speak fluent English, Italian, Russian. I'm beginner in German.",
+    "about.name": "NATALIA FOMINA",
+    "about.title": "Front-end Developer & Designer",
+    "about.headline": "I love web development, design and art.",
+    "about.location": "Currently living in Munich 🇩🇪  will be soon moving to Dublin 🇮🇪",
+    "about.languages": "I'm fluent in English and Italian.",
     "Download my CV": "Download my CV",
     "Professional Skills": "Professional Skills",
     "HTML5, CSS3 and Responsive/Mobile Web": "HTML5, CSS3 and Responsive/Mobile Web",

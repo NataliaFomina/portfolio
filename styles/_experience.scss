@@ -7,7 +7,6 @@ $lightGrey: #7A7A7A;
 
 .experience-section {
   font-family: $textFontFamily;
-  font-weight: 500;
 
   .experience-container {
     padding: 70px 20px 70px;
@@ -43,12 +42,12 @@ $lightGrey: #7A7A7A;
 
   .item {
     position: relative;
-    padding: 20px 15px;
+    padding: 20px;
     color: $lightGrey;
-    border-radius: 7px;
+    border-radius: 20px;
 
     @media (min-width: $lgWidth) {
-      padding: 20px 40px;
+      padding: 30px;
     }
 
     .fal {
@@ -118,7 +117,8 @@ $lightGrey: #7A7A7A;
     }
   }
 
-  .item:nth-child(4) {
+  .item:nth-child(4),
+  .item:nth-child(8) {
     border: 1px solid #EC008D;
 
     .job {
@@ -166,13 +166,13 @@ $lightGrey: #7A7A7A;
     background-color: #C21DF0;
   }
 
-  .item:nth-child(4):before {
+  .item:nth-child(4):before,
+  .item:nth-child(8):before {
     background-color: #EC008D;
   }
 
   .year {
     color: black;
-    letter-spacing: 0.5px;
   }
 
   .job {
@@ -185,7 +185,6 @@ $lightGrey: #7A7A7A;
     margin-left: 20px;
     font-family: $descFontFamily;
     line-height: 20px;
-    letter-spacing: 0.2px;
     margin-bottom: 6px;
   }
 }

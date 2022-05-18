@@ -40,20 +40,24 @@
       }
     }
 
+    .education-item-link {
+      display: block;
+      margin-bottom: 5px;
+    }
+
     .education-item {
       display: flex;
       margin-bottom: 30px;
       padding: 20px;
       width: 100%;
       font-family: $descFontFamily;
-      font-size: 15px;
       line-height: 22px;
       background: linear-gradient(135deg,
               rgba(255,255,255,1) 0%,
               rgba(255,255,255,1) 50%,
               rgba(255,255,255,1) 70%,
               rgba(255,255,255,0) 100%);
-      border-radius: 30px;
+      border-radius: 20px;
       box-shadow: 10px 25px 40px -10px rgba(0, 0, 0, 0.1);
       transition: 150ms ease-in;
 
@@ -61,22 +65,19 @@
         width: 47%;
       }
 
-      p {
-        font-size: 15px;
-      }
-
       a {
         color: $textColor;
-        font-size: 15px;
-        text-decoration: none;
         cursor: pointer;
       }
 
       .education-item-univ {
-        margin-bottom: 6px;
         font-family: $titleFontFamily;
-        font-size: 16px;
         font-weight: 600;
+      }
+
+      .education-item-year,
+      .education-item-course {
+        color: #7A7A7A;
       }
     }
 

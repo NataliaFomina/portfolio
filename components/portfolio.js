@@ -121,13 +121,12 @@ function Slider(props) {
               <div className="slider-desc">
                 <h3 className="slider-desc-title">{e.title}</h3>
                 <p className="slider-desc-subtitle">{e.subtitle}</p>
-                <p className="slider-desc-text">{e.desc.p1}</p>
                 <p className="slider-desc-link">
-                  Link:
                   <a href={e.desc.link1.href} target="_blank" rel="noreferrer">
                     {e.desc.link1.text}
                   </a>
                 </p>
+                <p className="slider-desc-text">{e.desc.p1}</p>
                 <ul className="slider-desc-list">
                   {e.desc.ul1.title}
                   {e.desc.ul1.li.map((li, i) => (
@@ -184,7 +183,7 @@ export default function Portfolio() {
     items: [
       {
         id: 0,
-        title: t("Website for company Granit:"),
+        title: t("Website for company Granit"),
         subtitle: t("Design of UI/UX, Web Development and SEO"),
         text: t(
           "Created a complete website for Granit Extreme Center using HTML5, CSS Flexbox to insure responsiveness, SVG vector graphics, and high resolution images."
@@ -210,7 +209,7 @@ export default function Portfolio() {
       },
       {
         id: 1,
-        title: t("Real-time Image Collaboration:"),
+        title: t("Real-time Image Collaboration"),
         subtitle: t("WebSocket, JavaScript, HTML5 Canvas and Node.js"),
         text: t(
           "The client side is implemented in JavaScript and WebSockets; featuring Drag & Drop, Canvas drawing, collaborative drawing and commenting on images."
@@ -250,7 +249,7 @@ export default function Portfolio() {
       },
       {
         id: 2,
-        title: t("Website for company Autoharakter:"),
+        title: t("Website for company Autoharakter"),
         subtitle: t("Design of UI/UX, Web Development and SEO"),
         text: t(
           "Created a complete website for Avtoharakter using HTML5, CSS Flexbox to insure responsiveness, SVG vector graphics, and high resolution images."
@@ -281,7 +280,7 @@ export default function Portfolio() {
       },
       {
         id: 3,
-        title: t("Question and answer WebApp:"),
+        title: t("Question and answer WebApp"),
         subtitle: t("Featuring PHP, SQL, MVC and HTML5"),
         text: t(
           "Question and answer web application with guest and administrator portals. The web application is implemented in PHP, using MVC architecture, components are implemented using OOP, data is stored in a relational database."
@@ -325,7 +324,7 @@ export default function Portfolio() {
       },
       {
         id: 4,
-        title: t("Website for company Procent:"),
+        title: t("Website for company Procent"),
         subtitle: t("Design of UI/UX, Web Development and SEO"),
         text: t(
           "Created a complete website for Procent Finance using HTML5, CSS Flexbox to insure responsiveness, SVG vector graphics, and high resolution images."
@@ -356,7 +355,7 @@ export default function Portfolio() {
       },
       {
         id: 5,
-        title: t("Website for company Enduro:"),
+        title: t("Website for company Enduro"),
         subtitle: t("Design of UI/UX, Web Development and SEO"),
         text: t(
           "Created a complete website for Enduro travel in Crimea using HTML5, CSS Flexbox to insure responsiveness, SVG vector graphics, and high resolution images."
@@ -410,7 +409,9 @@ export default function Portfolio() {
   }
 
   const escFunction = useCallback((event) => {
-    closeSlider();
+    if(event.key === "Escape") {
+      closeSlider();
+    }
   }, []);
 
   useEffect(() => {

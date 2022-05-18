@@ -1,12 +1,8 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import { DiReact } from "react-icons/di";
-import { DiHtml5 } from "react-icons/di";
-import { DiCss3 } from "react-icons/di";
-import { DiJavascript1 } from "react-icons/di";
-import { DiPhp } from "react-icons/di";
-import { DiMagento } from "react-icons/di";
-import { FaGitAlt } from "react-icons/fa";
+import { DiReact, DiHtml5, DiCss3 } from "react-icons/di";
+import { BsGithub } from "react-icons/bs"
+import { SiJavascript, SiTypescript, SiNextdotjs, SiGoogleanalytics, SiChakraui, SiAdobeillustrator, SiAdobephotoshop } from "react-icons/si"
 import { FiFigma } from "react-icons/fi";
 
 function Skills() {
@@ -18,6 +14,26 @@ function Skills() {
         <div className="skills-content">
           <div className="skills-icons">
             <div className="skills-icon-wrap">
+              <DiReact className="skills-icon" />
+              <span>React</span>
+            </div>
+            <div className="skills-icon-wrap">
+              <SiJavascript className="skills-icon" />
+              <span>JavaScript</span>
+            </div>
+            <div className="skills-icon-wrap">
+              <SiTypescript className="skills-icon" />
+              <span>TypeScript</span>
+            </div>
+            <div className="skills-icon-wrap">
+              <SiNextdotjs className="skills-icon" />
+              <span>Next.js</span>
+            </div>
+            <div className="skills-icon-wrap">
+              <SiChakraui className="skills-icon" />
+              <span>Chakra UI</span>
+            </div>
+            <div className="skills-icon-wrap">
               <DiHtml5 className="skills-icon" />
               <span>HTML5</span>
             </div>
@@ -26,58 +42,28 @@ function Skills() {
               <span>CSS3</span>
             </div>
             <div className="skills-icon-wrap">
-              <DiJavascript1 className="skills-icon" />
-              <span>JavaScript</span>
-            </div>
-            <div className="skills-icon-wrap">
-              <DiReact className="skills-icon" />
-              <span>React JS</span>
-            </div>
-            <div className="skills-icon-wrap">
-              <DiPhp className="skills-icon" />
-              <span>PHP</span>
-            </div>
-            <div className="skills-icon-wrap">
-              <i className="fas fa-database" />
-              <span>SQL</span>
-            </div>
-            <div className="skills-icon-wrap">
-              <FaGitAlt className="skills-icon" />
+              <BsGithub className="skills-icon" />
               <span>Git</span>
-            </div>
-            <div className="skills-icon-wrap">
-              <DiMagento className="skills-icon" />
-              <span>Magento</span>
             </div>
             <div className="skills-icon-wrap">
               <FiFigma className="skills-icon" />
               <span>Figma</span>
             </div>
             <div className="skills-icon-wrap">
-              <i className="icon-ps" />
+              <SiAdobephotoshop className="skills-icon" />
               <span>Adobe Photoshop</span>
             </div>
             <div className="skills-icon-wrap">
-              <i className="icon-ai" />
+              <SiAdobeillustrator className="skills-icon" />
               <span>Adobe Illustrator</span>
             </div>
             <div className="skills-icon-wrap">
-              <i className="fal fa-window" />
+              <SiGoogleanalytics className="skills-icon" />
               <span>SEO</span>
             </div>
           </div>
 
           <div className="skills-text">
-            <section className="skills-text-section">
-              <h3 className="skills-text-title">
-                {t("HTML5, CSS3 and Responsive/Mobile Web")}
-              </h3>
-              <p className="skills-text-desc">
-                {t(
-                  "Design and build user interfaces for touch and mobile devices using: HTML5, CCS3 animations, CSS media queries, Chakra UI, Tailwind CSS, Emotion, Styled Components, Flexbox, Grid, Figma, Adobe Photoshop, Adobe Illustrator."
-                )}
-              </p>
-            </section>
             <section className="skills-text-section">
               <h3 className="skills-text-title">
                 {t("React, JavaScript and Single Page Applications (SPA)")}
@@ -89,10 +75,20 @@ function Skills() {
               </p>
             </section>
             <section className="skills-text-section">
-              <h3 className="skills-text-title">{t("Magento & PHP")}</h3>
+              <h3 className="skills-text-title">{t("Next.js & SSR")}</h3>
               <p className="skills-text-desc">
                 {t(
-                  "Experience in creating Magento based online stores with React based Frontends. Knowledge of Object Oriented Programming (OOP), SQL and MVC."
+                  "Experience in creating Next.js based websites with server-side rendering, image optimization and optimized page loading."
+                )}
+              </p>
+            </section>
+            <section className="skills-text-section">
+              <h3 className="skills-text-title">
+                {t("HTML5, CSS3 and Responsive/Mobile Web")}
+              </h3>
+              <p className="skills-text-desc">
+                {t(
+                  "Design and build user interfaces for touch and mobile devices using: HTML5, CCS3 animations, CSS media queries, Chakra UI, Tailwind CSS, Emotion, Styled Components, Flexbox, Grid, Figma, Adobe Photoshop, Adobe Illustrator."
                 )}
               </p>
             </section>

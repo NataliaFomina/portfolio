@@ -73,6 +73,7 @@
           align-items: center;
           width: 25%;
           padding: 15px;
+          color: #A0A0A0;
 
           @media (min-width: $smWidth) {
             padding: 20px;
@@ -80,23 +81,13 @@
 
           .skills-icon {
             margin-bottom: 10px;
-            font-size: 50px;
             color: #A0A0A0;
+            font-size: 40px;
 
             @media (min-width: $smWidth) {
-              font-size: 70px;
+              font-size: 50px;
             }
 
-          }
-
-          i {
-            margin-bottom: 10px;
-            font-size: 50px;
-            color: #A0A0A0;
-
-            @media (min-width: $smWidth) {
-              font-size: 70px;
-            }
           }
 
           span {
@@ -109,40 +100,6 @@
               font-size: 16px;
             }
           }
-
-          .fa-database {
-            font-size: 40px;
-            margin-top: 10px;
-
-            @media (min-width: $smWidth) {
-              font-size: 60px;
-            }
-          }
-
-          .icon-ai,
-          .icon-id,
-          .icon-ps {
-            height: 50px;
-            width: 43.75px;
-            background-repeat: no-repeat;
-
-            @media (min-width: $smWidth) {
-              height: 70px;
-              width: 61.25px;
-            }
-          }
-
-          .icon-ai {
-            background-image: url("../images/skills/icon_ai.svg");
-          }
-
-          .icon-id {
-            background-image: url("../images/skills/icon_id.svg");
-          }
-
-          .icon-ps {
-            background-image: url("../images/skills/icon_ps.svg");
-          }
         }
       }
 
@@ -154,7 +111,7 @@
         margin-top: 20px;
         background-color: rgba(255, 255, 255, 0.8);
         box-shadow: 10px 15px 40px 10px rgba(0, 0, 0, 0.1);
-        border-radius: 30px;
+        border-radius: 20px;
 
         @media (min-width: $smWidth) {
           padding: 35px;
@@ -178,13 +135,14 @@
         }
 
         .skills-text-title {
+          font-size: 18px;
+          font-weight: 600;
           margin-bottom: 5px;
           font-family: $titleFontFamily;
         }
 
         .skills-text-desc {
           font-family: $descFontFamily;
-          font-size: 18px;
           line-height: 24px;
           text-align: justify;
         }
