@@ -116,7 +116,8 @@ class Profile extends React.Component {
                           w="full"
                           whiteSpace={{ base: "normal", lg: "nowrap" }}
                         >
-                          Soon moving to Switzerland, currently living in Munich, Germany.
+                          Soon moving to Switzerland, currently living in
+                          Munich, Germany.
                         </Text>
                       </HStack>
                       <HStack spacing={{ base: 0, lg: 2 }}>
@@ -138,7 +139,12 @@ class Profile extends React.Component {
                     </Stack>
                   </Box>
                   <div className="reveal-from-top" data-reveal-delay="450">
-                    <Button tag="a" color="primary" href="" wideMobile>
+                    <Button
+                      tag="a"
+                      color="primary"
+                      href="https://natalia-portfolio-api.herokuapp.com"
+                      wideMobile
+                    >
                       Download my CV
                     </Button>
                   </div>
