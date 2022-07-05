@@ -123,7 +123,7 @@ class Projects extends React.Component {
                 <div className="split-item-content center-content-mobile">
                   <ProjectCard
                     title="Mars Cloud"
-                    websiteUrl="https://nataliafa.github.io/marscloud"
+                    websiteUrl="https://marscloud.vercel.app"
                     gitHubUrl="https://github.com/nataliafa/marscloud"
                     tags={["TypeScript", "React", "Next.js", "Chakra UI"]}
                     body={
