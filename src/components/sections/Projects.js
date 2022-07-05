@@ -59,8 +59,7 @@ class Projects extends React.Component {
 
     const sectionHeader = {
       title: "My projects",
-      paragraph:
-        "List of projects that I created and contributed to",
+      paragraph: "List of projects that I created and contributed to",
     }
 
     return (
@@ -89,9 +88,11 @@ class Projects extends React.Component {
                     tags={["TypeScript", "React", "Next.js", "Chakra UI"]}
                     body={
                       <>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
-                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat.
                       </>
                     }
                   />
@@ -127,9 +128,11 @@ class Projects extends React.Component {
                     tags={["TypeScript", "React", "Next.js", "Chakra UI"]}
                     body={
                       <>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
-                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat.
                       </>
                     }
                   />
@@ -202,7 +205,7 @@ class Projects extends React.Component {
                 <div className="split-item-content center-content-mobile">
                   <ProjectCard
                     title="Telecom Landing Page"
-                    websiteUrl="https://nataliafa.github.io/telecom-landing-page"
+                    websiteUrl="https://telecom-landing-page.vercel.app"
                     gitHubUrl="https://github.com/nataliafa/telecom-landing-page"
                     tags={[
                       "JavaScript",
