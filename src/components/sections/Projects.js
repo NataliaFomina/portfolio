@@ -253,7 +253,7 @@ class Projects extends React.Component {
                 <div className="split-item-content center-content-mobile">
                   <ProjectCard
                     title="UI Components"
-                    websiteUrl="https://nataliafa.github.io/ui-components"
+                    websiteUrl="https://ui-components-react.vercel.app"
                     gitHubUrl="https://github.com/nataliafa/ui-components"
                     tags={["JavaScript", "React", "Sass"]}
                     body={
