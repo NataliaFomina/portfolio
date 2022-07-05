@@ -80,7 +80,7 @@ class Profile extends React.Component {
                     as="h2"
                     className="mt-0 mb-16 reveal-from-top"
                   >
-                    Front-end Engineer & Web Designer
+                    Frontend Engineer
                   </Heading>
                   <Box
                     className="mt-0 mb-32 reveal-from-top"
