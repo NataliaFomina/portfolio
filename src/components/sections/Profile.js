@@ -143,6 +143,7 @@ class Profile extends React.Component {
                       tag="a"
                       color="primary"
                       href="https://natalia-portfolio-api.herokuapp.com"
+                      target="_blank"
                       wideMobile
                     >
                       Download my CV
