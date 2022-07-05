@@ -163,7 +163,7 @@ class Projects extends React.Component {
                 <div className="split-item-content center-content-mobile">
                   <ProjectCard
                     title="Indigo Portfolio"
-                    websiteUrl="https://nataliafa.github.io/indigo-portfolio"
+                    websiteUrl="https://indigo-portfolio.vercel.app"
                     gitHubUrl="https://github.com/nataliafa/indigo-portfolio"
                     tags={["TypeScript", "React", "Next.js", "Chakra UI"]}
                     body={
