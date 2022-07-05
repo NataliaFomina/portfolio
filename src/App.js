@@ -4,14 +4,9 @@ import ScrollReveal from "./utils/ScrollReveal"
 
 // Layouts
 import LayoutDefault from "./layouts/LayoutDefault"
-import LayoutAlternative from "./layouts/LayoutAlternative"
-import LayoutSignin from "./layouts/LayoutSignin"
 
 // Views
 import Home from "./views/Home"
-import Secondary from "./views/Secondary"
-import Login from "./views/Login"
-import Signup from "./views/Signup"
 
 import { ChakraProvider } from "@chakra-ui/react"
 import theme from "./theme"
@@ -37,24 +32,6 @@ class App extends React.Component {
           children={() => (
             <Routes>
               <Route exact path="/" element={<Home />} layout={LayoutDefault} />
-              <Route
-                exact
-                path="/secondary"
-                element={<Secondary />}
-                layout={LayoutAlternative}
-              />
-              <Route
-                exact
-                path="/login"
-                element={<Login />}
-                layout={LayoutSignin}
-              />
-              <Route
-                exact
-                path="/signup"
-                element={<Signup />}
-                layout={LayoutSignin}
-              />
             </Routes>
           )}
         />

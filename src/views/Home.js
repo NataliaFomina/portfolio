@@ -4,7 +4,7 @@ import Skills from "../components/sections/Skills"
 import Projects from "../components/sections/Projects"
 import Education from "../components/sections/Education"
 import WorkExperience from "../components/sections/WorkExperience"
-import SignupForm from "../components/sections/SignupForm"
+import Contacts from "../components/sections/Contacts"
 
 class Home extends React.Component {
   render() {
@@ -15,7 +15,7 @@ class Home extends React.Component {
         <Projects bottomDivider imageFill />
         <Education />
         <WorkExperience />
-        <SignupForm />
+        <Contacts />
       </React.Fragment>
     )
   }

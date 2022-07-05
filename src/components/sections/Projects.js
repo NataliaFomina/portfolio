@@ -60,7 +60,7 @@ class Projects extends React.Component {
     const sectionHeader = {
       title: "My projects",
       paragraph:
-        "List of projects that I created, and the ones where I was a major contributor.",
+        "List of projects that I created and contributed to",
     }
 
     return (
@@ -83,15 +83,15 @@ class Projects extends React.Component {
               <div className="split-item reveal-from-top">
                 <div className="split-item-content center-content-mobile">
                   <ProjectCard
-                    title="Voltaserve"
-                    websiteUrl="https://voltaserve.com"
-                    gitHubUrl="https://github.com/voltaserve"
+                    title="Snippet Stock"
+                    websiteUrl="https://snippetstock.github.io"
+                    gitHubUrl="https://github.com/snippetstock"
                     tags={["TypeScript", "React", "Next.js", "Chakra UI"]}
                     body={
                       <>
-                        Voltaserve is a cloud storage that is designed for
-                        speed, fine-grained permission management, powerful
-                        search and real-time collaboration.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                       </>
                     }
                   />
@@ -121,19 +121,15 @@ class Projects extends React.Component {
               <div className="split-item reveal-from-top">
                 <div className="split-item-content center-content-mobile">
                   <ProjectCard
-                    title="Rolldebee"
-                    websiteUrl="https://rolldebee.com"
-                    gitHubUrl="https://github.com/rolldebee"
+                    title="Mars Cloud"
+                    websiteUrl="https://nataliafa.github.io/marscloud"
+                    gitHubUrl="https://github.com/nataliafa/marscloud"
                     tags={["TypeScript", "React", "Next.js", "Chakra UI"]}
                     body={
                       <>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo consequat. Duis aute irure dolor in
-                        reprehenderit in voluptate velit esse cillum dolore eu
-                        fugiat nulla pariatur.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                       </>
                     }
                   />
@@ -163,9 +159,9 @@ class Projects extends React.Component {
               <div className="split-item reveal-from-top">
                 <div className="split-item-content center-content-mobile">
                   <ProjectCard
-                    title="Snippet Stock"
-                    websiteUrl="https://snippetstock.github.io"
-                    gitHubUrl="https://github.com/snippetstock"
+                    title="Indigo Portfolio"
+                    websiteUrl="https://nataliafa.github.io/indigo-portfolio"
+                    gitHubUrl="https://github.com/nataliafa/indigo-portfolio"
                     tags={["TypeScript", "React", "Next.js", "Chakra UI"]}
                     body={
                       <>
@@ -205,9 +201,9 @@ class Projects extends React.Component {
               <div className="split-item reveal-from-top">
                 <div className="split-item-content center-content-mobile">
                   <ProjectCard
-                    title="Indigo Portfolio"
-                    websiteUrl="https://nataliafa.github.io/indigo-portfolio"
-                    gitHubUrl="https://github.com/nataliafa/indigo-portfolio"
+                    title="Telecom Landing Page"
+                    websiteUrl="https://nataliafa.github.io/telecom-landing-page"
+                    gitHubUrl="https://github.com/nataliafa/telecom-landing-page"
                     tags={[
                       "JavaScript",
                       "React",
@@ -253,9 +249,9 @@ class Projects extends React.Component {
               <div className="split-item reveal-from-top">
                 <div className="split-item-content center-content-mobile">
                   <ProjectCard
-                    title="Telecom Landing Page"
-                    websiteUrl="https://nataliafa.github.io/telecom-landing-page"
-                    gitHubUrl="https://github.com/nataliafa/telecom-landing-page"
+                    title="UI Components"
+                    websiteUrl="https://nataliafa.github.io/ui-components"
+                    gitHubUrl="https://github.com/nataliafa/ui-components"
                     tags={["JavaScript", "React", "Sass"]}
                     body={
                       <>
@@ -285,48 +281,6 @@ class Projects extends React.Component {
                   <div style={imgOddStyle}>
                     <Image
                       src={featuresSplitTop01}
-                      alt=""
-                      width={624}
-                      height={512}
-                    />
-                  </div>
-                </div>
-              </div>
-              <div className="split-item reveal-from-top">
-                <div className="split-item-content center-content-mobile">
-                  <ProjectCard
-                    title="Components"
-                    websiteUrl="https://nataliafa.github.io/components"
-                    gitHubUrl="https://github.com/nataliafa/components"
-                    tags={["JavaScript", "React", "Styled Components"]}
-                    body={
-                      <>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo consequat. Duis aute irure dolor in
-                        reprehenderit in voluptate velit esse cillum dolore eu
-                        fugiat nulla pariatur.
-                      </>
-                    }
-                  />
-                </div>
-                <div
-                  className={classNames(
-                    "split-item-image center-content-mobile illustration-element-02",
-                    imageFill && "split-item-image-fill"
-                  )}
-                >
-                  <Image
-                    src={featuresSplitImage}
-                    alt=""
-                    width={528}
-                    height={396}
-                  />
-                  <div style={imgEvenStyle}>
-                    <Image
-                      src={featuresSplitTop02}
                       alt=""
                       width={624}
                       height={512}

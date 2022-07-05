@@ -116,7 +116,7 @@ class Profile extends React.Component {
                           w="full"
                           whiteSpace={{ base: "normal", lg: "nowrap" }}
                         >
-                          Soon moving to Paris, currently living in Munich.
+                          Soon moving to Switzerland, currently living in Munich, Germany.
                         </Text>
                       </HStack>
                       <HStack spacing={{ base: 0, lg: 2 }}>
@@ -132,18 +132,7 @@ class Profile extends React.Component {
                           w="full"
                           whiteSpace={{ base: "normal", lg: "nowrap" }}
                         >
-                          I'm studying{" "}
-                          <Text as="span" whiteSpace="nowrap">
-                            French 🇫🇷
-                          </Text>{" "}
-                          I'm fluent in{" "}
-                          <Text as="span" whiteSpace="nowrap">
-                            English 🇬🇧
-                          </Text>{" "}
-                          and{" "}
-                          <Text as="span" whiteSpace="nowrap">
-                            Italian 🇮🇹
-                          </Text>
+                          I'm fluent in English, Italian and Russian
                         </Text>
                       </HStack>
                     </Stack>

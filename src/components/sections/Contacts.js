@@ -13,7 +13,7 @@ const defaultProps = {
   ...SectionProps.defaults,
 }
 
-class SignupForm extends React.Component {
+class Contacts extends React.Component {
   render() {
     const {
       className,
@@ -54,37 +54,35 @@ class SignupForm extends React.Component {
               data={sectionHeader}
               className="center-content"
             />
-            <div className="tiles-wrap">
-              <div className="tiles-item">
-                <div className="tiles-item-inner">
-                  <form action="https://formspree.io/f/xpzonjaz" method="POST">
-                    <fieldset>
-                      <Stack spacing={3}>
-                        <Input
-                          id="email"
-                          name="email"
-                          type="email"
-                          label="Email"
-                          placeholder="Your email"
-                          required
-                        />
-                        <Textarea
-                          id="message"
-                          name="message"
-                          placeholder="Your message"
-                          required
-                        />
-                      </Stack>
-                      <div className="mt-24 mb-32">
-                        <Button color="primary" wide>
-                          Send
-                        </Button>
-                      </div>
-                    </fieldset>
-                  </form>
+            <form
+              action="https://formspree.io/f/xpzonjaz"
+              method="POST"
+              style={{ maxWidth: "700px", margin: "0 auto" }}
+            >
+              <fieldset>
+                <Stack spacing={3}>
+                  <Input
+                    id="email"
+                    name="email"
+                    type="email"
+                    label="Email"
+                    placeholder="Your email"
+                    required
+                  />
+                  <Textarea
+                    id="message"
+                    name="message"
+                    placeholder="Your message"
+                    required
+                  />
+                </Stack>
+                <div className="mt-24 mb-32">
+                  <Button color="primary" wide>
+                    Send
+                  </Button>
                 </div>
-              </div>
-            </div>
+              </fieldset>
+            </form>
           </div>
         </div>
       </section>
@@ -92,7 +90,7 @@ class SignupForm extends React.Component {
   }
 }
 
-SignupForm.propTypes = propTypes
-SignupForm.defaultProps = defaultProps
+Contacts.propTypes = propTypes
+Contacts.defaultProps = defaultProps
 
-export default SignupForm
+export default Contacts
