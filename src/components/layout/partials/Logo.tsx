@@ -1,10 +1,13 @@
-import React from "react"
 import classNames from "classnames"
 import { Link } from "react-router-dom"
 import Image from "../../elements/Image"
 import logo from "../../../assets/images/logo.svg"
 
-const Logo = ({ className, ...props }) => {
+type Props = {
+  className?: string
+}
+
+const Logo = ({ className, ...props }: Props) => {
   const classes = classNames("brand", className)
 
   return (

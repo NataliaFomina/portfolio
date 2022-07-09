@@ -1,7 +1,13 @@
-import React from "react"
+import { ElementType } from "react"
 import { VStack, Center, Heading } from "@chakra-ui/react"
 
-const Skill = ({ name, icon, fontSize, ...props }) => {
+type Props = {
+  name: string
+  icon: ElementType
+  fontSize: string
+}
+
+const Skill = ({ name, icon, fontSize, ...props }: Props) => {
   const Icon = icon
   return (
     <VStack className="reveal-rotate-from-left" {...props}>

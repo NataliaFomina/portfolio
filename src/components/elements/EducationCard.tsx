@@ -1,7 +1,15 @@
 import { Center, Link, Text, Heading, VStack } from "@chakra-ui/react"
+import { FC, ReactNode } from "react"
 import { GoMortarBoard } from "react-icons/go"
 
-const EducationCard = ({ title, subtitle, link, body }) => (
+type Props = {
+  title: string
+  subtitle: string
+  link: string
+  body: ReactNode
+}
+
+const EducationCard = ({ title, subtitle, link, body }: Props) => (
   <div className="tiles-item">
     <div className="tiles-item-inner">
       <div className="features-tiles-item-header">

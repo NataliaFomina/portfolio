@@ -1,4 +1,4 @@
-import React from "react"
+import { ReactNode } from "react"
 import {
   Link,
   Stack,
@@ -12,7 +12,15 @@ import {
 } from "@chakra-ui/react"
 import { FiGithub, FiExternalLink } from "react-icons/fi"
 
-const ProjectCard = ({ title, websiteUrl, gitHubUrl, tags, body }) => (
+type Props = {
+  title: string
+  websiteUrl: string
+  gitHubUrl: string
+  tags: string[]
+  body: ReactNode
+}
+
+const ProjectCard = ({ title, websiteUrl, gitHubUrl, tags, body }: Props) => (
   <Stack spacing="15px">
     <Stack spacing="5px">
       <Heading as="h3" fontSize="32px">

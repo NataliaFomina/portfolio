@@ -1,25 +1,30 @@
 import React from "react"
 import classNames from "classnames"
 import { Box, Stack, Text, HStack, Heading } from "@chakra-ui/react"
-import { SectionSplitProps } from "../../utils/SectionProps"
 import Button from "../elements/Button"
 import { FiMapPin, FiHeart } from "react-icons/fi"
 import { IoLanguageOutline } from "react-icons/io5"
 
-const propTypes = {
-  ...SectionSplitProps.types,
+type Props = {
+  className: string
+  topOuterDivider: boolean
+  bottomOuterDivider: boolean
+  topDivider: boolean
+  bottomDivider: boolean
+  hasBgColor: boolean
+  invertColor: boolean
+  invertMobile: boolean
+  invertDesktop: boolean
+  alignTop: boolean
+  imageFill: boolean
 }
 
-const defaultProps = {
-  ...SectionSplitProps.defaults,
-}
-
-class Profile extends React.Component {
+class Profile extends React.Component<Props, {}> {
   componentDidMount() {
     // this is only to handle inline style on window resize
-    window.onresize = function () {
+    window.onresize = () => {
       this.forceUpdate()
-    }.bind(this)
+    }
   }
 
   render() {
@@ -159,19 +164,13 @@ class Profile extends React.Component {
   }
 }
 
-// inline style
-const inlineCss = {
-  alignItems: "flex-start",
-  minHeight: "492px",
-}
-
-const inlineStyle = function () {
+const inlineStyle = () => {
   if (window.innerWidth > 641) {
-    return inlineCss
+    return {
+      alignItems: "flex-start",
+      minHeight: "492px",
+    }
   }
 }
-
-Profile.propTypes = propTypes
-Profile.defaultProps = defaultProps
 
 export default Profile
