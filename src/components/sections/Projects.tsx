@@ -58,8 +58,7 @@ const Projects = ({
       >
         <SectionHeader
           data={{
-            title: "My projects",
-            paragraph: "List of projects that I created and contributed to",
+            title: "Projects",
           }}
           className="center-content reveal-from-top"
         >

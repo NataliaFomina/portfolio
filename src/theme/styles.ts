@@ -1,7 +1,7 @@
 const styles = {
   global: {
     body: {
-      fontFamily: "Heebo",
+      fontFamily: "",
       fontSize: "18px",
       color: "#58678C",
     },

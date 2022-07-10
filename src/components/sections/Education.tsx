@@ -1,5 +1,7 @@
 import classNames from "classnames"
 import SectionHeader from "./partials/SectionHeader"
+import Image from "../elements/Image"
+import featuresSplitIcon from "../../assets/images/features-split-icon.svg"
 import EducationCard from "../elements/EducationCard"
 
 type Props = {
@@ -51,7 +53,15 @@ const Education = ({
           className="center-content"
           width={72}
           height={72}
-        />
+        >
+          <Image
+            className="mb-24"
+            src={featuresSplitIcon}
+            alt=""
+            width={80}
+            height={80}
+          />
+        </SectionHeader>
         <div className={classNames("tiles-wrap", pushLeft && "push-left")}>
           <EducationCard
             title="Programming, PHP / SQL back-end development and databases"

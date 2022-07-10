@@ -1,5 +1,7 @@
 import classNames from "classnames"
 import SectionHeader from "./partials/SectionHeader"
+import Image from "../elements/Image"
+import featuresSplitIcon from "../../assets/images/features-split-icon.svg"
 import Timeline from "../elements/Timeline"
 import TimelineItem from "../elements/TimelineItem"
 import { Heading, Text, Stack, Link, HStack, Circle } from "@chakra-ui/react"
@@ -16,7 +18,7 @@ type Props = {
   invertColor?: boolean
 }
 
-const WorkExperience = ({
+const Experience = ({
   className,
   topOuterDivider,
   bottomOuterDivider,
@@ -51,7 +53,15 @@ const WorkExperience = ({
             title: "Experience",
           }}
           className="center-content"
-        />
+        >
+          <Image
+            className="mb-24"
+            src={featuresSplitIcon}
+            alt=""
+            width={80}
+            height={80}
+          />
+        </SectionHeader>
         <Timeline>
           {data.map((item, index) => (
             <TimelineItem title={item.period} key={index}>
@@ -197,4 +207,4 @@ const data = [
   },
 ]
 
-export default WorkExperience
+export default Experience

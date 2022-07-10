@@ -13,7 +13,7 @@ type Props = {
   invertColor?: boolean
 }
 
-const Contacts = ({
+const Contact = ({
   className,
   topOuterDivider = false,
   bottomOuterDivider = false,
@@ -62,12 +62,14 @@ const Contacts = ({
                 name="email"
                 type="email"
                 placeholder="Your email"
+                autoComplete="off"
                 required
               />
               <Textarea
                 id="message"
                 name="message"
                 placeholder="Your message"
+                autoComplete="off"
                 required
               />
             </Stack>
@@ -83,4 +85,4 @@ const Contacts = ({
   </section>
 )
 
-export default Contacts
+export default Contact

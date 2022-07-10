@@ -1,12 +1,12 @@
 // Typography
 
 $font--provider:    'Google Fonts';
-$font--import:      'IBM+Plex+Sans:600|Heebo:400,500,700';
+$font--import:      'IBM+Plex+Sans:600|Source+Sans+Pro:400,500,700';
 
 // The font set
 $font--family: (
 	heading: 	'"IBM Plex Sans", sans-serif',
-	base:		'"Heebo", sans-serif',
+	base:		'"Source Sans Pro", sans-serif',
 	code: 		'Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace',
 	pre: 		'"Courier 10 Pitch", Courier, monospace'
 );

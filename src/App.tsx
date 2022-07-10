@@ -1,14 +1,9 @@
 import React, { createRef } from "react"
 import { Routes, Route } from "react-router-dom"
-import ScrollReveal from "./utils/ScrollReveal"
-
-// Layouts
-import LayoutDefault from "./layouts/LayoutDefault"
-
-// Views
-import Home from "./views/Home"
-
 import { ChakraProvider } from "@chakra-ui/react"
+import ScrollReveal from "./utils/ScrollReveal"
+import LayoutDefault from "./layouts/LayoutDefault"
+import Home from "./views/Home"
 import theme from "./theme"
 
 type Props = {

@@ -89,7 +89,7 @@ const Skills = ({
             data-reveal-delay="600"
           />
           <Skill
-            name="GitHub"
+            name="Git"
             icon={BsGithub}
             fontSize="36px"
             data-reveal-delay="700"

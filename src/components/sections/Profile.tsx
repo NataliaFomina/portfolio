@@ -135,7 +135,7 @@ const Profile = ({
                   target="_blank"
                   wideMobile
                 >
-                  Download my CV
+                  Download my resume
                 </Button>
               </div>
             </div>
