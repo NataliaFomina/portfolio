@@ -25,6 +25,7 @@ const Contacts = ({
 }: Props) => (
   <section
     {...props}
+    id="contact"
     className={classNames(
       "signin section",
       topOuterDivider && "has-top-divider",

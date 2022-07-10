@@ -1,5 +1,4 @@
 import classNames from "classnames"
-import { Link } from "react-router-dom"
 
 type Props = {
   className?: string
@@ -9,16 +8,16 @@ const FooterNav = ({ className, ...props }: Props) => (
   <nav {...props} className={classNames("footer-nav", className)}>
     <ul className="list-reset">
       <li>
-        <Link to="/contact/">Contact</Link>
+        <a href="#profile">Profile</a>
       </li>
       <li>
-        <Link to="/about-us/">About us</Link>
+        <a href="#projects">Projects</a>
       </li>
       <li>
-        <Link to="/faqs/">FAQ's</Link>
+        <a href="#experience">Experience</a>
       </li>
       <li>
-        <Link to="/support/">Support</Link>
+        <a href="#education">Education</a>
       </li>
     </ul>
   </nav>

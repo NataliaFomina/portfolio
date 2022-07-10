@@ -1,9 +1,17 @@
 import React from "react"
-import PropTypes from "prop-types"
 import { throttle } from "lodash"
 
-class ScrollReveal extends React.Component {
-  state = {
+type Props = {
+  children?: any
+}
+
+type State = {
+  viewportHeight: number
+  revealEl: HTMLElement[]
+}
+
+class ScrollReveal extends React.Component<Props, State> {
+  state: State = {
     viewportHeight: window.innerHeight,
     revealEl: [],
   }
@@ -15,7 +23,7 @@ class ScrollReveal extends React.Component {
     )
   }
 
-  elementIsVisible = (el, offset) => {
+  elementIsVisible = (el: HTMLElement, offset: number) => {
     return el.getBoundingClientRect().top <= this.state.viewportHeight - offset
   }
 
@@ -23,12 +31,14 @@ class ScrollReveal extends React.Component {
     if (this.checkComplete()) return
     for (let i = 0; i < this.state.revealEl.length; i++) {
       let el = this.state.revealEl[i]
-      let revealDelay = el.getAttribute("data-reveal-delay")
-      let revealOffset = el.getAttribute("data-reveal-offset")
-        ? el.getAttribute("data-reveal-offset")
-        : "200"
+      let revealDelay = parseInt(el.getAttribute("data-reveal-delay") as string)
+      let revealOffset = parseInt(
+        el.getAttribute("data-reveal-offset")
+          ? (el.getAttribute("data-reveal-offset") as string)
+          : "200"
+      )
       let listenedEl = el.getAttribute("data-reveal-container")
-        ? el.closest(el.getAttribute("data-reveal-container"))
+        ? el.closest(el.getAttribute("data-reveal-container") as any)
         : el
       if (
         this.elementIsVisible(listenedEl, revealOffset) &&
@@ -48,7 +58,7 @@ class ScrollReveal extends React.Component {
   init = () => {
     setTimeout(() => {
       this.setState(
-        { revealEl: document.querySelectorAll("[class*=reveal-]") },
+        { revealEl: document.querySelectorAll("[class*=reveal-]") as any },
         () => {
           if (!this.checkComplete()) {
             window.addEventListener("scroll", this.handleScroll)
@@ -81,10 +91,6 @@ class ScrollReveal extends React.Component {
   render() {
     return <React.Fragment>{this.props.children()}</React.Fragment>
   }
-}
-
-ScrollReveal.propTypes = {
-  children: PropTypes.func.isRequired,
 }
 
 export default ScrollReveal

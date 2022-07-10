@@ -1,4 +1,4 @@
-import React from "react"
+import React, { createRef } from "react"
 import { Routes, Route } from "react-router-dom"
 import ScrollReveal from "./utils/ScrollReveal"
 
@@ -11,16 +11,26 @@ import Home from "./views/Home"
 import { ChakraProvider } from "@chakra-ui/react"
 import theme from "./theme"
 
-class App extends React.Component {
+type Props = {
+  location?: any
+}
+
+class App extends React.Component<Props, {}> {
+  scrollReveal = createRef<ScrollReveal>()
+
   componentDidMount() {
     document.body.classList.add("is-loaded")
-    this.refs.scrollReveal.init()
+    if (this.scrollReveal?.current) {
+      this.scrollReveal.current.init()
+    }
   }
 
   // Route change
-  componentDidUpdate(prevProps) {
+  componentDidUpdate(prevProps: Props) {
     if (this.props.location.pathname !== prevProps.location.pathname) {
-      this.refs.scrollReveal.init()
+      if (this.scrollReveal?.current) {
+        this.scrollReveal.current.init()
+      }
     }
   }
 
@@ -28,10 +38,12 @@ class App extends React.Component {
     return (
       <ChakraProvider theme={theme}>
         <ScrollReveal
-          ref="scrollReveal"
+          ref={this.scrollReveal}
           children={() => (
             <Routes>
-              <Route exact path="/" element={<Home />} layout={LayoutDefault} />
+              <Route element={<LayoutDefault />}>
+                <Route path="/" element={<Home />} />
+              </Route>
             </Routes>
           )}
         />

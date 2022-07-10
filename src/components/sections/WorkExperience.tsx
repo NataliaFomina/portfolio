@@ -1,12 +1,90 @@
-import React from "react"
 import classNames from "classnames"
-import { SectionProps } from "../../utils/SectionProps"
 import SectionHeader from "./partials/SectionHeader"
 import Timeline from "../elements/Timeline"
 import TimelineItem from "../elements/TimelineItem"
 import { Heading, Text, Stack, Link, HStack, Circle } from "@chakra-ui/react"
 import { FiLink } from "react-icons/fi"
 import { HiOutlineLocationMarker } from "react-icons/hi"
+
+type Props = {
+  className?: string
+  topOuterDivider?: boolean
+  bottomOuterDivider?: boolean
+  topDivider?: boolean
+  bottomDivider?: boolean
+  hasBgColor?: boolean
+  invertColor?: boolean
+}
+
+const WorkExperience = ({
+  className,
+  topOuterDivider,
+  bottomOuterDivider,
+  topDivider,
+  bottomDivider,
+  hasBgColor,
+  invertColor,
+  ...props
+}: Props) => (
+  <section
+    {...props}
+    id="experience"
+    className={classNames(
+      "roadmap section",
+      topOuterDivider && "has-top-divider",
+      bottomOuterDivider && "has-bottom-divider",
+      hasBgColor && "has-bg-color",
+      invertColor && "invert-color",
+      className
+    )}
+  >
+    <div className="container">
+      <div
+        className={classNames(
+          "roadmap-inner section-inner",
+          topDivider && "has-top-divider",
+          bottomDivider && "has-bottom-divider"
+        )}
+      >
+        <SectionHeader
+          data={{
+            title: "Experience",
+          }}
+          className="center-content"
+        />
+        <Timeline>
+          {data.map((item, index) => (
+            <TimelineItem title={item.period} key={index}>
+              <Stack spacing={1.5}>
+                <Heading as="h4" fontSize="20px">
+                  {item.title}
+                </Heading>
+                <HStack spacing={1}>
+                  <HiOutlineLocationMarker fontSize="18px" color="#58678C" />
+                  <Heading as="h4" fontSize="18px" color="#58678C">
+                    {item.location}
+                  </Heading>
+                </HStack>
+                <HStack spacing={1} pb={2}>
+                  <FiLink fontSize="16px" color="#8E79FC" />
+                  <Link href={item.link} isExternal>
+                    {item.link}
+                  </Link>
+                </HStack>
+              </Stack>
+              {item.duties.map((item, index) => (
+                <HStack spacing={1.5} key={index} alignItems="flex-start">
+                  <Circle mt={2} size={1} bg="#58678C" />
+                  <Text>{item}</Text>
+                </HStack>
+              ))}
+            </TimelineItem>
+          ))}
+        </Timeline>
+      </div>
+    </div>
+  </section>
+)
 
 const data = [
   {
@@ -118,92 +196,5 @@ const data = [
     ],
   },
 ]
-
-const propTypes = {
-  ...SectionProps.types,
-}
-
-const defaultProps = {
-  ...SectionProps.defaults,
-}
-
-class WorkExperience extends React.Component {
-  render() {
-    const {
-      className,
-      topOuterDivider,
-      bottomOuterDivider,
-      topDivider,
-      bottomDivider,
-      hasBgColor,
-      invertColor,
-      ...props
-    } = this.props
-
-    const outerClasses = classNames(
-      "roadmap section",
-      topOuterDivider && "has-top-divider",
-      bottomOuterDivider && "has-bottom-divider",
-      hasBgColor && "has-bg-color",
-      invertColor && "invert-color",
-      className
-    )
-
-    const innerClasses = classNames(
-      "roadmap-inner section-inner",
-      topDivider && "has-top-divider",
-      bottomDivider && "has-bottom-divider"
-    )
-
-    const sectionHeader = {
-      title: "Work experience",
-    }
-
-    return (
-      <section {...props} className={outerClasses}>
-        <div className="container">
-          <div className={innerClasses}>
-            <SectionHeader data={sectionHeader} className="center-content" />
-            <Timeline>
-              {data.map((item, index) => (
-                <TimelineItem title={item.period} key={index}>
-                  <Stack spacing={1.5}>
-                    <Heading as="h4" fontSize="20px">
-                      {item.title}
-                    </Heading>
-                    <HStack spacing={1}>
-                      <HiOutlineLocationMarker
-                        fontSize="18px"
-                        color="#58678C"
-                      />
-                      <Heading as="h4" fontSize="18px" color="#58678C">
-                        {item.location}
-                      </Heading>
-                    </HStack>
-                    <HStack spacing={1} pb={2}>
-                      <FiLink fontSize="16px" color="#8E79FC" />
-                      <Link href={item.link} isExternal>
-                        {item.link}
-                      </Link>
-                    </HStack>
-                  </Stack>
-                  {item.duties.map((item, index) => (
-                    <HStack spacing={1.5} key={index} alignItems="flex-start">
-                      <Circle mt={2} size={1} bg="#58678C" />
-                      <Text>{item}</Text>
-                    </HStack>
-                  ))}
-                </TimelineItem>
-              ))}
-            </Timeline>
-          </div>
-        </div>
-      </section>
-    )
-  }
-}
-
-WorkExperience.propTypes = propTypes
-WorkExperience.defaultProps = defaultProps
 
 export default WorkExperience

@@ -12,8 +12,8 @@ type Props = {
   }
   children?: ReactNode
   tag?: Tag
-  width: number
-  height: number
+  width?: number
+  height?: number
 }
 
 const SectionHeader = ({ className, data, children, ...props }: Props) => (

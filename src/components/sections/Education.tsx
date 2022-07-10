@@ -26,6 +26,7 @@ const Education = ({
 }: Props) => (
   <section
     {...props}
+    id="education"
     className={classNames(
       "features-tiles section center-content",
       topOuterDivider && "has-top-divider",

@@ -1,5 +1,5 @@
 import { Center, Link, Text, Heading, VStack } from "@chakra-ui/react"
-import { FC, ReactNode } from "react"
+import { ReactNode } from "react"
 import { GoMortarBoard } from "react-icons/go"
 
 type Props = {
