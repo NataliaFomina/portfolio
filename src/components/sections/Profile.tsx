@@ -1,8 +1,8 @@
 import classNames from "classnames"
 import { Box, Stack, Text, HStack, Heading } from "@chakra-ui/react"
-import Button from "../elements/Button"
 import { FiMapPin, FiHeart } from "react-icons/fi"
 import { IoLanguageOutline } from "react-icons/io5"
+import Button from "../elements/Button"
 
 type Props = {
   className?: string
