@@ -1,12 +1,7 @@
-import classNames from "classnames"
 import { BsGithub, BsLinkedin } from "react-icons/bs"
 
-type Props = {
-  className?: string
-}
-
-const FooterSocial = ({ className, ...props }: Props) => (
-  <div {...props} className={classNames("footer-social", className)}>
+const FooterSocial = () => (
+  <div className="footer-social">
     <ul className="list-reset">
       <li>
         <a href="https://github.com/nataliafa">

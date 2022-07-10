@@ -9,7 +9,7 @@ type Props = {
   body: ReactNode
 }
 
-const EducationCard = ({ title, subtitle, link, body }: Props) => (
+const Item = ({ title, subtitle, link, body }: Props) => (
   <div className="tiles-item">
     <div className="tiles-item-inner">
       <div className="features-tiles-item-header">
@@ -50,4 +50,4 @@ const EducationCard = ({ title, subtitle, link, body }: Props) => (
   </div>
 )
 
-export default EducationCard
+export default Item

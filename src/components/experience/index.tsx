@@ -1,53 +1,17 @@
 import classNames from "classnames"
-import SectionHeader from "./partials/SectionHeader"
-import Image from "../elements/Image"
-import featuresSplitIcon from "../../assets/images/features-split-icon.svg"
-import Timeline from "../elements/Timeline"
-import TimelineItem from "../elements/TimelineItem"
 import { Heading, Text, Stack, Link, HStack, Circle } from "@chakra-ui/react"
 import { FiLink } from "react-icons/fi"
 import { HiOutlineLocationMarker } from "react-icons/hi"
+import SectionHeader from "../shared/SectionHeader"
+import Image from "../shared/Image"
+import Timeline from "./Timeline"
+import TimelineItem from "./TimelineItem"
+import featuresSplitIcon from "../../assets/images/features-split-icon.svg"
 
-type Props = {
-  className?: string
-  topOuterDivider?: boolean
-  bottomOuterDivider?: boolean
-  topDivider?: boolean
-  bottomDivider?: boolean
-  hasBgColor?: boolean
-  invertColor?: boolean
-}
-
-const Experience = ({
-  className,
-  topOuterDivider,
-  bottomOuterDivider,
-  topDivider,
-  bottomDivider,
-  hasBgColor,
-  invertColor,
-  ...props
-}: Props) => (
-  <section
-    {...props}
-    id="experience"
-    className={classNames(
-      "roadmap section",
-      topOuterDivider && "has-top-divider",
-      bottomOuterDivider && "has-bottom-divider",
-      hasBgColor && "has-bg-color",
-      invertColor && "invert-color",
-      className
-    )}
-  >
+const Experience = () => (
+  <section id="experience" className={classNames("roadmap", "section")}>
     <div className="container">
-      <div
-        className={classNames(
-          "roadmap-inner section-inner",
-          topDivider && "has-top-divider",
-          bottomDivider && "has-bottom-divider"
-        )}
-      >
+      <div className={classNames("roadmap-inner", "section-inner")}>
         <SectionHeader
           data={{
             title: "Experience",

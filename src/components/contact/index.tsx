@@ -1,48 +1,12 @@
 import classNames from "classnames"
-import SectionHeader from "./partials/SectionHeader"
-import Button from "../elements/Button"
 import { Textarea, Stack, Input } from "@chakra-ui/react"
+import SectionHeader from "../shared/SectionHeader"
+import Button from "../shared/Button"
 
-type Props = {
-  className?: string
-  topOuterDivider?: boolean
-  bottomOuterDivider?: boolean
-  topDivider?: boolean
-  bottomDivider?: boolean
-  hasBgColor?: boolean
-  invertColor?: boolean
-}
-
-const Contact = ({
-  className,
-  topOuterDivider = false,
-  bottomOuterDivider = false,
-  topDivider = false,
-  bottomDivider = false,
-  hasBgColor = false,
-  invertColor = false,
-  ...props
-}: Props) => (
-  <section
-    {...props}
-    id="contact"
-    className={classNames(
-      "signin section",
-      topOuterDivider && "has-top-divider",
-      bottomOuterDivider && "has-bottom-divider",
-      hasBgColor && "has-bg-color",
-      invertColor && "invert-color",
-      className
-    )}
-  >
+const Contact = () => (
+  <section id="contact" className={classNames("signin", "section")}>
     <div className="container">
-      <div
-        className={classNames(
-          "signin-inner section-inner",
-          topDivider && "has-top-divider",
-          bottomDivider && "has-bottom-divider"
-        )}
-      >
+      <div className={classNames("signin-inner", "section-inner")}>
         <SectionHeader
           tag="h1"
           data={{

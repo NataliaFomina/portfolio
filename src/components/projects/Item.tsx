@@ -20,7 +20,7 @@ type Props = {
   body: ReactNode
 }
 
-const ProjectCard = ({ title, websiteUrl, gitHubUrl, tags, body }: Props) => (
+const Item = ({ title, websiteUrl, gitHubUrl, tags, body }: Props) => (
   <Stack spacing="15px">
     <Stack spacing="5px">
       <Heading as="h3" fontSize="32px">
@@ -77,4 +77,4 @@ const ProjectCard = ({ title, websiteUrl, gitHubUrl, tags, body }: Props) => (
   </Stack>
 )
 
-export default ProjectCard
+export default Item

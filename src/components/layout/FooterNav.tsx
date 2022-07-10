@@ -1,11 +1,5 @@
-import classNames from "classnames"
-
-type Props = {
-  className?: string
-}
-
-const FooterNav = ({ className, ...props }: Props) => (
-  <nav {...props} className={classNames("footer-nav", className)}>
+const FooterNav = () => (
+  <nav className="footer-nav">
     <ul className="list-reset">
       <li>
         <a href="#profile">Profile</a>

@@ -9,92 +9,64 @@ import {
 } from "react-icons/si"
 import { FiFigma } from "react-icons/fi"
 import { SimpleGrid } from "@chakra-ui/react"
-import Skill from "../elements/Skill"
+import Item from "./Item"
 
-type Props = {
-  className?: string
-  topOuterDivider?: boolean
-  bottomOuterDivider?: boolean
-  topDivider?: boolean
-  bottomDivider?: boolean
-  hasBgColor?: boolean
-  invertColor?: boolean
-}
-
-const Skills = ({
-  className,
-  topOuterDivider = false,
-  bottomOuterDivider = false,
-  topDivider = false,
-  bottomDivider = false,
-  hasBgColor = false,
-  invertColor = false,
-  ...props
-}: Props) => (
-  <section
-    {...props}
-    className={classNames(
-      "clients section reveal-fade",
-      topOuterDivider && "has-top-divider",
-      bottomOuterDivider && "has-bottom-divider",
-      hasBgColor && "has-bg-color",
-      invertColor && "invert-color",
-      className
-    )}
-  >
+const Skills = () => (
+  <section className={classNames("clients section", "reveal-fade")}>
     <div className="container">
       <div
         className={classNames(
-          "clients-inner section-inner",
-          topDivider && "has-top-divider",
-          bottomDivider && "has-bottom-divider"
+          "clients-inner",
+          "section-inner",
+          "has-top-divider",
+          "has-bottom-divider"
         )}
       >
         <SimpleGrid minChildWidth="100px" spacingY="20px">
-          <Skill name="JavaScript" icon={SiJavascript} fontSize="36px" />
-          <Skill
+          <Item name="JavaScript" icon={SiJavascript} fontSize="36px" />
+          <Item
             name="TypeScript"
             icon={SiTypescript}
             fontSize="36px"
             data-reveal-delay="100"
           />
-          <Skill
+          <Item
             name="HTML5"
             icon={DiHtml5}
             fontSize="42px"
             data-reveal-delay="200"
           />
-          <Skill
+          <Item
             name="CSS3"
             icon={DiCss3}
             fontSize="42px"
             data-reveal-delay="300"
           />
-          <Skill
+          <Item
             name="React"
             icon={DiReact}
             fontSize="42px"
             data-reveal-delay="400"
           />
-          <Skill
+          <Item
             name="Next.js"
             icon={SiVercel}
             fontSize="36px"
             data-reveal-delay="500"
           />
-          <Skill
+          <Item
             name="Chakra UI"
             icon={SiChakraui}
             fontSize="36px"
             data-reveal-delay="600"
           />
-          <Skill
+          <Item
             name="Git"
             icon={BsGithub}
             fontSize="36px"
             data-reveal-delay="700"
           />
-          <Skill
+          <Item
             name="Figma"
             icon={FiFigma}
             fontSize="36px"

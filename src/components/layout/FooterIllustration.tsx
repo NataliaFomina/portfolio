@@ -1,17 +1,5 @@
-import { Outlet } from "react-router-dom"
-import Footer from "../components/layout/Footer"
 import styled from "@emotion/styled"
-import FoolterIllustration from "../assets/images/illustration-section-10.svg"
-
-const LayoutDefault = () => (
-  <>
-    <main className="site-content">
-      <Outlet />
-    </main>
-    <Footer className="reveal-from-bottom" data-reveal-offset="0" />
-    <FooterIllustration />
-  </>
-)
+import FoolterIllustration from "../../assets/images/illustration-section-10.svg"
 
 const FooterIllustration = styled.div`
   &::after {
@@ -32,4 +20,4 @@ const FooterIllustration = styled.div`
   }
 `
 
-export default LayoutDefault
+export default FooterIllustration

@@ -2,62 +2,16 @@ import classNames from "classnames"
 import { Box, Stack, Text, HStack, Heading } from "@chakra-ui/react"
 import { FiMapPin, FiHeart } from "react-icons/fi"
 import { IoLanguageOutline } from "react-icons/io5"
-import Button from "../elements/Button"
+import Button from "../shared/Button"
 
-type Props = {
-  className?: string
-  topOuterDivider?: boolean
-  bottomOuterDivider?: boolean
-  topDivider?: boolean
-  bottomDivider?: boolean
-  hasBgColor?: boolean
-  invertColor?: boolean
-  invertMobile?: boolean
-  invertDesktop?: boolean
-  alignTop?: boolean
-}
-
-const Profile = ({
-  className,
-  topOuterDivider = false,
-  bottomOuterDivider = false,
-  topDivider = false,
-  bottomDivider = false,
-  hasBgColor = false,
-  invertColor = false,
-  invertMobile = false,
-  invertDesktop = false,
-  alignTop = false,
-  ...props
-}: Props) => (
+const Profile = () => (
   <section
-    {...props}
     id="profile"
-    className={classNames(
-      "hero section",
-      topOuterDivider && "has-top-divider",
-      bottomOuterDivider && "has-bottom-divider",
-      hasBgColor && "has-bg-color",
-      invertColor && "invert-color",
-      className
-    )}
+    className={classNames("hero", "section", "illustration-section-01")}
   >
     <div className="container">
-      <div
-        className={classNames(
-          "hero-inner section-inner",
-          topDivider && "has-top-divider",
-          bottomDivider && "has-bottom-divider"
-        )}
-      >
-        <div
-          className={classNames(
-            "split-wrap",
-            invertMobile && "invert-mobile",
-            invertDesktop && "invert-desktop",
-            alignTop && "align-top"
-          )}
-        >
+      <div className={classNames("hero-inner", "section-inner")}>
+        <div className={classNames("split-wrap", "invert-mobile")}>
           <div className="split-item" style={inlineStyle()}>
             <div className="hero-content split-item-content center-content-mobile">
               <Heading

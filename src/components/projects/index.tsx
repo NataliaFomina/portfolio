@@ -1,59 +1,21 @@
 import classNames from "classnames"
-import SectionHeader from "./partials/SectionHeader"
-import Image from "../elements/Image"
+import SectionHeader from "../shared/SectionHeader"
+import Image from "../shared/Image"
+import Item from "./Item"
 import featuresSplitIcon from "../../assets/images/features-split-icon.svg"
 import featuresSplitImage from "../../assets/images/features-split-image.svg"
 import featuresSplitTop01 from "../../assets/images/features-split-top-01.png"
 import featuresSplitTop02 from "../../assets/images/features-split-top-02.png"
 import featuresSplitTop03 from "../../assets/images/features-split-top-03.png"
-import ProjectCard from "../elements/ProjectCard"
 
-type Props = {
-  className?: string
-  topOuterDivider?: boolean
-  bottomOuterDivider?: boolean
-  topDivider?: boolean
-  bottomDivider?: boolean
-  hasBgColor?: boolean
-  invertColor?: boolean
-  invertMobile?: boolean
-  invertDesktop?: boolean
-  alignTop?: boolean
-  imageFill?: boolean
-}
-
-const Projects = ({
-  className,
-  topOuterDivider,
-  bottomOuterDivider,
-  topDivider,
-  bottomDivider,
-  hasBgColor,
-  invertColor,
-  invertMobile,
-  invertDesktop,
-  alignTop,
-  imageFill,
-  ...props
-}: Props) => (
-  <section
-    {...props}
-    id="projects"
-    className={classNames(
-      "features-split section",
-      topOuterDivider && "has-top-divider",
-      bottomOuterDivider && "has-bottom-divider",
-      hasBgColor && "has-bg-color",
-      invertColor && "invert-color",
-      className
-    )}
-  >
+const Projects = () => (
+  <section id="projects" className={classNames("features-split", "section")}>
     <div className="container">
       <div
         className={classNames(
-          "features-split-inner section-inner",
-          topDivider && "has-top-divider",
-          bottomDivider && "has-bottom-divider"
+          "features-split-inner",
+          "section-inner",
+          "has-bottom-divider"
         )}
       >
         <SectionHeader
@@ -70,17 +32,10 @@ const Projects = ({
             height={80}
           />
         </SectionHeader>
-        <div
-          className={classNames(
-            "split-wrap",
-            invertMobile && "invert-mobile",
-            invertDesktop && "invert-desktop",
-            alignTop && "align-top"
-          )}
-        >
+        <div className="split-wrap">
           <div className="split-item reveal-from-top">
             <div className="split-item-content center-content-mobile">
-              <ProjectCard
+              <Item
                 title="Snippet Stock"
                 websiteUrl="https://snippetstock.github.io"
                 gitHubUrl="https://github.com/snippetstock"
@@ -97,8 +52,10 @@ const Projects = ({
             </div>
             <div
               className={classNames(
-                "split-item-image center-content-mobile illustration-element-01",
-                imageFill && "split-item-image-fill"
+                "split-item-image",
+                "center-content-mobile",
+                "illustration-element-01",
+                "split-item-image-fill"
               )}
             >
               <Image src={featuresSplitImage} alt="" width={528} height={396} />
@@ -114,7 +71,7 @@ const Projects = ({
           </div>
           <div className="split-item reveal-from-top">
             <div className="split-item-content center-content-mobile">
-              <ProjectCard
+              <Item
                 title="Mars Cloud"
                 websiteUrl="https://marscloud.vercel.app"
                 gitHubUrl="https://github.com/nataliafa/marscloud"
@@ -132,7 +89,7 @@ const Projects = ({
             <div
               className={classNames(
                 "split-item-image center-content-mobile illustration-element-02",
-                imageFill && "split-item-image-fill"
+                "split-item-image-fill"
               )}
             >
               <Image
@@ -153,7 +110,7 @@ const Projects = ({
           </div>
           <div className="split-item reveal-from-top">
             <div className="split-item-content center-content-mobile">
-              <ProjectCard
+              <Item
                 title="Indigo Portfolio"
                 websiteUrl="https://indigo-portfolio.vercel.app"
                 gitHubUrl="https://github.com/nataliafa/indigo-portfolio"
@@ -173,7 +130,7 @@ const Projects = ({
             <div
               className={classNames(
                 "split-item-image center-content-mobile illustration-element-01",
-                imageFill && "split-item-image-fill"
+                "split-item-image-fill"
               )}
             >
               <Image src={featuresSplitImage} alt="" width={528} height={396} />
@@ -189,7 +146,7 @@ const Projects = ({
           </div>
           <div className="split-item reveal-from-top">
             <div className="split-item-content center-content-mobile">
-              <ProjectCard
+              <Item
                 title="Telecom Landing Page"
                 websiteUrl="https://telecom-landing-page.vercel.app"
                 gitHubUrl="https://github.com/nataliafa/telecom-landing-page"
@@ -215,7 +172,7 @@ const Projects = ({
             <div
               className={classNames(
                 "split-item-image center-content-mobile illustration-element-02",
-                imageFill && "split-item-image-fill"
+                "split-item-image-fill"
               )}
             >
               <Image src={featuresSplitImage} alt="" width={528} height={396} />
@@ -231,7 +188,7 @@ const Projects = ({
           </div>
           <div className="split-item reveal-from-top">
             <div className="split-item-content center-content-mobile">
-              <ProjectCard
+              <Item
                 title="UI Components"
                 websiteUrl="https://ui-components-react.vercel.app"
                 gitHubUrl="https://github.com/nataliafa/ui-components"
@@ -251,7 +208,7 @@ const Projects = ({
             <div
               className={classNames(
                 "split-item-image center-content-mobile illustration-element-01",
-                imageFill && "split-item-image-fill"
+                "split-item-image-fill"
               )}
             >
               <Image src={featuresSplitImage} alt="" width={528} height={396} />

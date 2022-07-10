@@ -7,7 +7,7 @@ type Props = {
   fontSize: string
 }
 
-const Skill = ({ name, icon, fontSize, ...props }: Props) => {
+const Item = ({ name, icon, fontSize, ...props }: Props) => {
   const Icon = icon
   return (
     <VStack className="reveal-rotate-from-left" {...props}>
@@ -21,4 +21,4 @@ const Skill = ({ name, icon, fontSize, ...props }: Props) => {
   )
 }
 
-export default Skill
+export default Item

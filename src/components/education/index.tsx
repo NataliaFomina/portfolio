@@ -1,51 +1,16 @@
 import classNames from "classnames"
-import SectionHeader from "./partials/SectionHeader"
-import Image from "../elements/Image"
+import SectionHeader from "../shared/SectionHeader"
+import Image from "../shared/Image"
+import Item from "./Item"
 import featuresSplitIcon from "../../assets/images/features-split-icon.svg"
-import EducationCard from "../elements/EducationCard"
 
-type Props = {
-  className?: string
-  topOuterDivider?: boolean
-  bottomOuterDivider?: boolean
-  topDivider?: boolean
-  bottomDivider?: boolean
-  hasBgColor?: boolean
-  invertColor?: boolean
-  pushLeft?: boolean
-}
-
-const Education = ({
-  className,
-  topOuterDivider,
-  bottomOuterDivider,
-  topDivider,
-  bottomDivider,
-  hasBgColor,
-  invertColor,
-  pushLeft,
-  ...props
-}: Props) => (
+const Education = () => (
   <section
-    {...props}
     id="education"
-    className={classNames(
-      "features-tiles section center-content",
-      topOuterDivider && "has-top-divider",
-      bottomOuterDivider && "has-bottom-divider",
-      hasBgColor && "has-bg-color",
-      invertColor && "invert-color",
-      className
-    )}
+    className={classNames("features-tiles section", "center-content")}
   >
     <div className="container">
-      <div
-        className={classNames(
-          "features-tiles-inner section-inner",
-          topDivider && "has-top-divider",
-          bottomDivider && "has-bottom-divider"
-        )}
-      >
+      <div className={classNames("features-tiles-inner", "section-inner")}>
         <SectionHeader
           data={{
             title: "Education",
@@ -62,38 +27,38 @@ const Education = ({
             height={80}
           />
         </SectionHeader>
-        <div className={classNames("tiles-wrap", pushLeft && "push-left")}>
-          <EducationCard
+        <div className="tiles-wrap">
+          <Item
             title="Programming, PHP / SQL back-end development and databases"
             subtitle="Moscow, Russia 2019"
             link="https://netology.ru"
             body={'University of Internet Professions "Netology"'}
           />
-          <EducationCard
+          <Item
             title="Programming, Frontend Development (HTML, JavaScript, React JS)"
             subtitle="Moscow, Russia 2018-2019"
             link="https://netology.ru"
             body={'University of Internet Professions "Netology"'}
           />
-          <EducationCard
+          <Item
             title="Programming, Responsive and mobile layout"
             subtitle="Moscow, Russia 2018"
             link="https://netology.ru"
             body={'University of Internet Professions "Netology"'}
           />
-          <EducationCard
+          <Item
             title="Web technologies, HTML5 and CSS3"
             subtitle="Moscow, Russia 2017"
             link="https://www.specialist.ru"
             body={'"Specialist" at Bauman Moscow State Technical University'}
           />
-          <EducationCard
+          <Item
             title="Web technologies, Website promotion and SEO"
             subtitle="Moscow, Russia 2017"
             link="https://www.specialist.ru"
             body={'"Specialist" at Bauman Moscow State Technical University'}
           />
-          <EducationCard
+          <Item
             title="Design"
             subtitle="Milan, Italy 2008-2011"
             link="https://www.istitutomarangoni.com"
