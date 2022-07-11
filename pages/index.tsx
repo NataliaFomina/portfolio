@@ -45,7 +45,7 @@ const IndexPage = ({
       <Projects projects={projects} />
       <Experience experiences={experiences} />
       <Education educations={educations} />
-      <Contact />
+      <Contact formUrl={profile.formUrl} />
     </>
   )
 }

@@ -16,7 +16,7 @@ export type Profile = {
   portfolioUrl: string
   linkedInUrl: string
   gitHubUrl: string
-  contactFormUrl: string
+  formUrl: string
 }
 
 export async function getProfile(): Promise<Profile> {
