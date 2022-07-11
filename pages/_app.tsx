@@ -1,7 +1,6 @@
 import { createRef, ReactElement, ReactNode, useEffect } from "react"
 import type { NextPage } from "next"
 import type { AppProps } from "next/app"
-import dynamic from "next/dynamic"
 import { ChakraProvider } from "@chakra-ui/react"
 import ScrollReveal from "@/components/shared/ScrollReveal"
 import theme from "@/theme/index"
@@ -44,6 +43,4 @@ const App = ({ Component, pageProps }: AppPropsWithLayout) => {
   )
 }
 
-export default dynamic(() => Promise.resolve(App), {
-  ssr: false,
-})
+export default App
