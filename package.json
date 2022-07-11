@@ -10,7 +10,8 @@
     "ts": "tsc --noEmit --incremental --preserveWatchOutput --pretty",
     "ts:watch": "tsc --noEmit --incremental --preserveWatchOutput --pretty --watch",
     "prettier": "prettier --write .",
-    "prepare": "husky install && playwright install && playwright install-deps"
+    "prepare": "husky install",
+    "prepare:playwright": "playwright install && playwright install-deps"
   },
   "dependencies": {
     "@chakra-ui/react": "1.8.5",
