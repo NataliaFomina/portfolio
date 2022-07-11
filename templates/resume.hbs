@@ -1,0 +1,83 @@
+<html>
+
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body { font-size: 14px; font-family: 'IBM Plex Serif', serif; line-height:
+      1.5; margin: 0; } h1 { font-size: 30px; } h3 { font-size: 16px;
+      margin-bottom: 5px; } table { font-size: 14px; } h1, h3, strong {
+      font-weight: 500; } a { text-decoration: none; }
+    </style>
+  </head>
+
+  <body>
+    {{#with profile}}
+      <h1 style="margin-top: 0">{{fullName}}</h1>
+      <strong>{{locationDetailed}}</strong><br />
+      {{#if legalFullName}}
+        Legal name:
+        {{legalFullName}}<br />
+      {{/if}}
+      {{#if nationality}}
+        Nationality:
+        {{nationality}}<br />
+      {{/if}}
+      Portfolio:
+      <a href="{{portfolioUrl}}">{{portfolioUrl}}</a><br />
+      {{#if gitHubUrl}}
+        GitHub:
+        <a href="{{gitHubUrl}}">{{gitHubUrl}}</a><br />
+      {{/if}}
+      E-Mail:
+      <a href="mailto:{{email}}">{{email}}</a><br />
+      Tel.:
+      {{phone}}<br />
+      <h1 style="text-align:center">{{title}}</h1>
+      <p>{{bio}}</p>
+    {{/with}}
+    <p>The following is a summary of my skills:</p>
+    {{#each skills}}
+      <h3>{{title}}</h3>
+      {{{description}}}
+    {{/each}}
+    <h1>Professional Experience</h1>
+    {{#each workExperiences}}
+      <h3>{{title}}</h3>
+      {{#if websiteUrl}}
+        <a href="{{websiteUrl}}">{{websiteUrl}}</a><br />
+      {{/if}}
+      {{location}}<br />
+      {{duration}}<br />
+      {{{description}}}
+    {{/each}}
+    <h1>Projects</h1>
+    {{#each projects}}
+      <h3>{{title}} - {{headline}}</h3>
+      {{#if websiteUrl}}
+        <a href="{{websiteUrl}}">{{websiteUrl}}</a><br />
+      {{/if}}
+      {{#if githubUrl}}
+        <a href="{{githubUrl}}">{{githubUrl}}</a><br />
+      {{/if}}
+      {{{description}}}
+    {{/each}}
+    <h1>Education</h1>
+    {{#each educations}}
+      <h3>{{title}}</h3>
+      {{#if websiteUrl}}
+        <a href="{{websiteUrl}}">{{websiteUrl}}</a><br />
+      {{/if}}
+      {{location}}
+      {{duration}}
+      {{{description}}}
+    {{/each}}
+    <h1>Spoken Languages</h1>
+    {{{profile.languagesDetailed}}}
+  </body>
+
+</html>
