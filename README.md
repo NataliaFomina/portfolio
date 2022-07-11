@@ -2,9 +2,9 @@
 
 ## Getting Started
 
-Install Node.js v16 (Gallium):
+Install Node.js v14 (Fermium):
 
-https://nodejs.org/download/release/latest-gallium/
+https://nodejs.org/download/release/latest-fermium/
 
 Install dependencies:
 
