@@ -7,6 +7,6 @@ export type ResumeSkill = {
 }
 
 export async function getResumeSkills(): Promise<ResumeSkill[]> {
-  const response = await fetch(`${apiUrl}/api/v1/resumeSkills`)
+  const response = await fetch(`${apiUrl}/api/v1/resume-skills`)
   return response.json()
 }

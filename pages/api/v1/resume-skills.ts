@@ -1,6 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from "next"
 import { GraphQLClient } from "graphql-request"
-import { ResumeSkill } from "api/resumeSkills"
+import { ResumeSkill } from "@/api/resume-skills"
 
 export async function getResumeSkills(): Promise<ResumeSkill[]> {
   const gql = new GraphQLClient(process.env.GRAPH_CMS_URL as string)

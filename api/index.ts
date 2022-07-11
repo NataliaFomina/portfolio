@@ -1,7 +1,7 @@
 import { getEducations, Education } from "./educations"
 import { getProfile, Profile } from "./profile"
 import { getProjects, Project } from "./projects"
-import { getResumeSkills, ResumeSkill } from "./resumeSkills"
+import { getResumeSkills, ResumeSkill } from "./resume-skills"
 import { getSkills, Skill } from "./skills"
 import { getExperiences, Experience } from "./experiences"
 
