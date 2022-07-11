@@ -2,6 +2,9 @@
   "name": "nataliafomina.com",
   "version": "2.0.0",
   "private": true,
+  "engines": {
+    "node": "14.x"
+  },
   "scripts": {
     "dev": "concurrently -n Next,~TS~ -c bgWhite.black,bgBlue.black \"next dev\" \"npm run ts:watch\"",
     "build": "next build",
@@ -25,7 +28,8 @@
     "lodash": "4.17.21",
     "markdown-to-jsx": "7.1.6",
     "next": "12.1.0",
-    "playwright-aws-lambda": "0.7.0",
+    "playwright-aws-lambda": "0.8.0",
+    "playwright-core": "1.23.2",
     "polished": "4.1.4",
     "prettier": "2.5.1",
     "react": "17.0.2",
