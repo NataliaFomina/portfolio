@@ -48,6 +48,8 @@ const Contact = ({ formUrl }: Props) => {
           />
           <Formik
             validationSchema={formSchema}
+            validateOnBlur={false}
+            validateOnChange={false}
             initialValues={{ email: "", message: "" }}
             onSubmit={handleSubmit}
           >
