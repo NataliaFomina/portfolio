@@ -3,7 +3,7 @@
   "version": "2.0.0",
   "private": true,
   "engines": {
-    "node": "14.x"
+    "node": "v18.14.0"
   },
   "scripts": {
     "dev": "concurrently -n Next,~TS~ -c bgWhite.black,bgBlue.black \"next dev\" \"npm run ts:watch\"",
