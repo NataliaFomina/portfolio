@@ -19,7 +19,7 @@ const Footer = () => (
         </div>
         <div className="footer-bottom space-between text-xxs invert-order-desktop">
           <FooterNav />
-          <div className="footer-copyright">&copy; 2022 Natalia Fomina</div>
+          <div className="footer-copyright">&copy; 2025 Natalia Fomina</div>
         </div>
       </div>
     </div>
